@@ -1,0 +1,51 @@
+slug: supporting
+group: comm
+mat: obs
+acc: obs
+title: Supporting Splitstone
+nav: Supporting Splitstone
+summary: Three optional monthly tiers and cosmetics fund Splitstone. Paying never gives an advantage in ranked: competitive play and improvement tools stay free.
+stat: $2.49|a month, from
+facts: 3|monthly tiers;;$2.49|Tier 1 a month;;0|competitive advantage;;Free|battle pass at launch
+keywords: support supporter tiers subscription price tebex gift shop cosmetics coins battle pass earned bought outfits capes advantage pay to win refund website purchase username
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" d="M6 3h6v2h2v2h4V5h2V3h6v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v2h-4v-2h-2v-2h-2v-2h-2v-2H6v-2H4V5h2z"/><path fill="#b98cff" d="M7 5h3v2H7zM6 7h2v2H6z"/><path fill="#5b3f8f" d="M20 5h4v1h-4zM14 17h4v1h-4z"/><path fill="#e3d3ff" d="M8 5h1v1H8z"/></svg>
+---
+<h2 id="rule">Paying never helps you win</h2>
+<ul>
+<li>Ranked, the practice tools and replay analysis are free for everyone.</li>
+<li>Rank marks, such as gold, the crown, medals and the lava glow, can only be earned. A shop item never looks like competitive status.</li>
+<li>Bought cosmetics never appear on leaderboard rows, only on profiles and hover cards.</li>
+</ul>
+<h2 id="tiers">The tiers</h2>
+<p>Each tier includes everything in the tier below it.</p>
+<div class="tw"><table class="wt"><thead><tr><th>Tier</th><th class="n">A month</th><th>Adds</th></tr></thead><tbody>
+<tr><td>Tier 1</td><td class="n">$2.49</td><td>A supporter badge on your name; a name colour; up to 6 highlighted achievements on your profile</td></tr>
+<tr><td>Tier 2</td><td class="n">$4.99</td><td>A custom name for your private rooms; up to 7 highlighted achievements</td></tr>
+<tr><td>Tier 3</td><td class="n">$7.99</td><td>An animated name colour; a "request to join" mode for your rooms; up to 8 highlighted achievements</td></tr>
+</tbody></table></div>
+<p>Without a tier, a profile highlights <b>5</b> achievements. Tiers are sold on the <a href="../shop.html">Shop page</a>.</p>
+<h2 id="buying">Buying on the website</h2>
+<ul>
+<li>No sign-in: type the Minecraft username of the player the tier is for, and choose whether it's a gift.</li>
+<li>Before you pay, the website shows that player's head, name and profile so you can check it's the right person.</li>
+<li>A tier can go to any Minecraft account, even one that has never signed in to Splitstone. The website then shows "not on Splitstone yet", and the tier waits for that player's first sign-in.</li>
+<li>Payment goes through Tebex, which tells Splitstone's service to add the tier to that Minecraft account.</li>
+<li>A gifted tier is paid once and lasts a month; it never renews. When it ends, the player receiving it can subscribe themselves.</li>
+<li>From 16 you can buy for yourself; younger players get a tier when a parent buys it.</li>
+</ul>
+<h2 id="cosmetics">Cosmetics</h2>
+<ul>
+<li>Cosmetics and coins are sold in the game's own shop, where you can try items on your 3D model first. The website sells only the tiers.</li>
+<li>Kinds of cosmetic: outfits, hats and worn models, particles and trails, emotes, titles, banners, name colours, badges and match-win effects. No capes.</li>
+<li>Outfits are drawn over your own skin and never change your Minecraft skin.</li>
+<li>Your equipped set shows everywhere: matches, ranked included, replays and profiles. You can hide other players' cosmetics in settings. Your own speedrun.com instance shows none.</li>
+<li>The shop rotates: items are on sale in limited windows. Some return, some never do, and bundles cost fewer coins.</li>
+<li>Coins have no real-world value and can't be cashed out or transferred.</li>
+<li>Community creators make cosmetics alongside Splitstone, for a share of sales.</li>
+</ul>
+<h2 id="earned">Earned items</h2>
+<ul>
+<li>Some cosmetics can only be earned: through the battle pass, playtime and levels, being a beta player, achievements and wins. Earned items are yours for good.</li>
+<li>At launch the whole battle pass is free for everyone. Each pass follows a <a href="seasons.html">season</a>, and rewards not reached by its end are lost.</li>
+<li>You can gift many bought items, and the person receiving one can accept or decline it. Earned items can't be gifted.</li>
+</ul>

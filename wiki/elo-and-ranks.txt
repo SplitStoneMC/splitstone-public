@@ -1,0 +1,74 @@
+slug: elo-and-ranks
+group: play
+mat: stone
+acc: stone
+title: Elo and ranks
+nav: Elo and ranks
+summary: How your rating moves, how placement sets your starting Elo, the seven ranks and the Top 20, and what happens when you stop playing for a while.
+stat: 7|ranks, then Top 20
+facts: 5|placement matches;;80|K for your first 10 matches;;40|K after that;;7|ranks, then Top 20
+keywords: elo rating k-factor rank ranks placement bronze silver gold platinum diamond obsidian netherite top 20 division divisions decay inactive leaderboard 2v2 elo season reset seed types unlock draw
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" d="M1 19h5v5H1z"/><path fill="#c3ccd0" d="M6 16h5v8H6z"/><path fill="#c9a03c" d="M11 13h5v11h-5z"/><path fill="#a9def9" d="M16 10h5v14h-5z"/><path fill="#5fe0e6" d="M21 7h5v17h-5z"/><path fill="#5b3f8f" d="M26 4h5v20h-5z"/><path fill="#fff" fill-opacity=".3" d="M1 19h5v1H1zM6 16h5v1H6zM11 13h5v1h-5zM16 10h5v1h-5zM21 7h5v1h-5zM26 4h5v1h-5z"/><path fill="#000" fill-opacity=".3" d="M5 20h1v4H5zM10 17h1v7h-1zM15 14h1v10h-1zM20 11h1v13h-1zM25 8h1v16h-1zM30 5h1v19h-1z"/><path fill="#ffd08a" d="M27 0h1v4h-1zM28 0h3v2h-3z"/></svg>
+---
+<h2 id="elo">Your Elo</h2>
+<p>Elo is a number that rises when you win and falls when you lose. Beating a higher-rated player moves it more than beating a lower-rated one.</p>
+<ul>
+<li>You start at <b>1000</b> until your placement matches set your rating.</li>
+<li>The <b>K-factor</b> is the most one match can move you. At launch it is <b>80</b> for your first 10 matches after placement, counted again each season, so new ratings settle quickly, then <b>40</b>.</li>
+<li>Once enough people play, Splitstone switches to a fixed K of 40 for everyone, fitted to MCSR Ranked's ratings.</li>
+<li>A draw counts as half a win: equal players don't move, and the lower-rated player gains a little.</li>
+</ul>
+<h2 id="2v2">2v2 and co-op</h2>
+<p>2v2 gives every player a separate 2v2 Elo. After each match it moves by your team's average Elo, the same average that matchmaking uses. It works exactly as 1v1 does: the same starting Elo, K, placement, ranks and decay. Co-op is unrated: it has no Elo, rank or leaderboard.</p>
+<h2 id="placement">Placement matches</h2>
+<p>New players, and every player after a season reset, play <b>5</b> placement matches. Each one scores how far you got, not how fast, and your starting Elo is the average of the five:</p>
+<div class="tw"><table class="wt"><thead><tr><th>Furthest point reached</th><th class="n">Score</th></tr></thead><tbody>
+<tr><td>Not in the Nether</td><td class="n">500</td></tr><tr><td>The Nether</td><td class="n">650</td></tr><tr><td>A bastion or a fortress</td><td class="n">800</td></tr><tr><td>Both</td><td class="n">950</td></tr><tr><td>Blind travel</td><td class="n">1050</td></tr><tr><td>The stronghold</td><td class="n">1150</td></tr><tr><td>The End</td><td class="n">1250</td></tr><tr><td>Finished</td><td class="n">1400</td></tr>
+</tbody></table></div>
+<h2 id="ranks">Ranks</h2>
+<p>Seven ranks, climbing from Bronze. Every rank but Netherite has three divisions, and the 20 highest places show <b>Top 20</b> instead of a rank, whatever their Elo.</p>
+<div class="rkw">
+<ol class="rl" id="rl" aria-label="Ranks from highest to lowest, with the Elo each starts at">
+<li class="t20" style="--c:#ffd08a;--s:7"><i aria-hidden="true"></i><span><b>Top 20</b><small>The 20 highest places on the leaderboard</small></span></li>
+<li data-e="2100" style="--c:#ab9a94;--s:6"><i aria-hidden="true"></i><span><b>Netherite</b><small>from <em>2100</em> &middot; no divisions</small></span></li>
+<li data-e="1800" style="--c:#a583f5;--s:5"><i aria-hidden="true"></i><span><b>Obsidian</b><small>from <em>1800</em> &middot; divisions <em>1800</em> <em>1900</em> <em>2000</em></small></span></li>
+<li data-e="1500" style="--c:#5fe0e6;--s:4"><i aria-hidden="true"></i><span><b>Diamond</b><small>from <em>1500</em> &middot; divisions <em>1500</em> <em>1600</em> <em>1700</em></small></span></li>
+<li data-e="1200" style="--c:#a9def9;--s:3"><i aria-hidden="true"></i><span><b>Platinum</b><small>from <em>1200</em> &middot; divisions <em>1200</em> <em>1300</em> <em>1400</em></small></span></li>
+<li data-e="900" style="--c:#c9a03c;--s:2"><i aria-hidden="true"></i><span><b>Gold</b><small>from <em>900</em> &middot; divisions <em>900</em> <em>1000</em> <em>1100</em></small></span></li>
+<li data-e="600" style="--c:#c3ccd0;--s:1"><i aria-hidden="true"></i><span><b>Silver</b><small>from <em>600</em> &middot; divisions <em>600</em> <em>700</em> <em>800</em></small></span></li>
+<li data-e="0" style="--c:#c58a4a;--s:0"><i aria-hidden="true"></i><span><b>Bronze</b><small>from <em>0</em> &middot; divisions <em>0</em> <em>400</em> <em>500</em></small></span></li>
+</ol>
+<div class="rkf" id="rkf" hidden><label for="rke">Try an Elo</label><input class="field" id="rke" type="number" inputmode="numeric" min="0" max="4000" step="10" value="1000"><p id="rko" aria-live="polite"></p></div>
+</div>
+<p>The divisions are 100 Elo apart, except Bronze's, which start at 0, 400 and 500 because placement scores start at 500. These are the beta's starting lines; beta data sets the final ones.</p>
+<p class="livec" id="ladc" hidden><i aria-hidden="true"></i><span><b id="ladn1">0</b> players on the 1v1 ladder and <b id="ladn2">0</b> on the 2v2 ladder now: placed, and played in the last 7 days. <a href="../leaderboards.html">See the leaderboards &rarr;</a></span></p>
+<p>Some seed types unlock as you rank up. A match uses only the seed types the lower-ranked player has unlocked.</p>
+<h2 id="inactive">Taking a break</h2>
+<p>If you don't play for a week, you're hidden from the leaderboard and your Elo starts to drop each day until you play again. It never drops you below the bottom of your rank.</p>
+<figure class="dk">
+<svg class="dkc" id="dkc" viewBox="0 0 400 190" role="img" aria-labelledby="dkt"><title id="dkt">Elo over 28 days without playing, starting 100 Elo above the bottom of your rank: flat for 7 days, then down 12 a day at Netherite, 8 at Obsidian and 5 below, stopping at the bottom of the rank.</title>
+<path class="ax" d="M34 160H390M34 34V160"/><path class="d7" d="M123 34V160"/>
+<path class="fl" d="M34 160H390"/>
+<polyline class="ln l3" pathLength="1" points="34,34 123,34 377,160 390,160"/>
+<polyline class="ln l2" pathLength="1" points="34,34 123,34 282,160 390,160"/>
+<polyline class="ln l1" pathLength="1" points="34,34 123,34 229,160 390,160"/>
+<text class="an" x="129" y="24">a week off: hidden, decay starts</text>
+<text class="an" x="40" y="152">bottom of your rank</text>
+<g class="tk"><text x="34" y="180" text-anchor="middle">0</text><text x="123" y="180" text-anchor="middle">7</text><text x="212" y="180" text-anchor="middle">14</text><text x="301" y="180" text-anchor="middle">21</text><text x="390" y="180" text-anchor="end">28 days</text><text x="28" y="39" text-anchor="end">100</text><text x="28" y="164" text-anchor="end">0</text></g>
+</svg>
+<figcaption><span class="k1"><i></i>Netherite <b>&minus;12</b> a day</span><span class="k2"><i></i>Obsidian <b>&minus;8</b> a day</span><span class="k3"><i></i>Lower ranks <b>&minus;5</b> a day</span><small>Example: a player 100 Elo above the bottom of their rank who stops playing.</small></figcaption>
+</figure>
+<h2 id="season-reset">Seasons and leaderboards</h2>
+<p>Each <a href="seasons.html">season</a> ends with a full reset, and everyone plays placement again. The <a href="../leaderboards.html">leaderboards</a> are a 1v1 and a 2v2 Elo ladder.</p>
+<script defer src="../assets/sample.js?v=1e04316a"></script><script defer src="../assets/live-data.js?v=5cf4c8fa"></script>
+<script>
+/* wiki-content: the Elo finder on the rank ladder, the decay lines drawn in when seen, and the ladder count from real data only */
+addEventListener('DOMContentLoaded',function(){var D=document,R=[].slice.call(D.querySelectorAll('#rl li[data-e]')),f=D.getElementById('rkf'),inp=D.getElementById('rke'),o=D.getElementById('rko'),N=['first','second','third'];
+function find(){var e=Math.max(0,Math.round(+inp.value||0)),hit=null;R.forEach(function(li){var s=+li.dataset.e;li.classList.remove('on');if(!hit&&e>=s)hit=li});
+hit.classList.add('on');var d=[].map.call(hit.querySelectorAll('small em'),function(x){return+x.textContent}).slice(1),k=0;d.forEach(function(v,i){if(e>=v)k=i});
+var nm=hit.querySelector('b').textContent;o.innerHTML='<b>'+e+'</b> Elo is <b>'+nm+'</b>'+(d.length?', '+N[k]+' division':'')+'.'}
+if(f&&inp){f.hidden=false;inp.addEventListener('input',find);find()}
+var c=D.getElementById('dkc');if(c&&'IntersectionObserver'in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches&&c.getBoundingClientRect().top>innerHeight){c.classList.add('anim');var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){c.classList.add('go');io.disconnect()}},{threshold:.25});io.observe(c)}
+var X=window.SAMPLE,L=D.getElementById('ladc');if(!X||!X.ready||!L)return;
+X.ready(function(){if(!X.real)return;function n(m){var k=X.data('elo',m).length;return k>=100?'100+':k}D.getElementById('ladn1').textContent=n('1v1');D.getElementById('ladn2').textContent=n('2v2');L.hidden=false})});
+</script>

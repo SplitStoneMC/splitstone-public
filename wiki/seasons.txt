@@ -1,0 +1,103 @@
+slug: seasons
+group: comp
+mat: nether
+acc: nether
+title: Seasons and events
+nav: Seasons and events
+summary: A season is 16 weeks of ranked play, weekend cups, three Majors and the playoffs. Here is what each week holds, how playoff points work and how the season ends.
+stat: 16|weeks in a season
+facts: 16|weeks in a season;;7|matches in a weekend cup;;64|players in a Major;;16|players in the playoffs
+keywords: season seasons weeks top cup netherite cup weekly cup weekend major majors standout playoffs bracket points ladder points swiss prize money titles reset recap battle pass 2v2 events calculator
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" d="M10 2h12v9h-1v2h-2v2h-2v3h3v2H12v-2h3v-3h-2v-2h-2v-2h-1z"/><path fill="#e8c35a" d="M6 3h4v2H8v3h2v2H7V9H6zM22 3h4v6h-1v1h-3V8h2V5h-2z"/><path fill="#fff" fill-opacity=".45" d="M12 3h2v6h-2z"/><path fill="#000" fill-opacity=".25" d="M19 3h2v8h-1v2h-1zM15 15h2v3h-2z"/><path fill="#6b2a24" d="M7 20h18v4H7z"/><path fill="#3a1714" d="M7 22h18v1H7zM12 20h1v2h-1zM19 20h1v2h-1zM9 23h1v1H9zM16 23h1v1h-1zM22 23h1v1h-1z"/><path fill="#ff8a3d" d="M7 20h18v1H7z"/></svg>
+---
+<p>The <a href="../events.html">Events page</a> shows the current season's next event and the playoff bracket.</p>
+<h2 id="shape">The shape of a season</h2>
+<p>Tap a week to see what it holds.</p>
+<p class="wsn" id="wsn" hidden>Sample season, shown at week <b>6</b> of 16.</p>
+<ol class="ws" id="ws" aria-label="Weeks 1 to 16">
+<li class="c"><button type="button" data-w="1" aria-pressed="true"><i></i>1</button></li><li class="c"><button type="button" data-w="2" aria-pressed="false"><i></i>2</button></li><li class="c"><button type="button" data-w="3" aria-pressed="false"><i></i>3</button></li><li class="c"><button type="button" data-w="4" aria-pressed="false"><i></i>4</button></li><li class="m"><button type="button" data-w="5" aria-pressed="false"><i></i>5</button></li><li class="c"><button type="button" data-w="6" aria-pressed="false"><i></i>6</button></li><li class="c"><button type="button" data-w="7" aria-pressed="false"><i></i>7</button></li><li class="c"><button type="button" data-w="8" aria-pressed="false"><i></i>8</button></li><li class="c"><button type="button" data-w="9" aria-pressed="false"><i></i>9</button></li><li class="m"><button type="button" data-w="10" aria-pressed="false"><i></i>10</button></li><li class="c"><button type="button" data-w="11" aria-pressed="false"><i></i>11</button></li><li class="c"><button type="button" data-w="12" aria-pressed="false"><i></i>12</button></li><li class="c"><button type="button" data-w="13" aria-pressed="false"><i></i>13</button></li><li class="c"><button type="button" data-w="14" aria-pressed="false"><i></i>14</button></li><li class="m"><button type="button" data-w="15" aria-pressed="false"><i></i>15</button></li><li class="p"><button type="button" data-w="16" aria-pressed="false"><i></i>16</button></li>
+</ol>
+<p class="wkk" data-nogloss><span><b>Brick:</b> cup weekend</span><span><b>Lava top:</b> Major</span><span><b>Obsidian:</b> playoffs</span></p>
+<div class="wsp" id="wsp" aria-live="polite"><h3>Week 1 &middot; Cup weekend</h3><ul><li>After the reset, everyone plays 5 placement matches first.</li><li>Ranked all week. Play 10 ranked matches and your ladder place that week earns points.</li><li>Weekend cups from Friday 9 PM to Sunday 9 PM ET: 7 matches each. The Netherite cup gives playoff points; the other ranks' cups give cosmetics.</li></ul></div>
+<ul>
+<li><b>All season:</b> ranked play. A week runs from Sunday 9 PM ET to the next Sunday 9 PM ET.</li>
+<li><b>12 weekends:</b> the weekend cups, from Friday 9 PM to Sunday 9 PM ET.</li>
+<li><b>Weeks 5, 10 and 15:</b> Majors, with no cup those weekends.</li>
+<li><b>Week 16:</b> the playoffs.</li>
+</ul>
+<p>Only Majors, the playoffs and the Netherite cup are events. 2v2 runs the same season system. Co-op has no season, because it is unrated.</p>
+<h2 id="active-weeks">Making a week count</h2>
+<p>Play <b>10 ranked matches</b> in a week and that week counts: your leaderboard place that week earns ladder points, and your cup for that weekend unlocks as soon as your 10th ranked match of the week is played, while the cup is open. Your best 10 of 15 weeks count. No single snapshot of the ladder decides a playoff place.</p>
+<h2 id="top-cup">Weekend cups</h2>
+<ul>
+<li>Every rank has its own weekend cup. You can enter only the cup for your rank, taken when the cup opens and kept for the weekend.</li>
+<li>The top cup is the <b>Netherite cup</b>: every Netherite player and the Top 20. It is the only cup that gives playoff points, and your best 6 of 12 count. The other cups give cosmetic rewards.</li>
+<li>A cup is a weekend 1v1 league of <b>7</b> matches at launch, played whenever you're online over the weekend. The beta can change the number.</li>
+<li>Every match has its own seed, so no seed can be scouted or shared.</li>
+<li>Swiss pairing: each match is against a player on the same cup record, widening by at most one step when nobody is online. Ties go to whoever beat stronger opponents, counted by the cup wins of the players each one beat.</li>
+<li>Cup matches don't change Elo and follow the ranked match rules. A draw is half a win, and a player who stops early keeps their record and is placed by it.</li>
+</ul>
+<h2 id="majors">Majors</h2>
+<ul>
+<li><b>64 players:</b> the top 58 on playoff points, plus 6 standout places for players not already in: 3 for the fastest finishes and 3 for the biggest Elo climbs since the last Major, or since the season's start. There is no open qualifier.</li>
+<li><b>Saturday from 12 PM ET:</b> all 64 race the same 5 seeds, with 13 minutes per seed. On each seed every player gets a place, finishers by time and then the rest by how far they got, and scores 65 minus their place.</li>
+<li>The top 32 go into a knockout, seeded by race result (1st plays 32nd), and play the rounds of 32 and 16 the same day. A tie at 32nd place is settled by one sudden-death seed.</li>
+<li><b>Sunday from 12 PM ET:</b> the last 8 play on to the final.</li>
+<li>Knockout matches are best of 3 until the last 8, then best of 5, final included. There are no seed rerolls or forfeits, and a game nobody finishes in 20 minutes goes to the player who got further.</li>
+</ul>
+<h2 id="playoffs">The playoffs</h2>
+<p>The top 16 on playoff points play a single-elimination bracket in week 16, best of 5 until the best-of-7 final: the rounds of 16 and 8 on Saturday from 12 PM ET, the semifinals and the final on Sunday. There is no last-chance qualifier, and only the playoffs crown a champion.</p>
+<div class="co"><span><b>Not decided yet:</b> how the playoff bracket is seeded.</span></div>
+<h2 id="points">Playoff points</h2>
+<p>Playoff points come <b>20%</b> from the ladder, <b>30%</b> from the Netherite cup and <b>50%</b> from Majors. Try a season:</p>
+<div class="calc" id="calc" hidden>
+<div class="cr"><label for="c-l">Ladder place</label><select class="field" id="c-l"></select><label class="cn" for="c-lw">in <output id="c-lwo">10</output> counted weeks</label><input type="range" id="c-lw" min="0" max="10" value="10"><b class="cv" id="c-lv">0</b></div>
+<div class="cr"><label for="c-c">Netherite cup place</label><select class="field" id="c-c"></select><label class="cn" for="c-cw">in <output id="c-cwo">6</output> counted cups</label><input type="range" id="c-cw" min="0" max="6" value="6"><b class="cv" id="c-cv">0</b></div>
+<div class="cr cm"><span class="lb">Major places</span><span class="m3"><label class="sr" for="c-m1">Major 1</label><select class="field" id="c-m1"></select><label class="sr" for="c-m2">Major 2</label><select class="field" id="c-m2"></select><label class="sr" for="c-m3">Major 3</label><select class="field" id="c-m3"></select></span><b class="cv" id="c-mv">0</b></div>
+<div class="ctot"><span>Playoff points</span><b id="c-t">0</b><small>of <b>1001</b> possible</small><div class="cbar" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div></div>
+<p class="cnote">The same place every counted week and cup, for simplicity. The top 16 on points play the playoffs; how many points that takes depends on everyone else.</p>
+</div>
+<details class="pts"><summary>Points for every place</summary>
+<div class="tw"><table class="wt" id="t-l"><thead><tr><th>Ladder place</th><th class="n">Per active week</th></tr></thead><tbody>
+<tr><td>1st</td><td class="n">20</td></tr><tr><td>2nd</td><td class="n">18</td></tr><tr><td>3rd</td><td class="n">16</td></tr><tr><td>4th&ndash;5th</td><td class="n">14</td></tr><tr><td>6th&ndash;10th</td><td class="n">12</td></tr><tr><td>11th&ndash;20th</td><td class="n">9</td></tr><tr><td>21st&ndash;50th</td><td class="n">6</td></tr><tr><td>51st&ndash;100th</td><td class="n">3</td></tr>
+</tbody></table></div>
+<div class="tw"><table class="wt" id="t-c"><thead><tr><th>Netherite cup place</th><th class="n">Points</th></tr></thead><tbody>
+<tr><td>1st</td><td class="n">50</td></tr><tr><td>2nd</td><td class="n">42</td></tr><tr><td>3rd</td><td class="n">36</td></tr><tr><td>4th</td><td class="n">32</td></tr><tr><td>5th&ndash;8th</td><td class="n">26</td></tr><tr><td>9th&ndash;16th</td><td class="n">18</td></tr><tr><td>17th&ndash;32nd</td><td class="n">10</td></tr><tr><td>33rd&ndash;50th</td><td class="n">4</td></tr><tr><td>51st and below</td><td class="n">2</td></tr>
+</tbody></table></div>
+<div class="tw"><table class="wt" id="t-m"><thead><tr><th>Major place</th><th class="n">Points</th></tr></thead><tbody>
+<tr><td>1st</td><td class="n">167</td></tr><tr><td>2nd</td><td class="n">135</td></tr><tr><td>3rd&ndash;4th</td><td class="n">110</td></tr><tr><td>5th&ndash;8th</td><td class="n">85</td></tr><tr><td>9th&ndash;16th</td><td class="n">55</td></tr><tr><td>17th&ndash;32nd</td><td class="n">30</td></tr><tr><td>33rd&ndash;48th</td><td class="n">15</td></tr><tr><td>49th&ndash;64th</td><td class="n">5</td></tr>
+</tbody></table></div>
+</details>
+<h2 id="prizes">Prizes</h2>
+<p>The playoffs pay a cash prize; Majors pay none. The amount is announced when it is set.</p>
+<h2 id="season-end">When a season ends</h2>
+<ul>
+<li>Ratings fully reset, and everyone plays <a href="elo-and-ranks.html#placement">placement</a> again.</li>
+<li>Season-end titles: special titles for 1st, 2nd and 3rd, then top 5, 10, 20, 50 and 100.</li>
+<li>Every player gets a recap card to share.</li>
+<li>Each battle pass follows a season, and rewards not reached by its end are lost.</li>
+</ul>
+<script defer src="../assets/sample.js?v=1e04316a"></script><script defer src="../assets/live-data.js?v=5cf4c8fa"></script>
+<script>
+/* wiki-content: the tappable 16-week strip (the current week is marked only on sample data) and the playoff points calculator */
+addEventListener('DOMContentLoaded',function(){var D=document,$=function(i){return D.getElementById(i)};
+var B=[].slice.call(D.querySelectorAll('#ws button')),P=$('wsp'),
+CUP='<li>Ranked all week. Play 10 ranked matches and your ladder place that week earns points.</li><li>Weekend cups from Friday 9 PM to Sunday 9 PM ET: 7 matches each. The Netherite cup gives playoff points; the other ranks\' cups give cosmetics.</li>';
+function info(w){if(w==16)return['Week 16 &middot; Playoffs','<li>The top 16 on playoff points, single elimination, best of 5.</li><li>Saturday from 12 PM ET: the rounds of 16 and 8. Sunday: the semifinals and the best-of-7 final.</li><li>Then the season ends: a full reset, season-end titles and recap cards.</li>'];
+if(w%5==0)return['Week '+w+' &middot; Major '+w/5,'<li>Ranked still counts: 10 matches make the week count for ladder points. No cup this weekend.</li><li>Saturday from 12 PM ET: 64 players race 5 seeds, then the rounds of 32 and 16. Sunday from 12 PM ET: the last 8 play to the final.</li>'+(w==15?'<li>The last week that earns points. The top 16 go to the playoffs.</li>':'')];
+return['Week '+w+' &middot; Cup weekend',(w==1?'<li>After the reset, everyone plays 5 placement matches first.</li>':'')+CUP+(w%5==4?'<li>Next week is Major '+(w+1)/5+': the top 58 on playoff points and 6 standout places.</li>':'')]}
+function pick(w){B.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.w==w)});var x=info(w);P.innerHTML='<h3>'+x[0]+'</h3><ul>'+x[1]+'</ul>'}
+B.forEach(function(b){b.addEventListener('click',function(){pick(+b.dataset.w)})});
+var X=window.SAMPLE;if(X&&X.ready)X.ready(function(){if(X.real)return;var w=Math.min(16,Math.max(1,parseInt(new URLSearchParams(location.search).get('week'),10)||6));
+B[w-1].parentNode.classList.add('now');B[w-1].insertAdjacentHTML('beforeend','<em class="sr">, this week</em>');$('wsn').querySelector('b').textContent=w;$('wsn').hidden=false;pick(w)});
+/* calculator: the places and points come from the tables above, so there is one copy of the numbers */
+function rows(id,last){var r=[].map.call(D.querySelectorAll('#'+id+' tbody tr'),function(tr){return[tr.cells[0].textContent,+tr.cells[1].textContent]});if(last)r.push([last,0]);return r}
+var L=rows('t-l','Below 100th'),C=rows('t-c','Not played'),M=rows('t-m','Not in it');
+function fill(id,r,v){var s=$(id);s.innerHTML=r.map(function(x,i){return'<option value="'+i+'">'+x[0]+'</option>'}).join('');s.value=v;s.addEventListener('change',sum)}
+fill('c-l',L,5);fill('c-c',C,5);fill('c-m1',M,5);fill('c-m2',M,4);fill('c-m3',M,8);
+['c-lw','c-cw'].forEach(function(i){$(i).addEventListener('input',sum)});
+function sum(){var l=L[$('c-l').value][1]*$('c-lw').value,c=C[$('c-c').value][1]*$('c-cw').value,m=['c-m1','c-m2','c-m3'].reduce(function(a,i){return a+M[$(i).value][1]},0);
+$('c-lwo').textContent=$('c-lw').value;$('c-cwo').textContent=$('c-cw').value;$('c-lv').textContent=l;$('c-cv').textContent=c;$('c-mv').textContent=m;$('c-t').textContent=l+c+m;
+var b=D.querySelectorAll('.cbar i');b[0].style.width=l/10.01+'%';b[1].style.width=c/10.01+'%';b[2].style.width=m/10.01+'%'}
+$('calc').hidden=false;sum()});
+</script>

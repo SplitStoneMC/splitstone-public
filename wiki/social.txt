@@ -1,0 +1,50 @@
+slug: social
+group: play
+mat: stone
+acc: stone
+title: Friends, parties, chat and voice
+nav: Friends, chat and voice
+summary: Add friends, form a party, block someone, and the chats and voice channels you can use.
+stat: 64|players per party
+facts: 999|friends at most;;64|players per party;;4|voice channels;;30 days|chat is kept
+keywords: friends friend requests party parties leader ready check stay together block blocking chat direct messages team chat filter voice push to talk coach voice room voice recorded hub smp invite presence
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" d="M2 2h16v9H9l-3 3v-3H2z"/><path fill="#1a2423" d="M6 6h2v2H6zM9 6h2v2H9zM12 6h2v2h-2z"/><path fill="#b98cff" d="M14 10h16v9h-3v3l-3-3H14z"/><path fill="#1a2423" d="M17 14h10v1H17zM17 16h7v1h-7z"/></svg>
+---
+<h2 id="friends">Friends</h2>
+<ul>
+<li>Add friends by searching their username, from their profile, or from the screen after a match.</li>
+<li>When you first launch Splitstone, you choose who can send you friend requests: everyone, friends of friends and people you've played with, or nobody. You can change it later.</li>
+<li>A friends list holds up to 999 friends.</li>
+<li>Friends see whether you're online and what you're doing, such as playing ranked or practising.</li>
+<li>You can invite a friend to your party, a private room, your 2v2 or co-op world, or to watch or coach your match.</li>
+</ul>
+<h2 id="parties">Parties</h2>
+<ul>
+<li>A party holds up to 64 players. More than two play together in <a href="private-rooms.html">private rooms</a>, as a free-for-all or in teams of two.</li>
+<li>One leader queues for the party, can promote and kick, and runs a ready check before queueing.</li>
+<li>You can party with people who aren't your friends. After a match with random teammates, "stay together" keeps you in a party.</li>
+</ul>
+<h2 id="blocking">Blocking</h2>
+<ul>
+<li>Blocking hides that player's messages, friend requests, invites and voice, and they're never your random 2v2 or co-op teammate.</li>
+<li>You can still meet them as an opponent. In that match they can't chat to you, and names stay hidden until it ends.</li>
+</ul>
+<h2 id="chat">Chat</h2>
+<ul>
+<li>There are direct messages, party chat, team chat in 2v2 and co-op, chat between opponents in a match, and chat in public rooms. Spectators can't message the player they watch.</li>
+<li>A filter for swearing and slurs is on by default, and you can turn it off.</li>
+<li>Chat is kept for 30 days, for moderation only.</li>
+<li>You can mute a player, or everyone for one match.</li>
+</ul>
+<h2 id="voice">Voice</h2>
+<p>Four voice channels at launch:</p>
+<ul>
+<li><b>Party voice.</b></li>
+<li><b>Team voice</b> in 2v2 and co-op.</li>
+<li><b>Coach voice</b> between a coach and their player.</li>
+<li><b>Room voice</b> for everyone in a private room, if the host turns it on.</li>
+</ul>
+<p>Opponents can only talk to each other in private rooms. In ranked they have text chat only. Voice is never recorded. Push-to-talk is the default.</p>
+<p>If your Microsoft account settings turn off chat or multiplayer, Splitstone turns off voice for you and tells you to change the setting with Microsoft.</p>
+<h2 id="hub">Is there a hub or SMP?</h2>
+<p>No. There is no hub world at launch, no plan for one yet, and no SMP world.</p>

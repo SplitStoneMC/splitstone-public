@@ -1,0 +1,60 @@
+slug: profiles
+group: comm
+mat: stone
+acc: obs
+title: Profiles and stats
+nav: Profiles and stats
+summary: Your Splitstone account is your Minecraft account. Here is what your profile shows, what you can hide, and the stats you get.
+stat: 1|account per Minecraft account
+facts: 1|account per Minecraft account;;Public|match data;;2|stat views: basic and detailed
+keywords: profile profiles account uuid name username stats statistics head to head rivals achievements badges endorsements pb personal best showcase bio country social links streamer card recap hide delete
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" d="M3 2h26v20H3z"/><path fill="#b98cff" d="M3 2h26v1H3z"/><path fill="#ffc9a0" d="M6 6h9v9H6z"/><path fill="#6b4428" d="M6 6h9v3H6z"/><path fill="#1a2423" d="M8 11h1v1H8zM12 11h1v1h-1z"/><path fill="#e9f0ef" d="M17 7h9v1h-9z"/><path fill="#9db3b1" d="M17 10h6v1h-6z"/><path fill="#b98cff" d="M6 19h3v1H6zM10 17h3v3h-3zM14 15h3v5h-3zM18 13h3v7h-3z"/></svg>
+---
+<h2 id="account">Your account</h2>
+<ul>
+<li>Your Splitstone account is your Minecraft account, one per Minecraft account. There's no separate sign-up.</li>
+<li>Your name is always your current Minecraft username. It follows name changes, and your history, Elo and items stay with your account. Past names aren't shown.</li>
+<li>Profiles can be viewed in the game and on this website, for example from the <a href="../leaderboards.html">leaderboards</a>.</li>
+</ul>
+<h2 id="shows">What a profile shows</h2>
+<ul>
+<li>A personal-best card: personal best, best splits and sum of best.</li>
+<li>Your 3D model in your equipped cosmetics, with a chosen title or banner.</li>
+<li>A trophy case of event wins and records held, and earned achievements.</li>
+<li>A replay you pin.</li>
+<li>Live status, with buttons to watch or join.</li>
+<li>Favourite 2v2 and co-op partners with each pair's record, mutual friends and "member since".</li>
+<li>Linked social accounts, a short bio, a cosmetics showcase, and your country if you choose to show it.</li>
+<li>Endorsements from 2v2 and co-op teammates: good teammate, good sport and helpful.</li>
+<li>Fun facts, such as dragons killed, deaths, resets and your fastest Nether entry.</li>
+</ul>
+<p>You choose and order your profile's sections, so you can lead with stats or with cosmetics.</p>
+<h2 id="h2h">Head-to-head and rivals</h2>
+<p>Opening another player's profile shows your head-to-head first: your record against them, your last meeting, and a rematch or challenge button. On your own profile, this tab lists your rivals, the players you've faced most and your record against each.</p>
+<h2 id="stats">Stats</h2>
+<p>Stats come in a basic and a detailed view, and you choose which opens first. The basic view includes recent form: your last 10 results and current streak. Stats include:</p>
+<ul>
+<li>averages per week, month and seed type, and win rate by seed and bastion type;</li>
+<li>what an average player at each rank does per split, and how many players are in each rank;</li>
+<li>sum of best, finer Nether splits, your end-fight death rate and session average;</li>
+<li>Elo history and percentile, and personal-best progress over time;</li>
+<li>how and where you die, by split, and target split times for a goal time;</li>
+<li>a split-by-split comparison with a top player's run on the same seed;</li>
+<li>tips matched to your rank and a quick look at your opponent's profile at match start.</li>
+</ul>
+<p>Splitstone also plans a public API for third-party sites. There's no live player count.</p>
+<h2 id="achievements">Achievements</h2>
+<p>Achievements are earned badges with Splitstone's own icons and requirements, shown on your profile. A profile highlights <b>5</b> for free; <a href="supporting.html">supporters</a> can highlight more, up to <b>8</b>. It changes the display only.</p>
+<h2 id="privacy">What you can hide</h2>
+<ul>
+<li>Match data is public: results, Elo, match history, leaderboards and replays.</li>
+<li>Everything else on your profile is shown by default, and you can hide each part.</li>
+<li>In settings you can hide your Elo during a match, hide your profile from your opponent, or hide theirs.</li>
+</ul>
+<h2 id="extras">Sharing</h2>
+<ul>
+<li>A streamer card, for example with live Elo and today's record, drawn by the game itself so your stream captures it with the game.</li>
+<li>A recap card at the end of each season to share outside the game.</li>
+</ul>
+<h2 id="deleting">Deleting your account</h2>
+<p>Your past matches stay, so other players' histories and the leaderboards stay correct, and your name on them is shown faded. You can ask for your name to be removed from past matches.</p>

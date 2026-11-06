@@ -1,0 +1,58 @@
+slug: install
+group: start
+mat: stone
+acc: grass
+title: Install Splitstone
+nav: Install
+summary: Splitstone is a mod you run from a Minecraft launcher you already use. Here is how installing will work, which launchers are supported, and what happens the first time you start it.
+stat: 4|supported launchers
+facts: 4|supported launchers;;2|ready-made packs;;1|instance of its own;;13+|minimum age
+keywords: download launcher prism multimc modrinth official curseforge pack instance mac linux windows sign in certificate update updater first launch age
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" d="M14 1h4v8h4l-6 6-6-6h4z"/><path fill="#6b4a32" d="M8 16h16v8H8z"/><path fill="#7fcf5a" d="M8 16h16v2H8z"/><path fill="#5a9e3e" d="M10 18h2v1h-2zM17 18h3v1h-3z"/><path fill="#000" fill-opacity=".25" d="M11 21h2v1h-2zM18 22h2v1h-2z"/></svg>
+---
+<div class="co soon"><span><b>Not released yet.</b> Splitstone is still being built and there is nothing to download yet. This page describes how installing will work at launch.</span></div>
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>A Minecraft Java Edition account.</li>
+<li>One of the supported launchers below, on Windows, macOS or Linux.</li>
+</ul>
+<p>There is no Splitstone launcher. Your launcher downloads the game from Mojang and signs you in with Microsoft as it always does, so Splitstone never handles your password or copies game files.</p>
+<h2 id="launchers">Supported launchers</h2>
+<div class="tw"><table class="wt"><thead><tr><th>Launcher</th><th>Supported</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Prism Launcher</td><td>Yes</td><td>Installs packs from Modrinth directly.</td></tr>
+<tr><td>Modrinth App</td><td>Yes</td><td>Installs packs from Modrinth directly.</td></tr>
+<tr><td>MultiMC</td><td>Yes</td><td>Imports the Modrinth pack file (.mrpack): Add Instance, then Import from zip.</td></tr>
+<tr><td>Official Minecraft Launcher</td><td>Yes</td><td>Switching to speedrun.com categories is done by hand (<a href="categories.html">why</a>).</td></tr>
+<tr><td>CurseForge</td><td>No</td><td>CurseForge packs may only include mods hosted on CurseForge or on its approved list, which leaves out most speedrun-legal builds.</td></tr>
+</tbody></table></div>
+<h2 id="packs">Choose a pack</h2>
+<p>Splitstone comes as two ready-made packs or as the mod on its own, for Windows, macOS and Linux.</p>
+<ul>
+<li><b>Basic pack:</b> Splitstone plus speedrun.com-legal performance mods: Sodium (its Mac build on macOS), Lithium, Starlight, LazyDFU and Krypton.</li>
+<li><b>Practice pack:</b> the basic pack plus the reset mods Atum, SeedQueue, WorldPreview and StandardSettings, for <a href="practice.html">practice</a>.</li>
+<li><b>The mod alone:</b> for players who already have their own setup. Only mods on the speedrun.com legal list are allowed (<a href="faq.html#own-mods">details</a>).</li>
+</ul>
+<p>You download them from Modrinth, and Prism, MultiMC and the Modrinth App all use the same Modrinth pack. This website keeps a mirror as a fallback. The packs link to each mod on Modrinth rather than copying it.</p>
+<h2 id="own-instance">Keep it separate from MCSR Ranked</h2>
+<p>Splitstone runs in its own instance. MCSR Ranked refuses to start next to any mod that is not on the speedrun.com legal list, and Splitstone's mod is not on it. Ranked also bundles its own copies of mods that Splitstone's packs include. Make a new instance for Splitstone and leave your Ranked instance as it is; both can sit side by side in the same launcher.</p>
+<h2 id="steps">Install in four steps</h2>
+<ol class="steps">
+<li><span><b>Open a supported launcher.</b>Sign in with your Microsoft account as usual.</span></li>
+<li><span><b>Add a Splitstone pack as a new instance.</b>Prism and the Modrinth App install it straight from Modrinth. In MultiMC, download the pack file and import it.</span></li>
+<li><span><b>Launch the instance.</b>Splitstone starts inside Minecraft.</span></li>
+<li><span><b>Finish the first-launch screen.</b>It's described below. Then you're ready to queue.</span></li>
+</ol>
+<p>Screen-by-screen guides for each launcher will be added when downloads are released.</p>
+<h2 id="first-launch">Your first launch</h2>
+<ul>
+<li><b>Agree to the <a href="../rules.html">rules</a>, the <a href="../terms.html">terms</a> and the <a href="../privacy.html">privacy policy</a>.</b> You can't play without agreeing.</li>
+<li><b>Say how old you are: under 13, 13–17, or 18 or older.</b> Players must be 13 or older; 13–17 year olds keep the chat filter on. Splitstone never asks for or keeps your birth date, and you can change your answer in Settings.</li>
+<li><b>Choose who can send you friend requests:</b> everyone, friends of friends and people you've played with, or nobody. You can change it later.</li>
+</ul>
+<p>There is no tutorial yet: Splitstone starts as plain as MCSR Ranked.</p>
+<h2 id="sign-in">Signing in</h2>
+<p>You don't make a Splitstone account or password. Your Minecraft account is your Splitstone account. When the game starts, it asks Microsoft for a signed player certificate, and Splitstone's service checks that certificate. Your login token never leaves your computer.</p>
+<p>Because the certificate comes from Microsoft, Splitstone can't sign you in while Microsoft's service is down. MCSR Ranked has the same limit.</p>
+<h2 id="updates">Updates</h2>
+<p>Only the latest version of Splitstone can connect, so everyone plays the same rules. When a new version comes out, the game's built-in updater installs it.</p>
+

@@ -1,0 +1,53 @@
+slug: private-rooms
+group: play
+mat: stone
+acc: stone
+title: Private rooms
+nav: Private rooms
+summary: Set up your own match for friends, a community night or a race: up to 64 players, three formats, and the host's options.
+stat: 64|players per room
+facts: 64|players per room;;3|formats;;0|Elo change;;Code|or invite to join
+keywords: private room rooms custom match host code invite solo alone hand over remove free for all teams co-op filtered set seed split start time limit head start spectators coaches voice elo history leaderboard subscriber perks
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#9db3b1" d="M8 1h16v2H8zM8 3h2v19H8zM22 3h2v19h-2z"/><path fill="#8a5a35" d="M10 3h12v19H10z"/><path fill="#6b4428" d="M12 5h8v6h-8zM12 13h8v7h-8z"/><path fill="#ffd08a" d="M18 11h2v2h-2z"/><path fill="#5a6a68" d="M3 22h26v2H3z"/></svg>
+---
+<h2 id="open">Opening and joining</h2>
+<ul>
+<li>Anyone can open a room, and every room holds up to 64 players.</li>
+<li>Players join by invite or with a room code, and anyone in a room can invite.</li>
+<li>A room can be played alone, for free.</li>
+<li>A party of more than two plays together in a private room.</li>
+</ul>
+<h2 id="formats">What a room can play</h2>
+<p>The normal run or a game mode, in one of three formats:</p>
+<ul>
+<li><b>Free-for-all</b> (1v1v1&hellip;),</li>
+<li><b>Teams of two</b> (2v2v2&hellip;), racing as in 2v2: the first pair to finish wins,</li>
+<li><b>Co-op teams</b>, which all play to the end and are placed by their times.</li>
+</ul>
+<p>Rooms don't host speedrun.com categories; those run in your own instance (<a href="categories.html">Categories</a>).</p>
+<h2 id="options">Host options</h2>
+<ul>
+<li>A filtered seed or a set seed.</li>
+<li>Which seed types and which bastion types can come up: include or leave out several of either list, or of both. If the pool has no seeds left of a type you chose, another of your types is played and the loading screen says so; if none of them has seeds left, the room says so and won't start, so pick other types. Rooms never play random seeds.</li>
+<li>Start at a chosen split, such as Nether entry or the End.</li>
+<li>How teams are made: chosen by the host, random, or balanced by Elo, and the relay region for team and co-op rooms.</li>
+<li>A time limit that places players by how far they got.</li>
+<li>Whether spectators and coaches are allowed.</li>
+<li>Team voice and whole-room voice on or off.</li>
+<li>A head start, in seconds, for chosen players.</li>
+<li>Most of the room rules MCSR Ranked players know, except any that change luck.</li>
+</ul>
+<p>Rooms always use Splitstone's <a href="seeds-and-luck.html#luck">standardized luck</a>, so there are no luck switches.</p>
+<h2 id="results">Results</h2>
+<ul>
+<li>Room matches don't change Elo.</li>
+<li>They go in a match history of their own, and room times have their own leaderboard, separate from Ranked 1v1.</li>
+<li>In a team or co-op room, if the player hosting the shared world leaves or crashes, the room ends; start a new one to keep playing.</li>
+<li>When the host of a free-for-all room leaves, the room ends once any running match finishes. A host who wants to leave can hand the host role to another player first, and a host can remove a player from the room.</li>
+</ul>
+<h2 id="tiers">Extras for supporters</h2>
+<p>Every host gets the options above. <a href="supporting.html">Supporter tiers</a> add a few extras:</p>
+<div class="tw"><table class="wt"><thead><tr><th>Tier</th><th>Room extras</th></tr></thead><tbody>
+<tr><td>Tier 2</td><td>A custom room name</td></tr>
+<tr><td>Tier 3</td><td>A "request to join" mode</td></tr>
+</tbody></table></div>

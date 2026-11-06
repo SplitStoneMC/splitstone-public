@@ -1,0 +1,42 @@
+slug: matchmaking
+group: play
+mat: stone
+acc: stone
+title: Matchmaking
+nav: Matchmaking
+summary: How queues work, who you get paired with, when a bot is offered, and how 2v2 and co-op teams are found.
+stat: &plusmn;50|Elo first search range
+facts: &plusmn;50|Elo searched first;;&plusmn;450|search width at the bot offer;;5:30|bot offer in queue;;1 in 5|games can be a bot
+keywords: queue matchmaking pairing elo forfeit rate bot bots copy bot copy bots top 75 region regions automatic global pool 2v2 co-op teammate party dodge cancel decline in line queue ban
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" d="M1 7h8v8H1z"/><path fill="#1a2423" d="M3 10h1v1H3zM6 10h1v1H6z"/><path fill="#ffb08a" d="M23 7h8v8h-8z"/><path fill="#1a2423" d="M25 10h1v1h-1zM28 10h1v1h-1z"/><path fill="#9db3b1" d="M10 10h2v2h-2zM20 10h2v2h-2z"/><path fill="#ffd08a" d="M15 8h2v2h2v2h-2v2h-2v-2h-2v-2h2z"/></svg>
+---
+<h2 id="queues">Queues</h2>
+<ul>
+<li>Every mode has its own queue: Ranked 1v1, 2v2, co-op, each game mode and 1v1 Casual. Co-op and 1v1 Casual are unrated.</li>
+<li>1v1 Casual plays by Ranked 1v1's rules on the same seeds, but changes no Elo and keeps no stats. A hidden rating finds you a fair opponent; turn on "Any Elo" on its card to meet anyone.</li>
+<li>Queueing runs in the background. While you wait you can sit in a private room, play your own practice world, or do anything else that doesn't put you against another person.</li>
+<li>You can leave the queue at any time before a match is found. After that it can't be cancelled or declined.</li>
+</ul>
+<h2 id="pairing">Who you play</h2>
+<p>You're paired by Elo and by how often you forfeit. Close Elo comes first, and the allowed gap widens the longer you wait.</p>
+<p>The starting numbers, which will be tuned with real players: the search starts at &plusmn;50 Elo and widens steadily to &plusmn;250 by 2:30, then to &plusmn;450 by the bot offer at 5:30, and keeps widening at that pace until you find a match. You can also set your matchmaking speed to fast, balanced or accurate; it starts on balanced.</p>
+<h2 id="bots">Bots</h2>
+<ul>
+<li>Every rank has a bot. After about 5:30 in the ranked queue you're offered a bot match, which you can accept or decline. A bot match counts for Elo.</li>
+<li>Players in the top 75 are offered copy bots of other top-75 players who opted in; everyone else is offered their rank's bot.</li>
+<li>You can take at most one bot match in every 5 games, except while few players are online.</li>
+<li>2v2, co-op and game-mode queues offer bots the same way. A 2v2 team's bots sit around the team's average Elo. How strong co-op bots are is not decided yet.</li>
+<li>Players in the top 75 can choose to let Splitstone build a bot that plays like them, from their own detailed stats. No copy bot exists without that player's consent.</li>
+</ul>
+<h2 id="teams">2v2 and co-op</h2>
+<ul>
+<li>A 2v2 team's strength is the plain average of its two players' 2v2 Elo. A premade duo can be matched against two random players.</li>
+<li>1v1 is one global pool, because each player plays their own world. In 2v2 and co-op only teammates are matched by region, because they share a world through a relay there; a 2v2 team can meet a team from any region.</li>
+<li>Your region is the nearest of five (North America, Europe, Asia, Oceania and the Middle East), found automatically, and you can pick any of them in settings. Queueing alone, you can turn on "join the global pool" to find a teammate anywhere. In a party, the leader picks the region.</li>
+<li>Players you've blocked are never given to you as a random teammate.</li>
+</ul>
+<p>A co-op match is one duo racing alone, against the clock and its best times; there is no opposing team. Looking for a random co-op teammate, you choose with a switch on the co-op card: paired by similar 1v1 Elo, or with whoever is waiting first.</p>
+<h2 id="forfeits">Forfeits and queue bans</h2>
+<p>Three forfeits in a row give a 3-minute queue ban, and it grows with each further forfeit in a row. Your forfeit rate also counts in pairing. Each queue keeps its own forfeit streak, queue ban and forfeit rate, so a ban in one queue doesn't keep you out of another.</p>
+<h2 id="busy">Busy times</h2>
+<p>If players arrive faster than the service can take them, you see a "you're in line" screen until there's room.</p>
