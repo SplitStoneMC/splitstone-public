@@ -1,0 +1,531 @@
+openapi: 3.1.0
+info:
+  title: Splitstone API
+  version: "1"
+  description: >
+    Splitstone's public, read-only API: players, matches with splits, timelines and Twitch VOD links, live matches,
+    leaderboards, playoff points and weekly cups. 500 requests per 10 minutes per IP address without a key. The manual
+    is README.md beside this file.
+servers:
+  - url: https://api.splitstonemc.com/v1
+security:
+  - {}
+  - DeveloperKey: []
+components:
+  securitySchemes:
+    DeveloperKey:
+      type: apiKey
+      in: header
+      name: API-Key
+      description: A key with a higher request limit, given on request (contact@splitstonemc.com).
+    PrivateKey:
+      type: apiKey
+      in: header
+      name: Private-Key
+      description: A player's own key, made in the game's settings; reads that player's own match or private room.
+  parameters:
+    Player:
+      name: player
+      in: path
+      required: true
+      description: A Minecraft name (any case) or UUID, with or without dashes.
+      schema: {type: string}
+    Other:
+      name: other
+      in: path
+      required: true
+      description: The other player, named the same way.
+      schema: {type: string}
+    Mode:
+      name: mode
+      in: query
+      schema: {type: string, examples: [ranked_1v1, ranked_2v2, coop, weekly_cup]}
+    Season:
+      name: season
+      in: query
+      schema: {type: integer, minimum: 1}
+    Before:
+      name: before
+      in: query
+      description: Matches older than this match id.
+      schema: {type: integer, minimum: 1}
+    After:
+      name: after
+      in: query
+      description: Matches newer than this match id, the ones just after it.
+      schema: {type: integer, minimum: 1}
+    Count:
+      name: count
+      in: query
+      schema: {type: integer, minimum: 1, maximum: 100, default: 20}
+    Country:
+      name: country
+      in: query
+      description: A two-letter country code; only players who show that country.
+      schema: {type: string, pattern: "^[A-Za-z]{2}$"}
+  headers:
+    RateLimit-Limit: {schema: {type: integer}}
+    RateLimit-Remaining: {schema: {type: integer}}
+    RateLimit-Reset: {description: When the window ends, in Unix seconds., schema: {type: integer}}
+  responses:
+    Error:
+      description: "400 bad parameter, 401 unknown API-Key or missing Private-Key, 403 another player's Private-Key, 404 not found, 405 not GET, 429 past the limit (with Retry-After), 503 unavailable."
+      content:
+        application/json:
+          schema: {$ref: "#/components/schemas/Error"}
+  schemas:
+    Error:
+      type: object
+      properties: {error: {type: string}}
+    Event:
+      type: [object, "null"]
+      description: A weekly cup's or Major's game; null for a queue match.
+      properties:
+        name: {type: string, examples: ["Gold cup", "Major 2", "Playoffs"]}
+        round: {type: string, examples: ["Week 3", "Quarterfinal, game 3"]}
+    MatchPlayer:
+      type: object
+      properties:
+        uuid: {type: string}
+        name: {type: string}
+        team: {type: [integer, "null"], description: 1 or 2 in team matches.}
+        eloBefore: {type: [integer, "null"]}
+        eloAfter: {type: [integer, "null"]}
+        eloChange: {type: [integer, "null"]}
+        timeMs: {type: [integer, "null"], description: The finish time; null without one.}
+        won: {type: boolean}
+    MatchSummary:
+      type: object
+      properties:
+        id: {type: integer}
+        mode: {type: string}
+        seedType: {type: [string, "null"]}
+        season: {type: [integer, "null"]}
+        startedAt: {type: [string, "null"], format: date-time}
+        endedAt: {type: [string, "null"], format: date-time}
+        ending: {type: [string, "null"], examples: [finish, forfeit, time]}
+        event: {$ref: "#/components/schemas/Event"}
+        winnerTeam: {type: [integer, "null"]}
+        players:
+          type: array
+          items: {$ref: "#/components/schemas/MatchPlayer"}
+    MatchList:
+      type: object
+      properties:
+        matches:
+          type: array
+          items: {$ref: "#/components/schemas/MatchSummary"}
+    Split:
+      type: object
+      properties:
+        split: {type: string, examples: ["minecraft:story/enter_the_nether"]}
+        ms: {type: integer}
+        rtaMs: {type: [integer, "null"], description: Real time since the start.}
+        vodAt: {type: [string, "null"], description: "The player's VOD at this moment, such as https://www.twitch.tv/videos/123?t=1h04m12s."}
+    Vod:
+      type: object
+      properties:
+        uuid: {type: string}
+        url: {type: string}
+        startsAt: {type: string, format: date-time, description: When the broadcast began.}
+    Match:
+      type: object
+      properties:
+        id: {type: integer}
+        mode: {type: string}
+        status: {type: string, enum: [live, finished]}
+        startedAt: {type: [string, "null"], format: date-time}
+        endedAt: {type: [string, "null"], format: date-time}
+        ending: {type: [string, "null"]}
+        seedType: {type: [string, "null"], description: Null while the match runs.}
+        event: {$ref: "#/components/schemas/Event"}
+        winnerTeam: {type: [integer, "null"]}
+        players:
+          type: array
+          items:
+            allOf:
+              - {$ref: "#/components/schemas/MatchPlayer"}
+              - type: object
+                properties:
+                  place: {type: [integer, "null"], description: Place on the leaderboard now.}
+                  top20: {type: boolean}
+                  vod:
+                    type: [object, "null"]
+                    properties: {url: {type: string}, startsAt: {type: string, format: date-time}}
+                  splits:
+                    type: array
+                    items: {$ref: "#/components/schemas/Split"}
+        vods:
+          type: array
+          items: {$ref: "#/components/schemas/Vod"}
+        timeline:
+          type: array
+          items:
+            type: object
+            properties:
+              uuid: {type: string}
+              event: {type: string}
+              ms: {type: integer}
+              rtaMs: {type: integer}
+    LiveMatch:
+      type: object
+      properties:
+        id: {type: integer}
+        mode: {type: string}
+        runningMs: {type: integer}
+        players:
+          type: array
+          items:
+            type: object
+            properties:
+              uuid: {type: string}
+              name: {type: string}
+              elo: {type: integer}
+              split: {type: [string, "null"]}
+              splitMs: {type: [integer, "null"]}
+              splits:
+                type: array
+                items:
+                  type: object
+                  properties: {split: {type: string}, ms: {type: integer}}
+              liveUrl: {type: [string, "null"], description: "Their Twitch channel while they stream with it shown; null otherwise."}
+    OwnMatch:
+      type: object
+      description: The player's own match or room, as their Private-Key reads it.
+      properties:
+        id: {type: [integer, "null"], description: Null for a room between matches.}
+        kind: {type: string, enum: [ranked, room]}
+        mode: {type: string}
+        status: {type: string, enum: [idle, loading, countdown, running, done]}
+        runningMs: {type: integer}
+        players:
+          type: array
+          items:
+            type: object
+            properties:
+              uuid: {type: string}
+              name: {type: string}
+              elo: {type: [integer, "null"]}
+              split: {type: [string, "null"]}
+              splitMs: {type: [integer, "null"]}
+              splits:
+                type: array
+                items:
+                  type: object
+                  properties: {split: {type: string}, ms: {type: integer}}
+              timeMs: {type: [integer, "null"], description: Their finish time in a room.}
+              forfeited: {type: boolean}
+              left: {type: boolean}
+        spectators:
+          type: array
+          items: {type: object, properties: {uuid: {type: string}, name: {type: string}}}
+        timeline:
+          type: array
+          items:
+            type: object
+            properties:
+              uuid: {type: string}
+              event: {type: string, examples: ["minecraft:story/enter_the_nether", "splitstone:death", "splitstone:reset"]}
+              ms: {type: integer}
+              rtaMs: {type: integer}
+        completions:
+          type: array
+          items: {type: object, properties: {uuid: {type: string}, name: {type: string}, timeMs: {type: integer}}}
+    BoardRow:
+      type: object
+      properties:
+        place: {type: integer}
+        uuid: {type: string}
+        name: {type: string}
+        elo: {type: integer}
+        rank: {type: [string, "null"]}
+        division: {type: integer}
+        country: {type: [string, "null"]}
+        top20: {type: boolean}
+        wins: {type: integer, description: This season's board without parameters only.}
+        draws: {type: integer}
+        losses: {type: integer}
+        bestMs: {type: [integer, "null"]}
+        form: {type: array, items: {type: string, enum: [win, draw, loss]}}
+        lastEloChange: {type: [integer, "null"]}
+        placeLastWeek: {type: [integer, "null"]}
+    Cup:
+      type: object
+      properties:
+        id: {type: integer}
+        season: {type: integer}
+        week: {type: integer}
+        rank: {type: string, examples: [gold, netherite]}
+        mode: {type: string}
+        opensAt: {type: string, format: date-time}
+        closesAt: {type: string, format: date-time}
+        matchesPerPlayer: {type: integer}
+        settled: {type: boolean}
+        players: {type: integer}
+paths:
+  /players/{player}:
+    get:
+      summary: A player's public profile
+      parameters: [{$ref: "#/components/parameters/Player"}]
+      responses:
+        "200":
+          description: "uuid, name, memberSince, country, bio, linkedAccounts, ratings, lastPlayed, recentMatches and bests."
+          content: {application/json: {schema: {type: object}}}
+        default: {$ref: "#/components/responses/Error"}
+  /players/{player}/matches:
+    get:
+      summary: A player's matches, newest first
+      parameters:
+        - {$ref: "#/components/parameters/Player"}
+        - {$ref: "#/components/parameters/Mode"}
+        - {$ref: "#/components/parameters/Season"}
+        - {$ref: "#/components/parameters/Before"}
+        - {$ref: "#/components/parameters/After"}
+        - {$ref: "#/components/parameters/Count"}
+      responses:
+        "200": {description: The matches., content: {application/json: {schema: {$ref: "#/components/schemas/MatchList"}}}}
+        default: {$ref: "#/components/responses/Error"}
+  /players/{player}/versus/{other}:
+    get:
+      summary: Two players' head-to-head
+      parameters: [{$ref: "#/components/parameters/Player"}, {$ref: "#/components/parameters/Other"}]
+      responses:
+        "200":
+          description: Totals per mode, keyed by UUID.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  players: {type: array, items: {type: object, properties: {uuid: {type: string}, name: {type: string}}}}
+                  modes:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        mode: {type: string}
+                        matches: {type: integer}
+                        wins: {type: object, additionalProperties: {type: integer}}
+                        draws: {type: integer}
+                        eloChange: {type: [object, "null"], additionalProperties: {type: integer}}
+        default: {$ref: "#/components/responses/Error"}
+  /players/{player}/versus/{other}/matches:
+    get:
+      summary: Two players' matches against each other
+      parameters:
+        - {$ref: "#/components/parameters/Player"}
+        - {$ref: "#/components/parameters/Other"}
+        - {$ref: "#/components/parameters/Mode"}
+        - {$ref: "#/components/parameters/Season"}
+        - {$ref: "#/components/parameters/Before"}
+        - {$ref: "#/components/parameters/After"}
+        - {$ref: "#/components/parameters/Count"}
+      responses:
+        "200": {description: The matches., content: {application/json: {schema: {$ref: "#/components/schemas/MatchList"}}}}
+        default: {$ref: "#/components/responses/Error"}
+  /players/{player}/seasons:
+    get:
+      summary: A player's seasons, newest first
+      parameters: [{$ref: "#/components/parameters/Player"}]
+      responses:
+        "200":
+          description: Per season and mode.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  seasons:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        season: {type: integer}
+                        current: {type: boolean}
+                        modes:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              mode: {type: string}
+                              elo: {type: [integer, "null"]}
+                              place: {type: [integer, "null"]}
+                              matches: {type: integer}
+                              wins: {type: integer}
+                              draws: {type: integer}
+                              losses: {type: integer}
+                              bestMs: {type: [integer, "null"]}
+        default: {$ref: "#/components/responses/Error"}
+  /players/{player}/live:
+    get:
+      summary: A player's own match or private room, with their key
+      security: [{PrivateKey: []}]
+      parameters: [{$ref: "#/components/parameters/Player"}]
+      responses:
+        "200":
+          description: The match or room, or null when they are in neither. Never cached.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  match:
+                    oneOf: [{$ref: "#/components/schemas/OwnMatch"}, {type: "null"}]
+        default: {$ref: "#/components/responses/Error"}
+  /matches:
+    get:
+      summary: Every public match, newest first
+      parameters:
+        - {$ref: "#/components/parameters/Mode"}
+        - {$ref: "#/components/parameters/Season"}
+        - {name: cup, in: query, description: Only this weekly cup's games., schema: {type: integer, minimum: 1}}
+        - {$ref: "#/components/parameters/Before"}
+        - {$ref: "#/components/parameters/After"}
+        - {$ref: "#/components/parameters/Count"}
+      responses:
+        "200": {description: The matches., content: {application/json: {schema: {$ref: "#/components/schemas/MatchList"}}}}
+        default: {$ref: "#/components/responses/Error"}
+  /matches/{id}:
+    get:
+      summary: One match with its splits, timeline and VODs
+      parameters: [{name: id, in: path, required: true, schema: {type: integer}}]
+      responses:
+        "200": {description: The match., content: {application/json: {schema: {$ref: "#/components/schemas/Match"}}}}
+        default: {$ref: "#/components/responses/Error"}
+  /live:
+    get:
+      summary: Matches running now that anyone may watch
+      responses:
+        "200":
+          description: Highest rated first, at most 100.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  matches: {type: array, items: {$ref: "#/components/schemas/LiveMatch"}}
+                  playersOnline: {type: integer}
+        default: {$ref: "#/components/responses/Error"}
+  /leaderboards/{mode}:
+    get:
+      summary: An Elo ladder
+      parameters:
+        - {name: mode, in: path, required: true, schema: {type: string, enum: [ranked_1v1, ranked_2v2]}}
+        - {$ref: "#/components/parameters/Season"}
+        - {$ref: "#/components/parameters/Country"}
+        - {name: count, in: query, schema: {type: integer, minimum: 1, maximum: 100, default: 100}}
+      responses:
+        "200":
+          description: The board.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mode: {type: string}
+                  season: {type: integer}
+                  players: {type: array, items: {$ref: "#/components/schemas/BoardRow"}}
+        default: {$ref: "#/components/responses/Error"}
+  /records/{board}:
+    get:
+      summary: The fastest finishes
+      parameters:
+        - {name: board, in: path, required: true, schema: {type: string, enum: [ranked_1v1, ranked_2v2, rooms]}}
+        - {name: period, in: query, schema: {type: string, enum: [all, month, week, day], default: all}}
+        - {$ref: "#/components/parameters/Country"}
+      responses:
+        "200":
+          description: The board.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  board: {type: string}
+                  period: {type: string}
+                  country: {type: [string, "null"]}
+                  players:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        place: {type: integer}
+                        uuid: {type: string}
+                        name: {type: string}
+                        country: {type: [string, "null"]}
+                        timeMs: {type: integer}
+                        seedType: {type: [string, "null"]}
+                        mate: {type: [object, "null"], properties: {uuid: {type: string}, name: {type: string}}}
+        default: {$ref: "#/components/responses/Error"}
+  /playoffs:
+    get:
+      summary: The season's Majors and playoff points
+      parameters: [{$ref: "#/components/parameters/Season"}]
+      responses:
+        "200": {description: "majors and points.", content: {application/json: {schema: {type: object}}}}
+        default: {$ref: "#/components/responses/Error"}
+  /cups:
+    get:
+      summary: Weekly cups, newest first
+      parameters:
+        - {$ref: "#/components/parameters/Season"}
+        - {name: week, in: query, schema: {type: integer, minimum: 1}}
+        - {$ref: "#/components/parameters/Count"}
+      responses:
+        "200":
+          description: The cups.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cups:
+                    type: array
+                    items:
+                      allOf:
+                        - {$ref: "#/components/schemas/Cup"}
+                        - type: object
+                          properties:
+                            winners: {type: array, items: {type: object, properties: {uuid: {type: string}, name: {type: string}}}}
+        default: {$ref: "#/components/responses/Error"}
+  /cups/{id}:
+    get:
+      summary: One weekly cup with its results
+      parameters: [{name: id, in: path, required: true, schema: {type: integer}}]
+      responses:
+        "200":
+          description: The cup; its games are at /matches?cup={id}.
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - {$ref: "#/components/schemas/Cup"}
+                  - type: object
+                    properties:
+                      results:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            place: {type: integer}
+                            uuid: {type: string}
+                            name: {type: string}
+                            wins: {type: integer}
+                            draws: {type: integer}
+                            losses: {type: integer}
+        default: {$ref: "#/components/responses/Error"}
+  /status:
+    get:
+      summary: How busy Splitstone is
+      responses:
+        "200":
+          description: Counts only.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  matchesRunning: {type: integer}
+                  playersOnline: {type: integer}
+                  queueSize: {type: integer}
+        default: {$ref: "#/components/responses/Error"}

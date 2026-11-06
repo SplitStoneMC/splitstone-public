@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A problem in the game, a cheating report or an account question
+    url: mailto:contact@splitstonemc.com
+    about: These go through the game or email, not this repository.

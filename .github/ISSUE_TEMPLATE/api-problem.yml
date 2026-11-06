@@ -1,0 +1,29 @@
+name: Something wrong in the API
+description: An address answers wrongly, fails, or differs from its manual.
+labels: [api, problem]
+body:
+  - type: input
+    id: address
+    attributes:
+      label: Address
+      description: The full request, such as GET /v1/players/Alice/matches?count=5
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: What you got
+      description: The status code and the answer, or the part of it that is wrong. Never paste a key.
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When (UTC)
+      description: Roughly when it happened, so it can be found in the service's logs.

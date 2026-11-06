@@ -1,0 +1,17 @@
+name: A suggestion
+description: Something the API or its manual should have, or say more clearly.
+labels: [suggestion]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you would like
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What you would use it for
+      description: The tracker, bot, overlay or site it is for helps decide.
+    validations:
+      required: true
