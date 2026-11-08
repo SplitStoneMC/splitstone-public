@@ -26,7 +26,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#9db3b1" 
 <h2 id="season">The season</h2>
 <ul class="mx">
 <li><a href="seasons.html#shape"><b>16-week seasons with events</b><span>Weekend cups for every rank, three Majors and the playoffs, which alone crown the champion.</span><small>Ranked splits its season into monthly phases.</small></a></li>
-<li><a href="seasons.html#active-weeks"><b>Points from weekly places</b><span>Play 10 ranked matches in a week and your place that week earns points; your best 10 of 15 weeks count.</span><small>Ranked awards phase points from a monthly snapshot.</small></a></li>
+<li><a href="seasons.html#active-weeks"><b>Points from weekly Elo</b><span>Play 10 ranked matches in a week and your Elo when it ends earns points, 1 for every 25 above 1800; your best 10 of 14 weeks count.</span><small>Ranked awards phase points from a monthly snapshot.</small></a></li>
 </ul>
 <h2 id="matches">Queues and matches</h2>
 <ul class="mx">
