@@ -42,9 +42,9 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 </div>
 <p>The divisions are 100 Elo apart, except Bronze's, which start at 0, 400 and 500 because placement scores start at 500. These are the beta's starting lines; beta data sets the final ones.</p>
 <p class="livec" id="ladc" hidden><i aria-hidden="true"></i><span><b id="ladn1">0</b> players on the 1v1 ladder and <b id="ladn2">0</b> on the 2v2 ladder now: placed, and played in the last 7 days. <a href="../leaderboards.html">See the leaderboards &rarr;</a></span></p>
-<p>Some seed types unlock as you rank up. A match uses only the seed types the lower-ranked player has unlocked.</p>
+<p>Some seed types unlock as you rank up. A match uses only the seed types its lowest-ranked player has unlocked, teammates included.</p>
 <h2 id="inactive">Taking a break</h2>
-<p>If you don't play for a week, you're hidden from the leaderboard and your Elo starts to drop each day until you play again. It never drops you below the bottom of your rank.</p>
+<p>If you don't play for a week, you're hidden from the leaderboard and your Elo starts to drop each day until you play again. The first drop comes 8 full days (8 &times; 24 hours) after your last match, then one every 24 hours. It never drops you below the bottom of your rank.</p>
 <figure class="dk">
 <svg class="dkc" id="dkc" viewBox="0 0 400 190" role="img" aria-labelledby="dkt"><title id="dkt">Elo over 28 days without playing, starting 100 Elo above the bottom of your rank: flat for 7 days, then down 12 a day at Netherite, 8 at Obsidian and 5 below, stopping at the bottom of the rank.</title>
 <path class="ax" d="M34 160H390M34 34V160"/><path class="d7" d="M123 34V160"/>
@@ -60,7 +60,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 </figure>
 <h2 id="season-reset">Seasons and leaderboards</h2>
 <p>Each <a href="seasons.html">season</a> ends with a full reset, and everyone plays placement again. The <a href="../leaderboards.html">leaderboards</a> are a 1v1 and a 2v2 Elo ladder.</p>
-<script defer src="../assets/sample.js?v=1e04316a"></script><script defer src="../assets/live-data.js?v=5cf4c8fa"></script>
+<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=01422421"></script>
 <script>
 /* wiki-content: the Elo finder on the rank ladder, the decay lines drawn in when seen, and the ladder count from real data only */
 addEventListener('DOMContentLoaded',function(){var D=document,R=[].slice.call(D.querySelectorAll('#rl li[data-e]')),f=D.getElementById('rkf'),inp=D.getElementById('rke'),o=D.getElementById('rko'),N=['first','second','third'];

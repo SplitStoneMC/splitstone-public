@@ -4,7 +4,7 @@ mat: stone
 acc: stone
 title: Practice
 nav: Practice
-summary: The community's practice maps and solo private rooms on filtered seeds, plus replaying any match seed you've played. Every practice tool is free.
+summary: The community's practice maps and solo private rooms on filtered seeds, plus replaying any match seed you've played.
 stat: Free|every practice tool
 facts: Free|all practice tools;;Solo|private room on filtered seeds;;Every|past match seed replayable
 keywords: practice tools practice maps community maps mcsr practice map bastion end blaze portal solo private room filtered seed split seed type bastion type timer minipracticekit replay seed match history free single player reset mods atum seedqueue worldpreview queue while practising
@@ -13,17 +13,17 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#ff5a6e" 
 <h2 id="tools">Practice tools</h2>
 <p>Practice uses what runners already have, not tools of Splitstone's own:</p>
 <ul>
-<li><b>The community's practice maps</b>, offered by default, such as the MCSR Practice Map, Llama's Bastion Practice and ryguy2k4's End Practice. Splitstone downloads each from its author's own page when you pick it, and credits the author.</li>
+<li><b>The community's practice maps</b>, offered by default, such as Llama's Bastion Practice, ryguy2k4's End Practice and Portal Practice v2. Saved Worlds downloads Llama's Bastion Practice, Zero Practice, Portal Practice v2 and Crafting Practice v2 from their authors' own pages when you first open it; the others download from their authors' pages in one click. Each author is credited.</li>
 <li><b>A solo private room</b> on filtered seeds, where you choose which seed types or which bastion types come up.</li>
 <li>A run timer and a button for a new practice world straight away. Practice opens from the Practice button in the dashboard's Singleplayer box.</li>
 </ul>
 <p>Practice mods such as peepoPractice aren't added. MiniPracticeKit isn't a mod, so it already works.</p>
-<p>All practice tools are free. Tools that help you improve stay free.</p>
+<p>All practice tools are free.</p>
 <h2 id="replay-seeds">Replay a match seed</h2>
-<p>Any seed from your match history can be played again alone, as practice, in a solo private room on that match's seeds. It's the quick way to retry a seed you lost on.</p>
+<p>Any seed from your match history can be played again alone, as practice, in a solo private room on that match's seeds: open it from the match in your history, or press <b>Again</b> beside it in the Practice screen's list of your recent matches. There's no separate last-seed button.</p>
 <h2 id="luck">Luck in practice</h2>
 <p>Practice in a solo private room uses <a href="seeds-and-luck.html#luck">standardized luck</a>, like every private room. The community practice maps are single-player worlds and keep vanilla luck.</p>
 <h2 id="while-queued">Practise while you queue</h2>
-<p>Queueing runs in the background, so you can keep practising until your match is found. The practice pack adds the reset mods Atum, SeedQueue, WorldPreview and StandardSettings, which work normally outside matches (<a href="install.html#packs">packs</a>).</p>
+<p>Queueing runs in the background, so you can keep practising until your match is found. Practice has its own button for a new practice world, so there is no practice pack; reset mods you install yourself (Atum, SeedQueue, WorldPreview, StandardSettings) work normally outside matches (<a href="install.html#packs">packs</a>).</p>
 <h2 id="with-others">Practising with others</h2>
 <p>There is no separate shared practice. To practise with friends, open a <a href="private-rooms.html">private room</a>: rooms are real runs, private and with more options, and can start at a chosen split.</p>

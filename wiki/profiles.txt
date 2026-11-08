@@ -4,7 +4,7 @@ mat: stone
 acc: obs
 title: Profiles and stats
 nav: Profiles and stats
-summary: Your Splitstone account is your Minecraft account. Here is what your profile shows, what you can hide, and the stats you get.
+summary: Your Splitstone account is your Minecraft account. What your profile shows, what you can hide, and your stats.
 stat: 1|account per Minecraft account
 facts: 1|account per Minecraft account;;Public|match data;;2|stat views: basic and detailed
 keywords: profile profiles account uuid name username stats statistics head to head rivals achievements badges endorsements pb personal best showcase bio country social links streamer card recap hide delete
@@ -19,14 +19,13 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" 
 <h2 id="shows">What a profile shows</h2>
 <ul>
 <li>A personal-best card: personal best, best splits and sum of best.</li>
-<li>Your 3D model in your equipped cosmetics, with a chosen title or banner.</li>
+<li>Your 3D model in your equipped cosmetics, with a chosen title or banner. <a href="supporting.html#supporter">Supporters</a> also get supporter profile banners and profile themes.</li>
 <li>A trophy case of event wins and records held, and earned achievements.</li>
 <li>A replay you pin.</li>
 <li>Live status, with buttons to watch or join.</li>
 <li>Favourite 2v2 and co-op partners with each pair's record, mutual friends and "member since".</li>
 <li>Linked social accounts, a short bio, a cosmetics showcase, and your country if you choose to show it.</li>
 <li>Endorsements from 2v2 and co-op teammates: good teammate, good sport and helpful.</li>
-<li>Fun facts, such as dragons killed, deaths, resets and your fastest Nether entry.</li>
 </ul>
 <p>You choose and order your profile's sections, so you can lead with stats or with cosmetics.</p>
 <h2 id="h2h">Head-to-head and rivals</h2>
@@ -44,12 +43,12 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" 
 </ul>
 <p>Splitstone also plans a public API for third-party sites. There's no live player count.</p>
 <h2 id="achievements">Achievements</h2>
-<p>Achievements are earned badges with Splitstone's own icons and requirements, shown on your profile. A profile highlights <b>5</b> for free; <a href="supporting.html">supporters</a> can highlight more, up to <b>8</b>. It changes the display only.</p>
+<p>Achievements are earned badges with Splitstone's own icons and requirements, shown on your profile. A profile highlights <b>5</b> for free; <a href="supporting.html">supporters</a> can highlight more, up to <b>8</b>.</p>
 <h2 id="privacy">What you can hide</h2>
 <ul>
-<li>Match data is public: results, Elo, match history, leaderboards and replays.</li>
-<li>Everything else on your profile is shown by default, and you can hide each part.</li>
-<li>In settings you can hide your Elo during a match, hide your profile from your opponent, or hide theirs.</li>
+<li>Match data is public: results, Elo, match history and leaderboards. Who can watch or download your replays follows your "who can watch my matches" setting (<a href="replays-and-spectating.html#kept">Replays</a>).</li>
+<li>Everything else on your profile is shown by default, and you can hide each part, except your country, which stays hidden until you choose to show it.</li>
+<li>In settings you can hide your Elo during a match, or hide your opponent&rsquo;s profile.</li>
 </ul>
 <h2 id="extras">Sharing</h2>
 <ul>

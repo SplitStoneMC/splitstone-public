@@ -5,7 +5,7 @@ acc: stone
 title: Seeds and luck
 nav: Seeds and luck
 summary: Where match seeds come from, how they stay secret, and how standardized luck gives both sides the same drops in the same order.
-stat: 1:1|same luck for both sides
+stat: Same|luck order for both sides
 facts: 1|private pool of filtered seeds;;2|seeds per match: world and Nether;;3|Rerolls each;;Vanilla|luck outside Splitstone modes
 keywords: seed seeds pool filtered nether seed seed type bastion type like dislike secret reroll rng luck standardized stronghold mobs barters blaze rods flint dragon perch woodlighting vanilla team spawn ghast
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#6b4a32" d="M2 18h12v6H2z"/><path fill="#7fcf5a" d="M2 18h12v2H2z"/><path fill="#7fcf5a" d="M7 9h2v9H7zM4 7h3v2H4zM9 5h3v2H9z"/><path fill="#d9b45a" d="M6 16h4v2H6z"/><path fill="#e9f0ef" d="M17 8h12v12H17z"/><path fill="#000" fill-opacity=".2" d="M28 9h1v11h-1zM18 19h10v1H18z"/><path fill="#1a2423" d="M19 10h2v2h-2zM25 10h2v2h-2zM22 13h2v2h-2zM19 16h2v2h-2zM25 16h2v2h-2z"/></svg>
@@ -13,7 +13,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#6b4a32" 
 <h2 id="seeds">Where seeds come from</h2>
 <ul>
 <li>Match seeds come from a private pool of seeds that have been filtered in advance, and the Nether has its own seed.</li>
-<li>Some seed types unlock as you rank up. A match uses only the types the lower-ranked player has unlocked.</li>
+<li>Some seed types unlock as you rank up. A match uses only the types its lowest-ranked player has unlocked, teammates included.</li>
 <li>After a match you can like or dislike the seed. A seed both players dislike leaves the pool.</li>
 <li>The seed stays secret during the match: <b>/seed</b> is off, the seed is stored encrypted in the world, and opening to LAN is blocked in 1v1. There's no copy-seed button: after the match, the saved world holds the seed, so you can read it there.</li>
 <li>Any past match seed can be played again alone, as <a href="practice.html">practice</a>, from your match history, in a solo private room.</li>
@@ -21,7 +21,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#6b4a32" 
 </ul>
 <h2 id="luck">Standardized luck</h2>
 <p>In vanilla Minecraft, two players on the same seed still get different luck: different barters, blaze rod drops and flint. Splitstone fixes that luck so it comes in the same order for everyone. Your 5th barter gives the same result as your opponent's 5th barter, so a match is decided by play rather than drops.</p>
-<p>Splitstone standardizes everything on MCSR Ranked's <a href="https://github.com/MCSR-Ranked/Wiki/blob/main/docs/gameplay/rng.md" rel="noopener">luck standardization list</a>, including the dragon's perch done the same way, and adds woodlighting. Stronghold mob spawns are to be standardized too, beyond MCSR's list. Everything else stays vanilla.</p>
+<p>Splitstone standardizes everything on MCSR Ranked's <a href="https://github.com/MCSR-Ranked/Wiki/blob/main/docs/gameplay/rng.md" rel="noopener">luck standardization list</a>, including the dragon's perch done the same way, and adds woodlighting. Beyond MCSR's list, Splitstone also places the first monsters near a stronghold on the same spots for every player, gives every stronghold in a match the same rooms and layout with no caves, dungeons or mineshaft spawners cutting into it, and spawns no monsters on a bastion's roofs and wall tops or under a desert temple. Everything else stays vanilla.</p>
 <h2 id="where">Where it applies</h2>
 <ul>
 <li><b>Standardized:</b> Ranked 1v1, 2v2, co-op, game modes, and private rooms playing any of them, solo practice rooms included.</li>

@@ -11,7 +11,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" 
 keywords: replay replays analysis splits time lost inventory download saved top 100 permanent spectate spectating watch live list streaming coach coaching broadcast tools spectator accounts organisers
 ---
 <h2 id="analysis">What a replay shows</h2>
-<p>Replays focus on where you lost time and why, the way top players review runs.</p>
+<p>Replays show where you lost time and why.</p>
 <h3>Split analysis</h3>
 <ul>
 <li>A split-by-split table of time gained and lost against your opponent, with a jump to that moment.</li>
@@ -34,33 +34,35 @@ keywords: replay replays analysis splits time lost inventory download saved top 
 </ul>
 <h2 id="kept">Which matches are saved</h2>
 <ul>
-<li>Splitstone's server saves a ranked 1v1 or 2v2, weekly cup or Major match for good, both sides, when <b>every player in it is in the top 100</b>.</li>
-<li>Nothing else is saved on the server. Game modes, co-op and private rooms never are.</li>
-<li>Your own game keeps its own copies of your own matches.</li>
-<li>Anyone can download a saved top-100 match in the game, from the match on a player's profile or in the match history. The website has no replay downloads.</li>
+<li>Splitstone's server keeps every match's replay for <b>10 days</b>, all sides, in every mode: ranked 1v1 and 2v2, weekly cups, Majors, the playoffs, private rooms, game modes and co-op. Solo practice rooms aren't saved, and a host can switch off saving for their private room.</li>
+<li>A ranked 1v1 or 2v2, weekly cup or Major match is kept for good when <b>every player in it is in the top 100</b>.</li>
+<li>The match history shows how long each replay has left on the server, or that it is kept for good, so you can download it in time.</li>
+<li>Your own game also keeps copies of your last replays, as many as your "replays to keep" setting allows, within the replay space you choose.</li>
+<li>Downloads happen in the game, from the match on a player's profile or in the match history; the website has no replay downloads. A match's own players can download it while the server keeps it. Anyone can download a playoff match, and a match kept for good if every player in it lets them watch their matches. A block always stops it.</li>
 </ul>
 <p>Your match history itself stays for good.</p>
 <h2 id="watch">Watching live</h2>
 <p class="livec" id="livec" hidden><i aria-hidden="true"></i><span><b>0</b><span class="lt"> ranked matches running now.</span> <a href="../live.html">Watch on the Live page &rarr;</a></span></p>
 <ul>
-<li>Ranked matches are shown live with no delay. Ghosting, using a live view of a match to cheat, is handled by the rules and reports.</li>
+<li>Ranked matches and weekly cups are shown live with no delay. Ghosting, using a live view of a match to cheat, is handled by the rules and reports.</li>
+<li>Majors and the playoffs are shown 3 minutes behind, to everyone except the event's organisers. Players who stream their own Major or playoff games put the same delay on their stream.</li>
 <li>Find a match three ways: a friend's match, the live list of top matches, or a search by player name.</li>
 <li>The live list shows events first while they run, then friends' matches, then ranked matches by the players' combined Elo, and marks players who are streaming. The website's <a href="../live.html">Live page</a> shows the same order without the friends part.</li>
 <li>You follow the player you came for. From the live list, you follow whoever is ahead.</li>
-<li>You can't watch a match while your own run is going. Once it's over, such as after a forfeit, you may watch your opponent.</li>
+<li>You can't watch a match while your own run is going, unless a friend invited you to watch theirs. Once your run is over, such as after a forfeit, you may watch your opponent.</li>
 <li>Live watching and replays show finer Nether splits and inventory counts, to players as well as spectators. Players don't see them on their own screen during their match.</li>
-<li>Everyone chooses who can watch their matches: everyone, friends or nobody.</li>
+<li>Everyone chooses who can watch their matches: everyone, friends or nobody. It starts at everyone and is changed in Settings. In Majors, the playoffs and the top weekly cup, anyone may watch.</li>
 <li>Spectators can't send messages to the player they watch.</li>
 </ul>
 <h2 id="coaching">Coaching</h2>
 <ul>
-<li>A player, or a 2v2 or co-op team, can have up to two coaches in a match. You add a coach by typing their name into a search bar and pressing Add, as when adding a friend.</li>
+<li>A player, or a 2v2 or co-op team, can have up to two coaches in a match. Coaches come through your party: a party of up to three can queue a 1v1, where the leader plays and the others coach, and a party of up to four can queue 2v2 or co-op with two playing. A coach must be a friend of the player they coach.</li>
 <li>In ranked, a coach sees only their own player or team, never the opponent, since both sides play the same seed.</li>
 <li>A coach can talk to their player during the match. In 2v2 and co-op, the coach talks to one teammate, chosen by the team.</li>
 </ul>
 <h2 id="broadcast">Broadcast tools</h2>
 <p>Organisers approved for an event get broadcast tools: camera control, split and timeline screens, and a live data feed for stream overlays.</p>
-<script defer src="../assets/sample.js?v=1e04316a"></script><script defer src="../assets/live-data.js?v=5cf4c8fa"></script>
+<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=01422421"></script>
 <script>
 /* wiki-content: ranked matches running now, from the live data the Live page reads; shown only with real data */
 addEventListener('DOMContentLoaded',function(){var X=window.SAMPLE,e=document.getElementById('livec');if(!X||!X.ready||!e)return;

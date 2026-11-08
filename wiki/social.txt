@@ -32,7 +32,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <h2 id="chat">Chat</h2>
 <ul>
 <li>There are direct messages, party chat, team chat in 2v2 and co-op, chat between opponents in a match, and chat in public rooms. Spectators can't message the player they watch.</li>
-<li>A filter for swearing and slurs is on by default, and you can turn it off.</li>
+<li>A filter for swearing and slurs is on by default. Players 18 or older can turn it off; players who said they are 13&ndash;17 can&rsquo;t.</li>
 <li>Chat is kept for 30 days, for moderation only.</li>
 <li>You can mute a player, or everyone for one match.</li>
 </ul>

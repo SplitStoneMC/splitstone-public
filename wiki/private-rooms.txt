@@ -4,7 +4,7 @@ mat: stone
 acc: stone
 title: Private rooms
 nav: Private rooms
-summary: Set up your own match for friends, a community night or a race: up to 64 players, three formats, and the host's options.
+summary: Your own match: up to 64 players, three formats, and the host's options.
 stat: 64|players per room
 facts: 64|players per room;;3|formats;;0|Elo change;;Code|or invite to join
 keywords: private room rooms custom match host code invite solo alone hand over remove free for all teams co-op filtered set seed split start time limit head start spectators coaches voice elo history leaderboard subscriber perks
@@ -45,9 +45,5 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#9db3b1" 
 <li>In a team or co-op room, if the player hosting the shared world leaves or crashes, the room ends; start a new one to keep playing.</li>
 <li>When the host of a free-for-all room leaves, the room ends once any running match finishes. A host who wants to leave can hand the host role to another player first, and a host can remove a player from the room.</li>
 </ul>
-<h2 id="tiers">Extras for supporters</h2>
-<p>Every host gets the options above. <a href="supporting.html">Supporter tiers</a> add a few extras:</p>
-<div class="tw"><table class="wt"><thead><tr><th>Tier</th><th>Room extras</th></tr></thead><tbody>
-<tr><td>Tier 2</td><td>A custom room name</td></tr>
-<tr><td>Tier 3</td><td>A "request to join" mode</td></tr>
-</tbody></table></div>
+<h2 id="supporter">Extras for supporters</h2>
+<p>Every host gets the options above. <a href="supporting.html#supporter">Supporter</a> adds a custom room name, a "request to join" mode and playing the bot in your room.</p>

@@ -28,9 +28,9 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <li>The seed stays secret: <b>/seed</b> is off, the seed is stored encrypted, and opening to LAN is blocked in 1v1. There is no copy-seed button: after the match, your saved world holds the seed, so you can explore it and read the seed there.</li>
 </ul>
 <h2 id="votes">Votes and forfeits</h2>
-<p>An on-screen countdown shows when each of these unlocks, so you never have to guess.</p>
+<p>An on-screen countdown shows when each of these unlocks.</p>
 <div class="tw"><table class="wt"><thead><tr><th>Option</th><th>When</th><th>How it works</th></tr></thead><tbody>
-<tr><td>Reroll</td><td>Until 3:00 in the top two ranks, until 4:30 below</td><td>A new seed. Hold Reroll in the match menu, or hold <b>F7</b>, to turn on your Reroll light; the match restarts on a new seed as soon as both lights are on. Up to <b>3</b> per player.</td></tr>
+<tr><td>Reroll</td><td>Until 3:00 in the top two ranks, until 4:30 below</td><td>A new seed. Press Reroll in the match menu, or hold <b>F7</b>, to turn on your Reroll light; the match restarts on a new seed as soon as both lights are on. Up to <b>3</b> per player.</td></tr>
 <tr><td>Draw vote</td><td>From 4:30</td><td>Both players have 30 seconds to agree.</td></tr>
 <tr><td>Forfeit</td><td>From 4:30, or 3:30 from Obsidian up, each player by their own rank</td><td>Ends the match as a loss for you.</td></tr>
 </tbody></table></div>
@@ -44,7 +44,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 </ul>
 <h2 id="winning">Winning and timing</h2>
 <p>The first player to enter the exit portal after the dragon dies wins. There is no time limit.</p>
-<p>Every match is timed in real time (RTA) only, so the time you watch is the time that counts. Resetting your world doesn't restart the clock: your time counts from the match start.</p>
+<p>Every match is timed in real time (RTA) only. Resetting your world doesn't restart the clock: your time counts from the match start.</p>
 <p>If your opponent forfeits, you can keep playing; a small notice briefly offers to leave. A run you finish counts exactly as if they hadn't forfeited.</p>
 <h2 id="teams">2v2 and co-op</h2>
 <ul>

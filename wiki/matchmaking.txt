@@ -12,8 +12,8 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 ---
 <h2 id="queues">Queues</h2>
 <ul>
-<li>Every mode has its own queue: Ranked 1v1, 2v2, co-op, each game mode and 1v1 Casual. Co-op and 1v1 Casual are unrated.</li>
-<li>1v1 Casual plays by Ranked 1v1's rules on the same seeds, but changes no Elo and keeps no stats. A hidden rating finds you a fair opponent; turn on "Any Elo" on its card to meet anyone.</li>
+<li>Every mode has its own queue: Ranked 1v1, 2v2, co-op and each game mode. Co-op is unrated.</li>
+<li>There is no 1v1 Casual queue. To race casually, join a public room from Extra Modes: no Elo moves there.</li>
 <li>Queueing runs in the background. While you wait you can sit in a private room, play your own practice world, or do anything else that doesn't put you against another person.</li>
 <li>You can leave the queue at any time before a match is found. After that it can't be cancelled or declined.</li>
 </ul>
@@ -21,6 +21,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <p>You're paired by Elo and by how often you forfeit. Close Elo comes first, and the allowed gap widens the longer you wait.</p>
 <p>The starting numbers, which will be tuned with real players: the search starts at &plusmn;50 Elo and widens steadily to &plusmn;250 by 2:30, then to &plusmn;450 by the bot offer at 5:30, and keeps widening at that pace until you find a match. You can also set your matchmaking speed to fast, balanced or accurate; it starts on balanced.</p>
 <h2 id="bots">Bots</h2>
+<div class="co"><span><b>Not at the beta:</b> bots aren't built for the beta, so no bot match is offered yet. Until they come, the search keeps widening.</span></div>
 <ul>
 <li>Every rank has a bot. After about 5:30 in the ranked queue you're offered a bot match, which you can accept or decline. A bot match counts for Elo.</li>
 <li>Players in the top 75 are offered copy bots of other top-75 players who opted in; everyone else is offered their rank's bot.</li>

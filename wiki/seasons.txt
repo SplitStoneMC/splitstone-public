@@ -4,7 +4,7 @@ mat: nether
 acc: nether
 title: Seasons and events
 nav: Seasons and events
-summary: A season is 16 weeks of ranked play, weekend cups, three Majors and the playoffs. Here is what each week holds, how playoff points work and how the season ends.
+summary: A season is 16 weeks of ranked play, weekend cups, three Majors and the playoffs: what each week holds, how playoff points work and how the season ends.
 stat: 16|weeks in a season
 facts: 16|weeks in a season;;7|matches in a weekend cup;;64|players in a Major;;16|players in the playoffs
 keywords: season seasons weeks top cup netherite cup weekly cup weekend major majors standout playoffs bracket points ladder points swiss prize money titles reset recap battle pass 2v2 events calculator
@@ -27,7 +27,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <li><b>Week 14:</b> a break, and the last week that earns ladder points.</li>
 <li><b>Weeks 15 and 16:</b> the playoffs, over two weekends. The season ends after the final.</li>
 </ul>
-<p>Only Majors, the playoffs and the Netherite cup are events. 2v2 runs the same season system. Co-op has no season, because it is unrated.</p>
+<p>Only Majors, the playoffs and the Netherite cup are events. 2v2 runs the same season system, starting with its own weekend cups; 2v2 Majors and playoffs come later. Co-op has no season, because it is unrated.</p>
 <h2 id="active-weeks">Making a week count</h2>
 <p>Play <b>10 ranked matches</b> in a week and that week counts: your Elo when the week ends earns ladder points, <b>1 for every 25 Elo above 1800</b> (2100 earns 12, 2600 earns 32), and your cup for that weekend unlocks as soon as your 10th ranked match of the week is played, while the cup is open. Your best 10 of weeks 1 to 14 count. Points from Elo reward how high you climb and how far ahead you are, not just your place. No single snapshot of the ladder decides a playoff place.</p>
 <h2 id="top-cup">Weekend cups</h2>
@@ -81,9 +81,9 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <li>Ratings fully reset, and everyone plays <a href="elo-and-ranks.html#placement">placement</a> again.</li>
 <li>Season-end titles: special titles for 1st, 2nd and 3rd, then top 5, 10, 20, 50 and 100.</li>
 <li>Every player gets a recap card to share.</li>
-<li>Each battle pass follows a season, and rewards not reached by its end are lost.</li>
+<li>Each battle pass follows a season. Free rewards not reached by its end can come back only in a later pass, never in the shop.</li>
 </ul>
-<script defer src="../assets/sample.js?v=1e04316a"></script><script defer src="../assets/live-data.js?v=5cf4c8fa"></script>
+<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=01422421"></script>
 <script>
 /* wiki-content: the tappable 16-week strip (the current week is marked only on sample data) and the playoff points calculator */
 addEventListener('DOMContentLoaded',function(){var D=document,$=function(i){return D.getElementById(i)};
