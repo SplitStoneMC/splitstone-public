@@ -31,7 +31,7 @@ A player is named by their Minecraft name (any case) or UUID, with or without da
 
 ### `GET /players/{player}`
 
-The public profile: `uuid`, `name`, `memberSince`, `country` and `bio` (null when hidden), `linkedAccounts` the player shows (`service`, `handle`, `url`), `ratings` per mode (`mode`, `elo`, `ratedMatches`, `draws`, `place` on the leaderboard or null, `top20`), `lastPlayed`, `recentMatches` (the last 100, from the player's side) and `bests` per mode (best finish, sum of best and each split's best, with when each was set).
+The public profile: `uuid`, `name`, `memberSince`, `country` and `bio` (null when hidden), `tier` (1 when the player is a Supporter, shown as the supporter badge; null otherwise), `linkedAccounts` the player shows (`service`, `handle`, `url`), `ratings` per mode (`mode`, `elo`, `ratedMatches`, `draws`, `place` on the leaderboard or null, `top20`), `lastPlayed`, `recentMatches` (the last 100, from the player's side) and `bests` per mode (best finish, sum of best and each split's best, with when each was set).
 
 ### `GET /players/{player}/matches`
 
@@ -104,23 +104,25 @@ One match, finished or running. Beyond the list's fields:
 - `timeline`: every event in the order received, deaths and resets included: `uuid`, `event`, `ms`, `rtaMs`.
 - `vods`: `{uuid, url, startsAt}` for each player whose linked Twitch is shown on their profile and whose channel saved the broadcast. That player's `vod` is the same, and each of their splits' `vodAt` links straight to that moment: `https://www.twitch.tv/videos/123?t=1h04m12s`. The moment is the match start plus the split's real time, less when the broadcast began. Twitch deletes past broadcasts after 7 to 60 days, so old links can stop working.
 
-Splits are named as the game names them: `minecraft:story/enter_the_nether`, `minecraft:nether/find_bastion`, `minecraft:nether/find_fortress`, `minecraft:story/follow_ender_eye`, `minecraft:story/enter_the_end`.
+Splits are named as the game names them: `minecraft:story/enter_the_nether`, `minecraft:nether/find_bastion`, `minecraft:nether/find_fortress`, `splitstone:blind`, `minecraft:story/follow_ender_eye`, `minecraft:story/enter_the_end`. `splitstone:blind` is Splitstone's own: the first time the player goes back from the Nether to the Overworld (blind travel).
 
 ### `GET /live`
 
-Ranked, weekly cup and Major matches running now with a top-100 player in them, where every player lets everyone watch, highest rated first, at most 100: each with `id`, `mode`, `runningMs` and its players (`uuid`, `name`, `elo`, `split`, `splitMs`, `splits`, and `liveUrl`: their Twitch channel while they stream with it shown on their profile, otherwise null). `playersOnline` gives how many games are connected.
+Ranked, weekly cup and Major matches running now with a top-100 player in them, where every player lets everyone watch, highest rated first, at most 100: each with `id`, `mode`, `runningMs` and its players (`uuid`, `name`, `elo`, `split`, `splitMs`, `splits`, and `liveUrl`: their Twitch channel while they stream with it shown on their profile, otherwise null).
 
 ## Boards
 
 ### `GET /leaderboards/{mode}`
 
-The Elo ladder (`ranked_1v1` or `ranked_2v2`): placed players who played in the last 7 days, the top 100, equal Elo sharing a place. Without parameters it is this season's board with each row's `place`, `uuid`, `name`, `elo`, `rank`, `division`, `country`, `wins`, `draws`, `losses`, `bestMs`, `form` (last five results), `lastEloChange`, `placeLastWeek` and `top20`.
+The Elo ladder (`ranked_1v1` or `ranked_2v2`): placed players who played in the last 7 days, the top 100, equal Elo sharing a place. Without parameters it is this season's board with each row's `place`, `uuid`, `name`, `elo`, `rank`, `division`, `country`, `wins`, `draws`, `losses`, `bestMs`, `form` (last five results), `lastEloChange`, `placeLastWeek` (their place on the board 7 UTC days ago, null when they were not on it) and `top20`. The answer's `lastWeekDay` is the date of that earlier board (`2026-11-02`), null when none was kept that day, and then no `placeLastWeek` is known.
 
 With `season` (an ended season gives its final places) or `country` (a two-letter code; only players who show that country), rows have `place`, `uuid`, `name`, `elo`, `rank`, `division`, `country` and `top20`. `count` takes fewer than 100.
 
+Only `ranked_1v1` and `ranked_2v2` have a leaderboard; any other mode answers `404`.
+
 ### `GET /records/{mode}`
 
-The fastest finishes in a ranked mode, or private rooms with `records/rooms` (rooms with every setting at its default): `place`, `uuid`, `name`, `country`, `timeMs`, `seedType` and, in 2v2, the `mate`. In 1v1 each player's best counts once; in 2v2 each pair's. Parameters: `period` (`all`, `month`, `week` or `day`; `all` by default) and `country`.
+The fastest finishes in a ranked mode, or private rooms with `records/rooms` (rooms with every setting at its default): `place`, `uuid`, `name`, `country`, `timeMs`, `seedType` and, in 2v2, the `mate`. In 1v1 each player's best counts once; in 2v2 each pair's. Parameters: `period` (`all`, `month`, `week` or `day`; `all` by default) and `country`. Only `ranked_1v1`, `ranked_2v2` and `rooms` have records; any other mode answers `404`.
 
 ### `GET /playoffs`
 
@@ -140,7 +142,7 @@ One cup with its `results` in place order: `place`, `uuid`, `name`, `wins`, `dra
 
 ### `GET /status`
 
-`{"matchesRunning": 12, "playersOnline": 340, "queueSize": 9}`: as many matches as `/live` lists, connected games, and players queueing.
+`{"matchesRunning": 12}`: how many matches the matchmaking is running now. It counts every one, co-op and game modes included, so it is usually more than `/live` lists.
 
 ## Compared with MCSR Ranked's API
 

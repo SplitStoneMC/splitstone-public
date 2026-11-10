@@ -118,7 +118,13 @@ components:
     Split:
       type: object
       properties:
-        split: {type: string, examples: ["minecraft:story/enter_the_nether"]}
+        split:
+          type: string
+          description: >
+            minecraft:story/enter_the_nether, minecraft:nether/find_bastion, minecraft:nether/find_fortress,
+            splitstone:blind (the first time the player goes back from the Nether to the Overworld),
+            minecraft:story/follow_ender_eye or minecraft:story/enter_the_end.
+          examples: ["minecraft:story/enter_the_nether", "splitstone:blind"]
         ms: {type: integer}
         rtaMs: {type: [integer, "null"], description: Real time since the start.}
         vodAt: {type: [string, "null"], description: "The player's VOD at this moment, such as https://www.twitch.tv/videos/123?t=1h04m12s."}
@@ -248,7 +254,7 @@ components:
         bestMs: {type: [integer, "null"]}
         form: {type: array, items: {type: string, enum: [win, draw, loss]}}
         lastEloChange: {type: [integer, "null"]}
-        placeLastWeek: {type: [integer, "null"]}
+        placeLastWeek: {type: [integer, "null"], description: "Their place on the board 7 UTC days ago; null when they were not on it or no board was kept that day."}
     Cup:
       type: object
       properties:
@@ -269,8 +275,13 @@ paths:
       parameters: [{$ref: "#/components/parameters/Player"}]
       responses:
         "200":
-          description: "uuid, name, memberSince, country, bio, linkedAccounts, ratings, lastPlayed, recentMatches and bests."
-          content: {application/json: {schema: {type: object}}}
+          description: "uuid, name, memberSince, country, bio, tier, linkedAccounts, ratings, lastPlayed, recentMatches and bests."
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tier: {type: [integer, "null"], enum: [1, null], description: "1 when the player is a Supporter, shown as the supporter badge; null otherwise."}
         default: {$ref: "#/components/responses/Error"}
   /players/{player}/matches:
     get:
@@ -404,7 +415,6 @@ paths:
                 type: object
                 properties:
                   matches: {type: array, items: {$ref: "#/components/schemas/LiveMatch"}}
-                  playersOnline: {type: integer}
         default: {$ref: "#/components/responses/Error"}
   /leaderboards/{mode}:
     get:
@@ -424,7 +434,16 @@ paths:
                 properties:
                   mode: {type: string}
                   season: {type: integer}
+                  lastWeekDay:
+                    type: [string, "null"]
+                    format: date
+                    description: >
+                      This season's board without parameters only: the date of the board placeLastWeek compares with,
+                      7 UTC days ago; null when none was kept that day.
                   players: {type: array, items: {$ref: "#/components/schemas/BoardRow"}}
+        "404":
+          description: Any mode but ranked_1v1 and ranked_2v2.
+          content: {application/json: {schema: {$ref: "#/components/schemas/Error"}}}
         default: {$ref: "#/components/responses/Error"}
   /records/{board}:
     get:
@@ -456,6 +475,9 @@ paths:
                         timeMs: {type: integer}
                         seedType: {type: [string, "null"]}
                         mate: {type: [object, "null"], properties: {uuid: {type: string}, name: {type: string}}}
+        "404":
+          description: Any board but ranked_1v1, ranked_2v2 and rooms.
+          content: {application/json: {schema: {$ref: "#/components/schemas/Error"}}}
         default: {$ref: "#/components/responses/Error"}
   /playoffs:
     get:
@@ -519,13 +541,11 @@ paths:
       summary: How busy Splitstone is
       responses:
         "200":
-          description: Counts only.
+          description: How many matches the matchmaking is running now, co-op and game modes included.
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  matchesRunning: {type: integer}
-                  playersOnline: {type: integer}
-                  queueSize: {type: integer}
+                  matchesRunning: {type: integer, examples: [12]}
         default: {$ref: "#/components/responses/Error"}
