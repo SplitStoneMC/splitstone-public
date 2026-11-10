@@ -60,7 +60,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 </figure>
 <h2 id="season-reset">Seasons and leaderboards</h2>
 <p>Each <a href="seasons.html">season</a> ends with a full reset, and everyone plays placement again. The <a href="../leaderboards.html">leaderboards</a> are a 1v1 and a 2v2 Elo ladder.</p>
-<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=01422421"></script>
+<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=aea781a6"></script>
 <script>
 /* wiki-content: the Elo finder on the rank ladder, the decay lines drawn in when seen, and the ladder count from real data only */
 addEventListener('DOMContentLoaded',function(){var D=document,R=[].slice.call(D.querySelectorAll('#rl li[data-e]')),f=D.getElementById('rkf'),inp=D.getElementById('rke'),o=D.getElementById('rko'),N=['first','second','third'];

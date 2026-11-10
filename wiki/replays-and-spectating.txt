@@ -62,7 +62,7 @@ keywords: replay replays analysis splits time lost inventory download saved top 
 </ul>
 <h2 id="broadcast">Broadcast tools</h2>
 <p>Organisers approved for an event get broadcast tools: camera control, split and timeline screens, and a live data feed for stream overlays.</p>
-<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=01422421"></script>
+<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=aea781a6"></script>
 <script>
 /* wiki-content: ranked matches running now, from the live data the Live page reads; shown only with real data */
 addEventListener('DOMContentLoaded',function(){var X=window.SAMPLE,e=document.getElementById('livec');if(!X||!X.ready||!e)return;

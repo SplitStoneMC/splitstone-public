@@ -83,9 +83,9 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <li>Every player gets a recap card to share.</li>
 <li>Each battle pass follows a season. Free rewards not reached by its end can come back only in a later pass, never in the shop.</li>
 </ul>
-<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=01422421"></script>
+<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=aea781a6"></script>
 <script>
-/* wiki-content: the tappable 16-week strip (the current week is marked only on sample data) and the playoff points calculator */
+/* wiki-content: the tappable 16-week strip (the current week is marked only on sample data, in mock mode) and the playoff points calculator */
 addEventListener('DOMContentLoaded',function(){var D=document,$=function(i){return D.getElementById(i)};
 var B=[].slice.call(D.querySelectorAll('#ws button')),P=$('wsp'),
 CUP='<li>Ranked all week. Play 10 ranked matches and your Elo when the week ends earns ladder points.</li><li>Weekend cups from Friday 9 PM to Sunday 9 PM ET: 7 matches each. The Netherite cup gives playoff points; the other ranks\' cups give cosmetics.</li>',
@@ -97,7 +97,7 @@ if(w==14)return['Week 14 &middot; Break','<li>The last week that earns ladder po
 return['Week '+w+' &middot; Cup weekend',CUP+(w==3||w==7||w==12?'<li>Next week is Major '+(w==3?1:w==7?2:3)+': the top 58 on playoff points and 6 standout places.</li>':'')]}
 function pick(w){B.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.w==w)});var x=info(w);P.innerHTML='<h3>'+x[0]+'</h3><ul>'+x[1]+'</ul>'}
 B.forEach(function(b){b.addEventListener('click',function(){pick(+b.dataset.w)})});
-var X=window.SAMPLE;if(X&&X.ready)X.ready(function(){if(X.real)return;var w=Math.min(16,Math.max(1,parseInt(new URLSearchParams(location.search).get('week'),10)||6));
+var X=window.SAMPLE;if(X&&X.ready)X.ready(function(){if(!X.mock)return;var w=Math.min(16,Math.max(1,parseInt(new URLSearchParams(location.search).get('week'),10)||6));
 B[w-1].parentNode.classList.add('now');B[w-1].insertAdjacentHTML('beforeend','<em class="sr">, this week</em>');$('wsn').querySelector('b').textContent=w;$('wsn').hidden=false;pick(w)});
 /* calculator: the places and points come from the tables above, so there is one copy of the numbers */
 function rows(id,last){var r=[].map.call(D.querySelectorAll('#'+id+' tbody tr'),function(tr){return[tr.cells[0].textContent,+tr.cells[1].textContent]});if(last)r.push([last,0]);return r}
