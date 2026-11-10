@@ -34,7 +34,7 @@ keywords: replay replays analysis splits time lost inventory download saved top 
 </ul>
 <h2 id="kept">Which matches are saved</h2>
 <ul>
-<li>Splitstone's server keeps every match's replay for <b>10 days</b>, all sides, in every mode: 1v1 and 2v2 speedrun races, weekly cups, Majors, the playoffs, private rooms, game modes and co-op. Solo practice rooms aren't saved, and a host can switch off saving for their private room.</li>
+<li>Splitstone's server keeps every match's replay for <b>10 days</b>, all sides, in every mode: 1v1 and 2v2 speedrun matches, weekly cups, Majors, the playoffs, private rooms, game modes and co-op. Solo practice rooms aren't saved, and a host can switch off saving for their private room.</li>
 <li>A ranked 1v1 or 2v2, weekly cup or Major match is kept for good when <b>every player in it is in the top 100</b>.</li>
 <li>The match history shows how long each replay has left on the server, or that it is kept for good, so you can download it in time.</li>
 <li>Your own game also keeps copies of your last replays, as many as your "replays to keep" setting allows, within the replay space you choose.</li>
@@ -56,12 +56,12 @@ keywords: replay replays analysis splits time lost inventory download saved top 
 </ul>
 <h2 id="coaching">Coaching</h2>
 <ul>
-<li>A player, or a 2v2 or co-op team, can have up to two coaches in a match. Coaches come through your party: a party of up to three can queue a 1v1, where the leader plays and the others coach, and a party of up to four can queue 2v2 or co-op with two playing. A coach must be a friend of the player they coach.</li>
+<li>A player, or a 2v2 or co-op team, can have up to two coaches in a match. Coaches come through your party: a party of up to three can queue a 1v1, where the leader plays and the others coach, and a party of up to four can queue 2v2 or co-op with two playing. A coach must be a friend of the player they coach, or hired by them from the coach directory.</li>
 <li>In ranked, a coach sees only their own player or team, never the opponent, since both sides play the same seed.</li>
 <li>A coach can talk to their player during the match. In 2v2 and co-op, the coach talks to one teammate, chosen by the team.</li>
 </ul>
 <h2 id="broadcast">Broadcast tools</h2>
-<p>Organisers approved for an event get broadcast tools: camera control, split and timeline screens, and a live data feed for stream overlays.</p>
+<p>Organisers approved for an event get broadcast tools: camera control and split and timeline screens. A live data feed for stream overlays comes later.</p>
 <script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=aea781a6"></script>
 <script>
 /* wiki-content: ranked matches running now, from the live data the Live page reads; shown only with real data */

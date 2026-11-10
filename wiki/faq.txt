@@ -6,22 +6,22 @@ title: Frequently asked questions
 nav: FAQ
 summary: Short answers to the questions new players ask most, with links to the full articles.
 stat: 28|answers
-keywords: faq question free pay advantage alts alt accounts curseforge mac linux mcsr ranked side by side bug crash report mclo.gs twitch youtube link website sign in name change age delete account refund cancel banned purchases help support discord report appeal mods fabric api tools ninjabrain
+keywords: faq question free pay advantage alts alt accounts curseforge mac linux other instances side by side bug crash report mclo.gs twitch youtube link website sign in name change age delete account refund cancel banned purchases help support discord report appeal mods fabric api tools ninjabrain
 ---
 <h2 id="basics">The basics</h2>
 <div class="qa">
-<details id="about"><summary>What is Splitstone?</summary><div><p>An independent Minecraft speedrunning platform: 1v1 and 2v2 speedrun races, co-op, private rooms, practice tools, replays, seasons and events. It runs its own matchmaking, ratings and service. It is not an official Minecraft product and is not run by MCSR Ranked.</p></div></details>
+<details id="about"><summary>What is Splitstone?</summary><div><p>An independent Minecraft speedrunning platform: 1v1 and 2v2 speedrun matches, co-op, private rooms, practice tools, replays, seasons and events. It runs its own matchmaking, ratings and service. It is not an official Minecraft product.</p></div></details>
 <details id="free"><summary>Is it free?</summary><div><p>Yes. Playing ranked, the practice tools and replay analysis are free, and so is the battle pass. There is an optional monthly subscription, Supporter (<a href="supporting.html">Supporting Splitstone</a>).</p></div></details>
 <details id="paying"><summary>Does paying help me in ranked?</summary><div><p>No. Supporter adds profile, private-room and social extras. Rank marks such as gold, the crown, medals and the lava glow can only be earned, and bought cosmetics never appear on leaderboard rows.</p></div></details>
-<details id="release"><summary>When can I play?</summary><div><p>Downloads aren't released yet, and no release date has been announced.</p></div></details>
+<details id="release"><summary>When can I play?</summary><div><p>Now. Splitstone is out and open to everyone. Get it from the <a href="../download.html">download page</a>.</p></div></details>
 </div>
 <h2 id="setup">Install and setup</h2>
 <div class="qa">
 <details id="launchers"><summary>Which launchers work?</summary><div><p>Prism, MultiMC, the Modrinth App and the official Minecraft Launcher. Prism, MultiMC and the Modrinth App all use the same Modrinth pack (<a href="install.html#launchers">Install</a>).</p></div></details>
 <details id="curseforge"><summary>Why not CurseForge?</summary><div><p>CurseForge packs may only include mods hosted on CurseForge or on its approved list, and most speedrun-legal builds are neither.</p></div></details>
 <details id="mac-linux"><summary>Does it work on Mac and Linux?</summary><div><p>Yes. The mod and the pack are made for Windows, macOS and Linux. On macOS the pack uses Sodium's Mac build.</p></div></details>
-<details id="mcsr-ranked"><summary>Can I keep MCSR Ranked installed?</summary><div><p>Yes, in a separate instance. Splitstone needs its own instance because Ranked won't start next to mods that aren't on the speedrun.com legal list (<a href="install.html#own-instance">why</a>).</p></div></details>
-<details id="own-mods"><summary>Can I use my own mods and tools?</summary><div><p>You can use exactly the mods on the speedrun.com legal list, and Splitstone checks each file against it. Fabric API can't be installed on its own; Splitstone's mod brings the parts it needs. External tools follow speedrun.com's list, such as its approved calculators like Ninjabrain Bot.</p><p>During a match, reset mods (Atum, SeedQueue, WorldPreview) can't reset or create worlds, and SeedQueue pauses background generation. StandardSettings still applies your settings. Outside matches they all work normally.</p></div></details>
+<details id="other-instances"><summary>Can I keep my other instances?</summary><div><p>Yes. Splitstone runs in its own instance, next to any others in the same launcher (<a href="install.html#own-instance">why</a>).</p></div></details>
+<details id="own-mods"><summary>Can I use my own mods and tools?</summary><div><p>You can use exactly the mods on the legal mods list for Minecraft speedrunning, and Splitstone checks each file against it. Fabric API can't be installed on its own; Splitstone's mod brings the parts it needs. External tools follow the same rules, so approved calculators like Ninjabrain Bot are fine.</p><p>During a match, reset mods (Atum, SeedQueue, WorldPreview) can't reset or create worlds, and SeedQueue pauses background generation. StandardSettings still applies your settings. Outside matches they all work normally.</p></div></details>
 <details id="old-version"><summary>I'm on an old version and can't connect.</summary><div><p>Only the latest version can connect. Let the in-game updater install the new version.</p></div></details>
 </div>
 <h2 id="account">Your account</h2>

@@ -14,18 +14,18 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#6b4a32" 
 <ul>
 <li>Match seeds come from a private pool of seeds that have been filtered in advance, and the Nether has its own seed.</li>
 <li>Some seed types unlock as you rank up. A match uses only the types its lowest-ranked player has unlocked, teammates included.</li>
-<li>After a match you can like or dislike the seed. A seed both players dislike leaves the pool.</li>
+<li>After a match you can like or dislike the seed. A seed every player dislikes goes to review.</li>
 <li>The seed stays secret during the match: <b>/seed</b> is off, the seed is stored encrypted in the world, and opening to LAN is blocked in 1v1. There's no copy-seed button: after the match, the saved world holds the seed, so you can read it there.</li>
 <li>Any past match seed can be played again alone, as <a href="practice.html">practice</a>, from your match history, in a solo private room.</li>
 <li>If a seed is bad, either player can turn on their Reroll light, and the match moves to a new seed once both are on (<a href="ranked-matches.html#votes">Reroll</a>).</li>
 </ul>
 <h2 id="luck">Standardized luck</h2>
 <p>In vanilla Minecraft, two players on the same seed still get different luck: different barters, blaze rod drops and flint. Splitstone fixes that luck so it comes in the same order for everyone. Your 5th barter gives the same result as your opponent's 5th barter, so a match is decided by play rather than drops.</p>
-<p>Splitstone standardizes everything on MCSR Ranked's <a href="https://github.com/MCSR-Ranked/Wiki/blob/main/docs/gameplay/rng.md" rel="noopener">luck standardization list</a>, including the dragon's perch done the same way, and adds woodlighting. Beyond MCSR's list, Splitstone also places the first monsters near a stronghold on the same spots for every player, gives every stronghold in a match the same rooms and layout with no caves, dungeons or mineshaft spawners cutting into it, and spawns no monsters on a bastion's roofs and wall tops or under a desert temple. Everything else stays vanilla.</p>
+<p>Splitstone standardizes the luck that decides runs, including the dragon's perch, which happens the same way for everyone, and woodlighting. Splitstone also places the first monsters near a stronghold on the same spots for every player, gives every stronghold in a match the same rooms and layout with no caves, dungeons or mineshaft spawners cutting into it, and spawns no monsters on a bastion's roofs and wall tops or under a desert temple. Everything else stays vanilla.</p>
 <h2 id="where">Where it applies</h2>
 <ul>
 <li><b>Standardized:</b> Ranked 1v1, 2v2, co-op, game modes, and private rooms playing any of them, solo practice rooms included.</li>
-<li><b>Vanilla:</b> speedrun.com categories, which you play in your own legal instance (<a href="categories.html">Categories</a>), and single-player worlds, such as the community <a href="practice.html">practice maps</a>.</li>
+<li><b>Vanilla:</b> RSG and All Advancements, which you play in your own legal instance (<a href="categories.html">RSG and AA</a>), and single-player worlds, such as the community <a href="practice.html">practice maps</a>.</li>
 </ul>
 <h2 id="teams">Luck in a shared world</h2>
 <p>In 2v2 and co-op, each team has one luck sequence that both teammates share. The team's Nth barter, blaze rod or flint matches the other team's Nth, whichever teammate gets it. Team totals stay equal however the teammates split the work.</p>

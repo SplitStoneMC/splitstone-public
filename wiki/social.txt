@@ -44,7 +44,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <li><b>Coach voice</b> between a coach and their player.</li>
 <li><b>Room voice</b> for everyone in a private room, if the host turns it on.</li>
 </ul>
-<p>Opponents can only talk to each other in private rooms. In ranked they have text chat only. Voice is never recorded. Push-to-talk is the default.</p>
+<p>Opponents can talk by voice before a match starts and after it ends, for up to 3 minutes, never during play. It is off by default and only for players 18 or older: both must turn it on in Settings &rarr; Voice. Voice is never recorded. Push-to-talk is the default.</p>
 <p>If your Microsoft account settings turn off chat or multiplayer, Splitstone turns off voice for you and tells you to change the setting with Microsoft.</p>
 <h2 id="hub">Is there a hub or SMP?</h2>
 <p>No. There is no hub world at launch, no plan for one yet, and no SMP world.</p>

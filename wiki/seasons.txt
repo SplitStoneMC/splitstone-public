@@ -34,7 +34,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <ul>
 <li>Every rank has its own weekend cup. You can enter only the cup for your rank, taken when the cup opens and kept for the weekend.</li>
 <li>The top cup is the <b>Netherite cup</b>: every Netherite player and the Top 20. It runs on 9 weekends and is the only cup that gives playoff points; your best 6 of 9 count. The other cups give cosmetic rewards.</li>
-<li>A cup is a weekend 1v1 league of <b>7</b> matches at launch, played whenever you're online over the weekend. The beta can change the number.</li>
+<li>A cup is a weekend 1v1 league of <b>7</b> matches at launch, played whenever you're online over the weekend. This may change.</li>
 <li>Every match has its own seed, so no seed can be scouted or shared.</li>
 <li>Swiss pairing: each match is against a player on the same cup record, widening by at most one step when nobody is online. Ties go to whoever beat stronger opponents, counted by the cup wins of the players each one beat.</li>
 <li>Cup matches don't change Elo and follow the ranked match rules. A draw is half a win, and a player who stops early keeps their record and is placed by it.</li>

@@ -7,7 +7,7 @@ nav: Supporting Splitstone
 summary: Splitstone is paid for by cosmetics and an optional monthly subscription, Supporter. Ranked, the practice tools and replay analysis are free.
 stat: $3.99|a month
 facts: 1|subscription;;$3.99|a month;;Free|ranked and practice tools;;Free|battle pass
-keywords: support supporter tier tiers subscription price tebex gift shop cosmetics coins battle pass earned bought outfits capes advantage pay to win refund website purchase username anonymous anonymity discord supporter chat priority support help reports appeals banners profile themes bot paid track
+keywords: support supporter tier tiers subscription price tebex gift shop cosmetics coins battle pass earned bought outfits capes advantage pay to win refund website purchase username anonymous anonymity discord supporter chat priority support help reports appeals banners profile themes paid track
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" d="M6 3h6v2h2v2h4V5h2V3h6v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v2h-4v-2h-2v-2h-2v-2h-2v-2H6v-2H4V5h2z"/><path fill="#b98cff" d="M7 5h3v2H7zM6 7h2v2H6z"/><path fill="#5b3f8f" d="M20 5h4v1h-4zM14 17h4v1h-4z"/><path fill="#e3d3ff" d="M8 5h1v1H8z"/></svg>
 ---
 <h2 id="rule">What stays free or earned only</h2>
@@ -23,7 +23,6 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <li>Up to 8 highlighted achievements on your profile, instead of 5.</li>
 <li>Supporter profile banners and profile themes.</li>
 <li>A custom name and a "request to join" mode for your private rooms.</li>
-<li>Playing the bot in your private rooms.</li>
 <li>Supporter chat on our Discord.</li>
 <li>Your help requests, reports and appeals are looked at first. Rules and outcomes are the same for everyone.</li>
 <li>The battle pass's paid track. Its items stay yours only if you're still a Supporter when the season ends.</li>
@@ -43,10 +42,10 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <li>Cosmetics and coins are sold in the game's own shop, where you can try items on your 3D model first. The website sells only Supporter.</li>
 <li>Kinds of cosmetic at launch: hats (halos and horns included), masks and glasses, wings, back items, emotes, win effects, titles, banners and name colours. Shoulder pets, outfits, tails and moving wings come later. Never capes, or anything shaped like a cape or an elytra.</li>
 <li>Outfits are drawn over your own skin and never change your Minecraft skin.</li>
-<li>Your equipped set shows everywhere: matches, ranked included, replays and profiles. You can hide other players' cosmetics in settings. Your own speedrun.com instance shows none.</li>
+<li>Your equipped set shows everywhere: matches, ranked included, replays and profiles. Other players' cosmetics can be hidden only in replays, with the Show Cosmetics switch. Your own RSG and AA instance shows none.</li>
 <li>The shop rotates: items are on sale in limited windows. Some return, some never do, and bundles cost fewer coins.</li>
 <li>Coins have no real-world value and can't be cashed out or transferred.</li>
-<li>Community creators make cosmetics alongside Splitstone, for a share of sales.</li>
+<li>Join the creators' channel on our <a href="https://discord.gg/wxDcZ8NGWt" rel="noopener">Discord</a> to learn how listing your cosmetics on Splitstone works.</li>
 </ul>
 <h2 id="earned">Earned items</h2>
 <ul>

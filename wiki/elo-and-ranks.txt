@@ -15,8 +15,9 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 <ul>
 <li>You start at <b>1000</b> until your placement matches set your rating.</li>
 <li>The <b>K-factor</b> is the most one match can move you. At launch it is <b>80</b> for your first 10 matches after placement, counted again each season, so new ratings settle quickly, then <b>40</b>.</li>
-<li>Once enough people play, Splitstone switches to a fixed K of 40 for everyone, fitted to MCSR Ranked's ratings.</li>
+<li>Once enough people play, Splitstone switches to a fixed K of 40 for everyone.</li>
 <li>A draw counts as half a win: equal players don't move, and the lower-rated player gains a little.</li>
+<li>A gap of more than 400 Elo counts as 400.</li>
 </ul>
 <h2 id="2v2">2v2 and co-op</h2>
 <p>2v2 gives every player a separate 2v2 Elo. After each match it moves by your team's average Elo, the same average that matchmaking uses. It works exactly as 1v1 does: the same starting Elo, K, placement, ranks and decay. Co-op is unrated: it has no Elo, rank or leaderboard.</p>
@@ -40,7 +41,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 </ol>
 <div class="rkf" id="rkf" hidden><label for="rke">Try an Elo</label><input class="field" id="rke" type="number" inputmode="numeric" min="0" max="4000" step="10" value="1000"><p id="rko" aria-live="polite"></p></div>
 </div>
-<p>The divisions are 100 Elo apart, except Bronze's, which start at 0, 400 and 500 because placement scores start at 500. These are the beta's starting lines; beta data sets the final ones.</p>
+<p>The divisions are 100 Elo apart, except Bronze's, which start at 0, 400 and 500 because placement scores start at 500. These are the launch lines; they may be tuned with real data.</p>
 <p class="livec" id="ladc" hidden><i aria-hidden="true"></i><span><b id="ladn1">0</b> players on the 1v1 ladder and <b id="ladn2">0</b> on the 2v2 ladder now: placed, and played in the last 7 days. <a href="../leaderboards.html">See the leaderboards &rarr;</a></span></p>
 <p>Some seed types unlock as you rank up. A match uses only the seed types its lowest-ranked player has unlocked, teammates included.</p>
 <h2 id="inactive">Taking a break</h2>
