@@ -23,6 +23,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <li>Up to 8 highlighted achievements on your profile, instead of 5.</li>
 <li>Supporter profile banners and profile themes.</li>
 <li>A custom name and a "request to join" mode for your private rooms.</li>
+<li>Your private-room replays saved on the server for 10 days, to download and share. Everyone's game keeps its own copy for free.</li>
 <li>Supporter chat on our Discord.</li>
 <li>Your help requests, reports and appeals are looked at first. Rules and outcomes are the same for everyone.</li>
 <li>The battle pass's paid track. Its items stay yours only if you're still a Supporter when the season ends.</li>
