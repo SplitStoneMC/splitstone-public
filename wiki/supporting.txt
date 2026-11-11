@@ -45,7 +45,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <li>Your equipped set shows everywhere: matches, ranked included, replays and profiles. Other players' cosmetics can be hidden only in replays, with the Show Cosmetics switch. Your own RSG and AA instance shows none.</li>
 <li>The shop rotates: items are on sale in limited windows. Some return, some never do, and bundles cost fewer coins.</li>
 <li>Coins have no real-world value and can't be cashed out or transferred.</li>
-<li>Join the creators' channel on our <a href="https://discord.gg/wxDcZ8NGWt" rel="noopener">Discord</a> to learn how listing your cosmetics on Splitstone works.</li>
+<li>Community creators make cosmetics alongside Splitstone, for a share of sales (<a href="creators.html">making cosmetics</a>). Join the creators' channel on our <a href="https://discord.gg/wxDcZ8NGWt" rel="noopener">Discord</a> to learn how listing your cosmetics on Splitstone works.</li>
 </ul>
 <h2 id="earned">Earned items</h2>
 <ul>

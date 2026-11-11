@@ -83,7 +83,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <li>Every player gets a recap card to share.</li>
 <li>Each battle pass follows a season. Free rewards not reached by its end can come back only in a later pass, never in the shop.</li>
 </ul>
-<script defer src="../assets/sample.js?v=a5ce5c02"></script><script defer src="../assets/live-data.js?v=aea781a6"></script>
+<script defer src="../assets/sample.js?v=d31cf130"></script><script defer src="../assets/live-data.js?v=7e69f55a"></script>
 <script>
 /* wiki-content: the tappable 16-week strip (the current week is marked only on sample data, in mock mode) and the playoff points calculator */
 addEventListener('DOMContentLoaded',function(){var D=document,$=function(i){return D.getElementById(i)};

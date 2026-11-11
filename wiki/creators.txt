@@ -1,0 +1,110 @@
+slug: creators
+group: comm
+mat: obs
+acc: obs
+title: Making cosmetics
+nav: Making cosmetics
+summary: Creators make cosmetics for Splitstone's shop alongside Splitstone, for a share of each sale. What you can make, the file formats, how to submit on Discord and the checks before an item goes on sale.
+stat: $0|to sell your items
+facts: $0|to sell, no subscription;;Same|prices as Splitstone's own items;;1|Discord post per item
+keywords: creator creators make making cosmetics art artist submit submission blockbench model texture png emote emotecraft banner win effect hat mask wings back item share revenue payout paid sell made by discord forum workshop ai check
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" d="M4 3h24v18H4z"/><path fill="#b98cff" d="M4 3h24v1H4z"/><path fill="#5b3f8f" d="M9 8h10v2H9zM8 10h12v6H8z"/><path fill="#e3d3ff" d="M10 11h2v2h-2zM16 11h2v2h-2z"/><path fill="#ffd36b" d="M22 6h2v8h-2z"/><path fill="#e9f0ef" d="M22 14h2v2h-2z"/></svg>
+---
+<h2 id="who">Who can sell</h2>
+<ul>
+<li>Community creators make cosmetics alongside Splitstone, for a share of each sale.</li>
+<li>Invited creators come first. Later, any adult who verifies through the payout provider can sell. If you are under 18, a parent or guardian accepts the creators' terms for you.</li>
+<li>Selling costs you nothing and needs no subscription. You get 30% of each sale of your items, and Splitstone 70%.</li>
+<li>Creators are paid monthly, once they are owed more than $10. Items bought with coins earned in the game count the same as bought coins.</li>
+</ul>
+<div class="co"><span><b>Not decided yet:</b> how payouts are sent.</span></div>
+<h2 id="kinds">What you can make</h2>
+<p>At launch the shop sells hats (halos and horns included), masks and glasses, wings that do not move, back items, emotes, win effects, banners, titles and name colours. Never capes, or anything shaped like a cape or an elytra, tool or weapon skins, or kill effects.</p>
+<div class="tw"><table class="wt"><thead><tr><th>Kind</th><th>Files</th><th>Rules</th></tr></thead><tbody>
+<tr><td>Hat, mask or glasses</td><td>model.json and texture.png</td><td>A Blockbench "Java Block/Item" model. 16 units are a block; the head fills 4 to 12 on every axis, facing north (low z). A helmet is one unit larger, 3 to 13. A hat that starts at y 13 is drawn over helmets.</td></tr>
+<tr><td>Wings or back item</td><td>model.json and texture.png</td><td>The body fills 4 to 12 across, 0 (the waist) to 12 (the shoulders) up and 6 to 10 front to back, facing north. A chestplate reaches 5 to 11 front to back and up to 13; keep the model outside it. Wings and back items share one slot. Nothing moves.</td></tr>
+<tr><td>Emote</td><td>animation.json</td><td>An Emotecraft animation (or a GeckoLib animation file). Parts are head, torso, rightArm, leftArm, rightLeg and leftLeg, with angles in radians and 20 ticks a second.</td></tr>
+<tr><td>Banner</td><td>picture.png</td><td>Exactly 64 &times; 128 pixels. It hangs from a pole beside the player, pixel for pixel, so a clear background around a cloth shape works best.</td></tr>
+<tr><td>Win effect</td><td>effect.json</td><td>A particle (firework, flame, soul_fire_flame, end_rod, note, heart, happy_villager, totem_of_undying, enchant or dust), a shape (ring, fountain, spiral or burst), up to four colours, 1 to 4 seconds and at most 150 particles. It stays within about a block around the player.</td></tr>
+<tr><td>Title or name colour</td><td>none</td><td>A title is its text, up to 24 characters. A name colour is one colour that is not one of Supporter's.</td></tr>
+</tbody></table></div>
+<ul>
+<li>Every file is at most 64 kB. A texture is one PNG, 16 to 128 pixels a side.</li>
+<li>Model elements turn about one axis only, in steps of 22.5&deg;.</li>
+<li>Check your files below before you post them.</li>
+</ul>
+<h2 id="prices">Prices</h2>
+<p>Every item of a kind and rarity has one fixed price in coins, the same for creators' items and Splitstone's own, so creators never undercut each other. 100 coins are $1.</p>
+<div class="tw"><table class="wt"><thead><tr><th>Kind</th><th class="n">Common</th><th class="n">Rare</th><th class="n">Epic</th><th class="n">Legendary</th></tr></thead><tbody>
+<tr><td>Titles and name colours</td><td class="n">100</td><td class="n">200</td><td class="n">&ndash;</td><td class="n">&ndash;</td></tr>
+<tr><td>Banners</td><td class="n">150</td><td class="n">250</td><td class="n">400</td><td class="n">&ndash;</td></tr>
+<tr><td>Emotes</td><td class="n">150</td><td class="n">250</td><td class="n">400</td><td class="n">600</td></tr>
+<tr><td>Hats, masks and back items</td><td class="n">250</td><td class="n">400</td><td class="n">600</td><td class="n">800</td></tr>
+<tr><td>Win effects</td><td class="n">300</td><td class="n">500</td><td class="n">700</td><td class="n">900</td></tr>
+<tr><td>Wings</td><td class="n">&ndash;</td><td class="n">600</td><td class="n">900</td><td class="n">1,200</td></tr>
+</tbody></table></div>
+<h2 id="submit">Submitting an item</h2>
+<ol class="steps">
+<li><span><b>Join Splitstone's Discord.</b>The shop's "Join creators on Discord" button takes you there too.</span></li>
+<li><span><b>Read the creators' short rules and take the Creator role.</b>The role comes from a button under the rules. Only members with it can post in the creators' forum channel.</span></li>
+<li><span><b>Post each item in its own post, with its files.</b>Everyone can look and react, so you see what players want.</span></li>
+<li><span><b>Splitstone answers each post.</b>The answer is accepted, or changes needed with what to change.</span></li>
+</ol>
+<h2 id="checks">Checks before sale</h2>
+<ul>
+<li>Your item must be your own art. You confirm in the creators' terms that you own the rights to it.</li>
+<li>If you used AI to make it, tell Splitstone privately. Items carry no AI label in the shop, but AI-made items go through the same similarity check as Splitstone's own.</li>
+<li>The similarity check compares your textures and model with Minecraft 1.16.1's own textures and with every Splitstone item. It looks at the shapes in a texture, not its colours, so a recoloured, scaled or moved copy still matches. A texture that matches 70% or more, or a model of 3 boxes or more that matches 95% or more, is not sold.</li>
+<li>Then a second AI, a different model from any used to make the item, reviews it, and a person approves it before it goes on sale.</li>
+</ul>
+<h2 id="shop">In the shop</h2>
+<ul>
+<li>Your items show "Made by" and your name.</li>
+<li>The shop rotates: items are on sale in limited windows, and players try them on their own 3D model before buying.</li>
+<li>Items are bought only with coins, and never as a random reward.</li>
+</ul>
+<h2 id="check">Check your files</h2>
+<p>Pick the kind, add the files and see whether they meet the rules above. Nothing leaves your computer.</p>
+<div class="ck" id="ck" hidden>
+<div class="ckr"><label for="ck-k">Kind</label><select class="field" id="ck-k"><option value="model">Hat, mask, glasses, wings or back item</option><option value="emote">Emote</option><option value="banner">Banner</option><option value="effect">Win effect</option></select></div>
+<div class="ckr"><label for="ck-f">Files</label><input class="field" type="file" id="ck-f" multiple accept=".json,.png"></div>
+<ul class="ckl" id="ck-out" aria-live="polite"></ul>
+<div class="ckp" id="ck-pic" hidden><canvas id="ck-c" width="128" height="128"></canvas><span id="ck-cap"></span></div>
+</div>
+<noscript><p>The file check needs JavaScript.</p></noscript>
+<script>
+/* wiki-content: the creators' file check, the same rules the admin tool applies on upload (cosmetics/items/README.md) */
+addEventListener('DOMContentLoaded',function(){var D=document,$=function(i){return D.getElementById(i)},box=$('ck');if(!box)return;box.hidden=false;
+var MAX=65536,P=['firework','flame','soul_fire_flame','end_rod','note','heart','happy_villager','totem_of_undying','enchant','dust'],S=['ring','fountain','spiral','burst'],
+PARTS=['head','torso','rightArm','leftArm','rightLeg','leftLeg'];
+function li(ok,t){var e=D.createElement('li');e.className=ok?'ok':'no';e.textContent=(ok?'✓ ':'✗ ')+t;$('ck-out').appendChild(e);return ok}
+function txt(f){return new Promise(function(r){var x=new FileReader();x.onload=function(){r(x.result)};x.readAsText(f)})}
+function png(f){return new Promise(function(r){var u=URL.createObjectURL(f),i=new Image();i.onload=function(){r(i)};i.onerror=function(){r(null)};i.src=u})}
+function size(f){return li(f.size<=MAX,f.name+': '+Math.ceil(f.size/1024)+' kB'+(f.size<=MAX?'':' (at most 64 kB)'))}
+function pick(fs,ext){return fs.filter(function(f){return f.name.toLowerCase().endsWith(ext)})}
+function show(img,cap){var c=$('ck-c'),g=c.getContext('2d'),k=Math.max(1,Math.floor(128/Math.max(img.width,img.height)));c.width=img.width*k;c.height=img.height*k;g.imageSmoothingEnabled=false;g.drawImage(img,0,0,c.width,c.height);$('ck-cap').textContent=cap;$('ck-pic').hidden=false}
+function model(j){var o;try{o=JSON.parse(j)}catch(e){return li(false,'model.json is not valid JSON')}
+ var el=o&&o.elements;if(!Array.isArray(el)||!el.length)return li(false,'The model has no elements: export it as a Blockbench "Java Block/Item" model');
+ var pt=function(p){return Array.isArray(p)&&p.length==3&&p.every(function(n){return typeof n=='number'})},bad=0,turn=0;
+ el.forEach(function(e){if(!e||!pt(e.from)||!pt(e.to))bad++;var r=e&&e.rotation;if(r&&(['x','y','z'].indexOf(r.axis)<0||typeof r.angle!='number'||Math.abs(r.angle/22.5-Math.round(r.angle/22.5))>1e-6))turn++});
+ li(!bad,bad?bad+' element(s) without a from and a to':el.length+' element(s), each with a from and a to');
+ return li(!turn,turn?turn+' element(s) turn other than about one axis in 22.5° steps':'Every turn is about one axis in 22.5° steps')&&!bad}
+function run(){var out=$('ck-out');out.textContent='';$('ck-pic').hidden=true;var k=$('ck-k').value,fs=[].slice.call($('ck-f').files||[]);if(!fs.length)return;
+ fs.forEach(size);
+ if(k=='model'){var m=pick(fs,'.json')[0],t=pick(fs,'.png')[0];li(!!m,'model.json'+(m?' added':' is missing'));li(!!t,'texture.png'+(t?' added':' is missing'));
+  if(m)txt(m).then(model);
+  if(t)png(t).then(function(i){if(!i)return li(false,t.name+' is not a PNG');var ok=i.width>=16&&i.width<=128&&i.height>=16&&i.height<=128;li(ok,'Texture '+i.width+' × '+i.height+' pixels'+(ok?'':' (16 to 128 a side)'));show(i,'Your texture')})}
+ if(k=='banner'){var b=pick(fs,'.png')[0];if(!li(!!b,'picture.png'+(b?' added':' is missing')))return;
+  png(b).then(function(i){if(!i)return li(false,b.name+' is not a PNG');var ok=i.width==64&&i.height==128;li(ok,'Banner '+i.width+' × '+i.height+' pixels'+(ok?'':' (exactly 64 × 128)'));show(i,'Your banner')})}
+ if(k=='effect'){var f=pick(fs,'.json')[0];if(!li(!!f,'effect.json'+(f?' added':' is missing')))return;
+  txt(f).then(function(j){var o;try{o=JSON.parse(j)}catch(e){return li(false,'effect.json is not valid JSON')}
+   li(P.indexOf(o.particle)>=0,'Particle: '+(o.particle||'none')+(P.indexOf(o.particle)>=0?'':' (one of '+P.join(', ')+')'));
+   li(S.indexOf(o.shape)>=0,'Shape: '+(o.shape||'none')+(S.indexOf(o.shape)>=0?'':' (ring, fountain, spiral or burst)'));
+   var c=o.colours||[];li(Array.isArray(c)&&c.length<=4&&c.every(function(x){return /^[0-9a-fA-F]{6}$/.test(x)}),'Colours: '+(c.length||0)+' (up to four, six hex digits each)');
+   li(o.seconds>=1&&o.seconds<=4,'Seconds: '+o.seconds+' (1 to 4)');li(o.count>=1&&o.count<=150&&o.count%1==0,'Particles: '+o.count+' (1 to 150)')})}
+ if(k=='emote'){var a=pick(fs,'.json')[0];if(!li(!!a,'animation.json'+(a?' added':' is missing')))return;
+  txt(a).then(function(j){var o;try{o=JSON.parse(j)}catch(e){return li(false,'animation.json is not valid JSON')}
+   var s=JSON.stringify(o),used=PARTS.filter(function(p){return s.indexOf('"'+p+'"')>=0});li(used.length>0,used.length?'Moves '+used.join(', '):'Moves none of head, torso, rightArm, leftArm, rightLeg or leftLeg');
+   li(s.indexOf('"bend"')<0,s.indexOf('"bend"')<0?'No bend values':'bend is ignored: arms and legs do not bend')})}}
+$('ck-f').addEventListener('change',run);$('ck-k').addEventListener('change',run)});
+</script>
