@@ -15,9 +15,8 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <li>Community creators make cosmetics alongside Splitstone, for a share of each sale.</li>
 <li>Invited creators come first. Later, any adult who verifies through the payout provider can sell. If you are under 18, a parent or guardian accepts the creators' terms for you.</li>
 <li>Selling costs you nothing and needs no subscription. You get 30% of each sale of your items, and Splitstone 70%.</li>
-<li>Creators are paid monthly, once they are owed more than $10. Items bought with coins earned in the game count the same as bought coins.</li>
+<li>Creators are paid monthly by PayPal, once they are owed more than $10. Items bought with coins earned in the game count the same as bought coins.</li>
 </ul>
-<div class="co"><span><b>Not decided yet:</b> how payouts are sent.</span></div>
 <h2 id="kinds">What you can make</h2>
 <p>At launch the shop sells hats (halos and horns included), masks and glasses, wings that do not move, back items, emotes, win effects, banners, titles and name colours. Never capes, or anything shaped like a cape or an elytra, tool or weapon skins, or kill effects.</p>
 <div class="tw"><table class="wt"><thead><tr><th>Kind</th><th>Files</th><th>Rules</th></tr></thead><tbody>
