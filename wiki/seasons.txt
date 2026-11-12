@@ -79,7 +79,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <h2 id="season-end">When a season ends</h2>
 <ul>
 <li>Ratings fully reset, and everyone plays <a href="elo-and-ranks.html#placement">placement</a> again.</li>
-<li>Season-end titles: special titles for 1st, 2nd and 3rd, then top 5, 10, 20, 50 and 100.</li>
+<li>Season-end titles: special titles for 1st, 2nd and 3rd, then top 5, 10, 20, 50 and 100, by your place on the leaderboard when the season ends.</li>
 <li>Every player gets a recap card to share.</li>
 <li>Each battle pass follows a season. Free rewards not reached by its end can come back only in a later pass, never in the shop.</li>
 </ul>

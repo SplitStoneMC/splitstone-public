@@ -15,7 +15,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 <ul>
 <li>You start at <b>1000</b> until your placement matches set your rating.</li>
 <li>The <b>K-factor</b> is the most one match can move you. At launch it is <b>80</b> for your first 10 matches after placement, counted again each season, so new ratings settle quickly, then <b>40</b>, and <b>30</b> from your 100th match of the season, so a settled rating doesn't swing as much on one good or bad week.</li>
-<li>Once enough people play, Splitstone switches to a fixed K of 40 for everyone.</li>
+<li>Once enough people play, Splitstone drops the faster start: K is 40 for everyone, and still 30 from your 100th match of the season.</li>
 <li>A draw counts as half a win: equal players don't move, and the lower-rated player gains a little.</li>
 <li>A gap of more than 400 Elo counts as 400.</li>
 </ul>
