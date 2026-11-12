@@ -6,7 +6,7 @@ title: Elo and ranks
 nav: Elo and ranks
 summary: How your rating moves, how placement sets your starting Elo, the seven ranks and the Top 20, and what happens when you stop playing for a while.
 stat: 7|ranks, then Top 20
-facts: 5|placement matches;;80|K for your first 10 matches;;40|K after that;;7|ranks, then Top 20
+facts: 5|placement matches;;80|K for your first 10 matches;;40|K up to your 100th;;30|K after that;;7|ranks, then Top 20
 keywords: elo rating k-factor rank ranks placement bronze silver gold platinum diamond obsidian netherite top 20 division divisions decay inactive leaderboard 2v2 elo season reset seed types unlock draw
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" d="M1 19h5v5H1z"/><path fill="#c3ccd0" d="M6 16h5v8H6z"/><path fill="#c9a03c" d="M11 13h5v11h-5z"/><path fill="#a9def9" d="M16 10h5v14h-5z"/><path fill="#5fe0e6" d="M21 7h5v17h-5z"/><path fill="#5b3f8f" d="M26 4h5v20h-5z"/><path fill="#fff" fill-opacity=".3" d="M1 19h5v1H1zM6 16h5v1H6zM11 13h5v1h-5zM16 10h5v1h-5zM21 7h5v1h-5zM26 4h5v1h-5z"/><path fill="#000" fill-opacity=".3" d="M5 20h1v4H5zM10 17h1v7h-1zM15 14h1v10h-1zM20 11h1v13h-1zM25 8h1v16h-1zM30 5h1v19h-1z"/><path fill="#ffd08a" d="M27 0h1v4h-1zM28 0h3v2h-3z"/></svg>
 ---
@@ -14,7 +14,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 <p>Elo is a number that rises when you win and falls when you lose. Beating a higher-rated player moves it more than beating a lower-rated one.</p>
 <ul>
 <li>You start at <b>1000</b> until your placement matches set your rating.</li>
-<li>The <b>K-factor</b> is the most one match can move you. At launch it is <b>80</b> for your first 10 matches after placement, counted again each season, so new ratings settle quickly, then <b>40</b>.</li>
+<li>The <b>K-factor</b> is the most one match can move you. At launch it is <b>80</b> for your first 10 matches after placement, counted again each season, so new ratings settle quickly, then <b>40</b>, and <b>30</b> from your 100th match of the season, so a settled rating doesn't swing as much on one good or bad week.</li>
 <li>Once enough people play, Splitstone switches to a fixed K of 40 for everyone.</li>
 <li>A draw counts as half a win: equal players don't move, and the lower-rated player gains a little.</li>
 <li>A gap of more than 400 Elo counts as 400.</li>
