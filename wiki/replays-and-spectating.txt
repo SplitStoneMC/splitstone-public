@@ -8,7 +8,7 @@ summary: Review where you lost time, download top players' matches, watch matche
 stat: 0 s|delay when watching live
 facts: Top 100|matches saved for good;;Free|every replay and analysis feature;;2|coaches per player or team;;0 s|delay when watching live
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" d="M3 3h26v16H3z"/><path fill="#2f4a46" d="M4 4h24v14H4z"/><path fill="#e9f0ef" d="M13 7h2v1h2v1h2v1h2v2h-2v1h-2v1h-2v1h-2z"/><path fill="#ff5a6e" d="M24 5h3v2h-3z"/><path fill="#7fd6c4" d="M5 16h14v1H5z"/><path fill="#9db3b1" d="M14 19h4v2h-4zM9 21h14v2H9z"/></svg>
-keywords: replay replays analysis splits time lost inventory download saved top 100 permanent spectate spectating watch live list streaming coach coaching broadcast tools spectator accounts organisers
+keywords: replay replays analysis splits time lost inventory download saved top 100 permanent spectate spectating watch live list streaming coach coaching coach directory hire broadcast tools spectator accounts organisers
 ---
 <h2 id="analysis">What a replay shows</h2>
 <p>Replays show where you lost time and why.</p>
@@ -34,7 +34,7 @@ keywords: replay replays analysis splits time lost inventory download saved top 
 </ul>
 <h2 id="kept">Which matches are saved</h2>
 <ul>
-<li>Splitstone's server keeps every match's replay for <b>10 days</b>, all sides, in every mode: 1v1 and 2v2 speedrun matches, weekly cups, Majors, the playoffs, game modes and co-op. Solo practice rooms aren't saved.</li>
+<li>Splitstone's server keeps every match's replay for <b>10 days</b>, all sides, in every mode: 1v1 and 2v2 speedrun matches, weekly cups, Majors, the playoffs and game modes. Solo practice rooms aren't saved.</li>
 <li>A private room's match is saved on the server only for the <a href="supporting.html#supporter">Supporters</a> in it, all sides; every player's own game keeps its copy either way. A host can switch off saving on the server for their room.</li>
 <li>A ranked 1v1 or 2v2, weekly cup or Major match is kept for good when <b>every player in it is in the top 100</b>.</li>
 <li>The match history shows how long each replay has left on the server, or that it is kept for good, so you can download it in time.</li>
@@ -57,9 +57,17 @@ keywords: replay replays analysis splits time lost inventory download saved top 
 </ul>
 <h2 id="coaching">Coaching</h2>
 <ul>
-<li>A player, or a 2v2 or co-op team, can have up to two coaches in a match. Coaches come through your party: a party of up to three can queue a 1v1, where the leader plays and the others coach, and a party of up to four can queue 2v2 or co-op with two playing. A coach must be a friend of the player they coach, or hired by them from the coach directory.</li>
+<li>A player, or a 2v2 team, can have up to two coaches in a match. Coaches come through your party: a party of up to three can queue a 1v1, where the leader plays and the others coach, and a party of up to four can queue 2v2 with two playing. A coach must be a friend of the player they coach, or hired by them from the coach directory.</li>
 <li>In ranked, a coach sees only their own player or team, never the opponent, since both sides play the same seed.</li>
-<li>A coach can talk to their player during the match. In 2v2 and co-op, the coach talks to one teammate, chosen by the team.</li>
+<li>A coach can talk to their player during the match. In 2v2, the coach talks to one teammate, chosen by the team.</li>
+</ul>
+<h2 id="coach-directory">Coach directory</h2>
+<ul>
+<li>Watch &rsaquo; Coaches lists coaches who published a card: their topics, languages, free or paid, a short line and an optional link, with their ranked 1v1 rank, season peak, thumbs up and sessions. &ldquo;Coach on Splitstone&rdquo; there makes, edits or removes your own card.</li>
+<li>Filter by name, topic, language, online now, free only, or coaches who take beginners. Cards are ordered by thumbs up.</li>
+<li>Request a coach who is online and available; they have 2 minutes to accept. Accepted, they join your party as your coach, without needing to be friends.</li>
+<li>Any payment is arranged between you and the coach, not through Splitstone.</li>
+<li>After a session you can give the coach one thumbs up, within 7 days. Any player can report a coach&rsquo;s card.</li>
 </ul>
 <h2 id="broadcast">Broadcast tools</h2>
 <p>Organisers approved for an event get broadcast tools: camera control and split and timeline screens. A live data feed for stream overlays comes later.</p>

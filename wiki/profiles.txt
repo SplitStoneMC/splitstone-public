@@ -23,7 +23,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" 
 <li>A trophy case of event wins and records held, and earned achievements.</li>
 <li>A replay you pin.</li>
 <li>Live status, with buttons to watch or join.</li>
-<li>Favourite 2v2 and co-op partners with each pair's record, mutual friends and "member since".</li>
+<li>Favourite 2v2 partners with each pair's record, mutual friends and "member since".</li>
 <li>Linked social accounts, a short bio, a cosmetics showcase, and your country if you choose to show it.</li>
 </ul>
 <p>You choose and order your profile's sections, so you can lead with stats or with cosmetics.</p>

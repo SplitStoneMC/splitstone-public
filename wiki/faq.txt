@@ -10,14 +10,14 @@ keywords: faq question free pay advantage alts alt accounts curseforge mac linux
 ---
 <h2 id="basics">The basics</h2>
 <div class="qa">
-<details id="about"><summary>What is Splitstone?</summary><div><p>An independent Minecraft speedrunning platform: 1v1 and 2v2 speedrun matches, co-op, private rooms, practice tools, replays, seasons and events. It runs its own matchmaking, ratings and service. It is not an official Minecraft product.</p></div></details>
+<details id="about"><summary>What is Splitstone?</summary><div><p>An independent Minecraft speedrunning platform: 1v1 and 2v2 speedrun matches, rotating game modes, private rooms, practice tools, replays, seasons and events. It runs its own matchmaking, ratings and service. It is not an official Minecraft product.</p></div></details>
 <details id="free"><summary>Is it free?</summary><div><p>Yes. Playing ranked, the practice tools and replay analysis are free, and so is the battle pass. There is an optional monthly subscription, Supporter (<a href="supporting.html">Supporting Splitstone</a>).</p></div></details>
 <details id="paying"><summary>Does paying help me in ranked?</summary><div><p>No. Supporter adds profile, private-room and social extras. Rank marks such as gold, the crown, medals and the lava glow can only be earned, and bought cosmetics never appear on leaderboard rows.</p></div></details>
 <details id="release"><summary>When can I play?</summary><div><p>Now. Splitstone is out and open to everyone. Get it from the <a href="../download.html">download page</a>.</p></div></details>
 </div>
 <h2 id="setup">Install and setup</h2>
 <div class="qa">
-<details id="launchers"><summary>Which launchers work?</summary><div><p>Prism, MultiMC, the Modrinth App and the official Minecraft Launcher. Prism, MultiMC and the Modrinth App all use the same Modrinth pack (<a href="install.html#launchers">Install</a>).</p></div></details>
+<details id="launchers"><summary>Which launchers work?</summary><div><p>Prism, MultiMC, the Modrinth App and the official Minecraft Launcher. Prism, MultiMC and the Modrinth App all open the same pack file, downloaded from this website (<a href="install.html#launchers">Install</a>).</p></div></details>
 <details id="curseforge"><summary>Why not CurseForge?</summary><div><p>CurseForge packs may only include mods hosted on CurseForge or on its approved list, and most speedrun-legal builds are neither.</p></div></details>
 <details id="mac-linux"><summary>Does it work on Mac and Linux?</summary><div><p>Yes. The mod and the pack are made for Windows, macOS and Linux. On macOS the pack uses Sodium's Mac build.</p></div></details>
 <details id="other-instances"><summary>Can I keep my other instances?</summary><div><p>Yes. Splitstone runs in its own instance, next to any others in the same launcher (<a href="install.html#own-instance">why</a>).</p></div></details>

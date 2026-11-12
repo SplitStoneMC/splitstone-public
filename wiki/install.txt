@@ -20,7 +20,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <div class="tw"><table class="wt"><thead><tr><th>Launcher</th><th>Supported</th><th>Notes</th></tr></thead><tbody>
 <tr><td>Prism Launcher</td><td>Yes</td><td>Imports the pack file (.mrpack).</td></tr>
 <tr><td>Modrinth App</td><td>Yes</td><td>Imports the pack file (.mrpack).</td></tr>
-<tr><td>MultiMC</td><td>Yes</td><td>Imports the Modrinth pack file (.mrpack): Add Instance, then Import from zip.</td></tr>
+<tr><td>MultiMC</td><td>Yes</td><td>Imports the pack file (.mrpack): Add Instance, then Import from zip.</td></tr>
 <tr><td>Official Minecraft Launcher</td><td>Yes</td><td>Opening RSG and All Advancements is done by hand (<a href="categories.html">why</a>).</td></tr>
 <tr><td>CurseForge</td><td>No</td><td>CurseForge packs may only include mods hosted on CurseForge or on its approved list, which leaves out most speedrun-legal builds.</td></tr>
 </tbody></table></div>

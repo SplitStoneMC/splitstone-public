@@ -1,0 +1,32 @@
+slug: public-rooms
+group: play
+mat: stone
+acc: stone
+title: Public rooms
+nav: Public rooms
+summary: Rooms open all day where players of any rank play the same ranked seeds with no Elo at stake.
+stat: 24|players per room
+facts: 24|players per room;;0|Elo change;;7|seeds a round;;1 min|between seeds
+keywords: public room rooms casual unranked practice extra modes seed round points firsts nether bastion fortress stronghold end no elo
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" d="M2 4h28v16H2z"/><path fill="#1a2423" d="M4 6h24v12H4z"/><path fill="#b98cff" d="M7 9h4v4H7zM14 9h4v4h-4zM21 9h4v4h-4z"/><path fill="#ffd08a" d="M7 14h4v2H7zM14 14h4v2h-4zM21 14h4v2h-4z"/></svg>
+---
+<h2 id="joining">Joining</h2>
+<ul>
+<li>Public rooms are in Extra Modes. Anyone can join, and a room holds up to 24 players; when every room is full, joining opens another.</li>
+<li>No Elo moves and nothing is at stake: leaving or giving up a seed costs nothing.</li>
+<li>You can queue Ranked 1v1, Ranked 2v2 or a game mode while you're in a public room. A match found comes first: you leave the current seed and are back in the room afterwards.</li>
+</ul>
+<h2 id="seeds">Seeds</h2>
+<ul>
+<li>Once two players are in, a seed starts a minute after the last one ended. Seeds are ranked seeds from the pool.</li>
+<li>Everyone plays until the seed ends: after its first finish, the others get extra time (12 minutes below Gold, 10 from Gold to Diamond, 8 from Diamond up), or the seed ends when half its players have finished.</li>
+<li>If nobody finishes, the seed ends after 40 minutes below Gold, 30 from Gold to Diamond, or 25 from Diamond up, and places go by how far players got.</li>
+<li>Between seeds, and while you wait after joining mid-seed, you practise in your own world. The next seed pulls you in.</li>
+<li>If your game drops, you're out of that seed and keep your place in the room for 2 minutes.</li>
+</ul>
+<h2 id="points">Places and points</h2>
+<ul>
+<li>Places follow finishing order. A seed's win is 1 point, and seven seeds make a round; the round's winner is shown and its points start again, with the day's points kept beside them. Days are counted in UTC.</li>
+<li>Each seed shows its firsts: the first player into the Nether, a bastion, a fortress, the stronghold and the End, and the first to finish. A switch shows who was first most often over the day.</li>
+<li>Public rooms keep no standings beyond the day.</li>
+</ul>

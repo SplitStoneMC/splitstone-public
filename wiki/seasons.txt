@@ -27,7 +27,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <li><b>Week 14:</b> a break, and the last week that earns ladder points.</li>
 <li><b>Weeks 15 and 16:</b> the playoffs, over two weekends. The season ends after the final.</li>
 </ul>
-<p>Only Majors, the playoffs and the Netherite cup are events. 2v2 runs the same season system, starting with its own weekend cups; 2v2 Majors and playoffs come later. Co-op has no season, because it is unrated.</p>
+<p>Only Majors, the playoffs and the Netherite cup are events. 2v2 runs the same season system, starting with its own weekend cups; 2v2 Majors and playoffs come later.</p>
 <h2 id="active-weeks">Making a week count</h2>
 <p>Play <b>10 ranked matches</b> in a week and that week counts: your Elo when the week ends earns ladder points, <b>1 for every 25 Elo above 1800</b> (2100 earns 12, 2600 earns 32), and your cup for that weekend unlocks as soon as your 10th ranked match of the week is played, while the cup is open. Your best 10 of weeks 1 to 14 count. Points from Elo reward how high you climb and how far ahead you are, not just your place. No single snapshot of the ladder decides a playoff place.</p>
 <h2 id="top-cup">Weekend cups</h2>

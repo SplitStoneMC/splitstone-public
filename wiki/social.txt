@@ -16,7 +16,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <li>When you first launch Splitstone, you choose who can send you friend requests: everyone, friends of friends and people you've played with, or nobody. You can change it later.</li>
 <li>A friends list holds up to 999 friends.</li>
 <li>Friends see whether you're online and what you're doing, such as playing ranked or practising.</li>
-<li>You can invite a friend to your party, a private room, your 2v2 or co-op world, or to watch or coach your match.</li>
+<li>You can invite a friend to your party, a private room, your 2v2 world, or to watch or coach your match.</li>
 </ul>
 <h2 id="parties">Parties</h2>
 <ul>
@@ -26,12 +26,12 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 </ul>
 <h2 id="blocking">Blocking</h2>
 <ul>
-<li>Blocking hides that player's messages, friend requests, invites and voice, and they're never your random 2v2 or co-op teammate.</li>
+<li>Blocking hides that player's messages, friend requests, invites and voice, and they're never your random 2v2 teammate.</li>
 <li>You can still meet them as an opponent. In that match they can't chat to you, and names stay hidden until it ends.</li>
 </ul>
 <h2 id="chat">Chat</h2>
 <ul>
-<li>There are direct messages, party chat, team chat in 2v2 and co-op, chat between opponents in a match, and chat in public rooms. Spectators can't message the player they watch.</li>
+<li>There are direct messages, party chat, team chat in 2v2, chat between opponents in a match, and chat in public rooms. Spectators can't message the player they watch.</li>
 <li>A filter for swearing and slurs is on by default. Players 18 or older can turn it off; players who said they are 13&ndash;17 can&rsquo;t.</li>
 <li>Chat is kept for 30 days, for moderation only.</li>
 <li>You can mute a player, or everyone for one match.</li>
@@ -40,7 +40,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <p>Four voice channels at launch:</p>
 <ul>
 <li><b>Party voice.</b></li>
-<li><b>Team voice</b> in 2v2 and co-op.</li>
+<li><b>Team voice</b> in 2v2 and Swap.</li>
 <li><b>Coach voice</b> between a coach and their player.</li>
 <li><b>Room voice</b> for everyone in a private room, if the host turns it on.</li>
 </ul>

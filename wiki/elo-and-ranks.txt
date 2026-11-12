@@ -19,8 +19,8 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 <li>A draw counts as half a win: equal players don't move, and the lower-rated player gains a little.</li>
 <li>A gap of more than 400 Elo counts as 400.</li>
 </ul>
-<h2 id="2v2">2v2 and co-op</h2>
-<p>2v2 gives every player a separate 2v2 Elo. After each match it moves by your team's average Elo, the same average that matchmaking uses. It works exactly as 1v1 does: the same starting Elo, K, placement, ranks and decay. Co-op is unrated: it has no Elo, rank or leaderboard.</p>
+<h2 id="2v2">2v2</h2>
+<p>2v2 gives every player a separate 2v2 Elo. After each match it moves by your team's average Elo, the same average that matchmaking uses. It works exactly as 1v1 does: the same starting Elo, K, placement, ranks and decay.</p>
 <h2 id="placement">Placement matches</h2>
 <p>New players, and every player after a season reset, play <b>5</b> placement matches. Each one scores how far you got, not how fast, and your starting Elo is the average of the five:</p>
 <div class="tw"><table class="wt"><thead><tr><th>Furthest point reached</th><th class="n">Score</th></tr></thead><tbody>

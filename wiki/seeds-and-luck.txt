@@ -24,11 +24,11 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#6b4a32" 
 <p>Splitstone standardizes the luck that decides runs, including the dragon's perch, which happens the same way for everyone, and woodlighting. Splitstone also places the first monsters near a stronghold on the same spots for every player, gives every stronghold in a match the same rooms and layout with no caves, dungeons or mineshaft spawners cutting into it, and spawns no monsters on a bastion's roofs and wall tops or under a desert temple. Everything else stays vanilla.</p>
 <h2 id="where">Where it applies</h2>
 <ul>
-<li><b>Standardized:</b> Ranked 1v1, 2v2, co-op, game modes, and private rooms playing any of them, solo practice rooms included.</li>
+<li><b>Standardized:</b> Ranked 1v1, 2v2, game modes, and private rooms playing any of them, solo practice rooms included.</li>
 <li><b>Vanilla:</b> RSG and All Advancements, which you play in your own legal instance (<a href="categories.html">RSG and AA</a>), and single-player worlds, such as the community <a href="practice.html">practice maps</a>.</li>
 </ul>
 <h2 id="teams">Luck in a shared world</h2>
-<p>In 2v2 and co-op, each team has one luck sequence that both teammates share. The team's Nth barter, blaze rod or flint matches the other team's Nth, whichever teammate gets it. Team totals stay equal however the teammates split the work.</p>
+<p>In 2v2 and other team matches, each team has one luck sequence that both teammates share. The team's Nth barter, blaze rod or flint matches the other team's Nth, whichever teammate gets it. Team totals stay equal however the teammates split the work.</p>
 <ul>
 <li>The host gets the standardized spawn point; the teammate who joins spawns at a normal random spot nearby.</li>
 <li>No ghast spawns within 5 chunks of either teammate.</li>
