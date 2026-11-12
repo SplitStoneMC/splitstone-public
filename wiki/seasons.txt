@@ -23,7 +23,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <li><b>All season:</b> ranked play. A week runs from Sunday 9 PM ET to the next Sunday 9 PM ET.</li>
 <li><b>Week 1:</b> placements, with no cups.</li>
 <li><b>Weeks 2, 3, 5, 6, 7, 9, 10, 11 and 12:</b> the Netherite cup, from Friday 9 PM to Sunday 9 PM ET. The other ranks' cups run every weekend from week 2.</li>
-<li><b>Weeks 4, 8 and 13:</b> Majors.</li>
+<li><b>Weeks 4, 8 and 13:</b> Majors. A Major can move to another week to stay clear of a holiday or another tournament; the <a href="../events.html">Events page</a> always shows the dates.</li>
 <li><b>Week 14:</b> a break, and the last week that earns ladder points.</li>
 <li><b>Weeks 15 and 16:</b> the playoffs, over two weekends. The season ends after the final.</li>
 </ul>
