@@ -21,6 +21,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" 
 <li>A personal-best card: personal best, best splits and sum of best.</li>
 <li>Your 3D model in your equipped cosmetics, with a chosen title or banner. <a href="supporting.html#supporter">Supporters</a> also get supporter profile banners and profile themes.</li>
 <li>A trophy case of event wins and records held, and earned achievements.</li>
+<li>Favourite partners: the three teammates you played the most 2v2 and co-op matches with, with your 2v2 record and best co-op time together.</li>
 <li>A replay you pin.</li>
 <li>Live status, with buttons to watch or join.</li>
 <li>Favourite 2v2 partners with each pair's record, mutual friends and "member since".</li>

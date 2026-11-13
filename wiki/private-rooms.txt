@@ -27,7 +27,10 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#9db3b1" 
 <p>Rooms don't play RSG or All Advancements; Splitstone opens those in your own instance (<a href="categories.html">RSG and AA</a>).</p>
 <h2 id="options">Host options</h2>
 <ul>
-<li>A filtered seed or a set seed.</li>
+<li>A filtered seed or a set seed. The Seeds row holds the Overworld seed; the button beside it opens the Nether seed and the RNG seed too. The End always uses the Overworld seed.</li>
+<li>The Nether seed is filtered when the Overworld seed is filtered. With a set Overworld seed it is that same seed, unless you choose a filtered one. You can also type one.</li>
+<li>The RNG seed decides the <a href="seeds-and-luck.html#luck">standardized luck</a>. It is the Overworld seed unless you type one.</li>
+<li>Any typed seed stops the room counting. Reroll needs a filtered Overworld seed and keeps a typed Nether or RNG seed.</li>
 <li>Which seed types and which bastion types can come up: include or leave out several of either list, or of both. If the pool has no seeds left of a type you chose, another of your types is played and the loading screen says so; if none of them has seeds left, the room says so and won't start, so pick other types. Rooms never play random seeds.</li>
 <li>Start at a chosen split, such as Nether entry or the End.</li>
 <li>How teams are made: chosen by the host, random, or balanced by Elo, and the relay region for team and co-op rooms.</li>
