@@ -4,10 +4,10 @@ mat: stone
 acc: stone
 title: Matchmaking
 nav: Matchmaking
-summary: How queues work, who you get paired with, when a bot is offered, and how 2v2 teams are found.
+summary: How queues work, who you get paired with, and how 2v2 teams are found.
 stat: &plusmn;50|Elo first search range
-facts: &plusmn;50|Elo searched first;;&plusmn;450|search width at the bot offer;;5:30|bot offer in queue;;1 in 5|games can be a bot
-keywords: queue matchmaking pairing elo forfeit rate bot bots copy bot copy bots top 75 region regions automatic global pool 2v2 swap teammate party dodge cancel decline in line queue ban
+facts: &plusmn;50|Elo searched first;;&plusmn;250|search width at 2:30;;&plusmn;450|search width at 5:30
+keywords: queue matchmaking pairing elo forfeit rate region regions automatic global pool 2v2 swap teammate party dodge cancel decline in line queue ban
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" d="M1 7h8v8H1z"/><path fill="#1a2423" d="M3 10h1v1H3zM6 10h1v1H6z"/><path fill="#ffb08a" d="M23 7h8v8h-8z"/><path fill="#1a2423" d="M25 10h1v1h-1zM28 10h1v1h-1z"/><path fill="#9db3b1" d="M10 10h2v2h-2zM20 10h2v2h-2z"/><path fill="#ffd08a" d="M15 8h2v2h2v2h-2v2h-2v-2h-2v-2h2z"/></svg>
 ---
 <h2 id="queues">Queues</h2>
@@ -19,21 +19,12 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 </ul>
 <h2 id="pairing">Who you play</h2>
 <p>You're paired by Elo and by how often you forfeit. Close Elo comes first, and the allowed gap widens the longer you wait.</p>
-<p>The starting numbers, which will be tuned with real players: the search starts at &plusmn;50 Elo and widens steadily to &plusmn;250 by 2:30, then to &plusmn;450 by the bot offer at 5:30, and keeps widening at that pace until you find a match. You can also set your matchmaking speed to fast, balanced or accurate; it starts on balanced.</p>
-<h2 id="bots">Bots</h2>
-<div class="co"><span><b>Not at launch:</b> bots aren't built yet, so no bot match is offered. Until they come, the search keeps widening.</span></div>
-<ul>
-<li>Every rank has a bot. After about 5:30 in the ranked queue you're offered a bot match, which you can accept or decline. A bot match counts for Elo.</li>
-<li>Players in the top 75 are offered copy bots of other top-75 players who opted in; everyone else is offered their rank's bot.</li>
-<li>You can take at most one bot match in every 5 games, except while few players are online.</li>
-<li>2v2 and game-mode queues offer bots the same way. A 2v2 team's bots sit around the team's average Elo.</li>
-<li>Players in the top 75 can choose to let Splitstone build a bot that plays like them, from their own detailed stats. No copy bot exists without that player's consent.</li>
-</ul>
+<p>The starting numbers, which will be tuned with real players: the search starts at &plusmn;50 Elo and widens steadily to &plusmn;250 by 2:30, then to &plusmn;450 by 5:30, and keeps widening at that pace until you find a match. You can also set your matchmaking speed to fast, balanced or accurate; it starts on balanced.</p>
 <h2 id="teams">2v2</h2>
 <ul>
 <li>A 2v2 team's strength is the plain average of its two players' 2v2 Elo. A premade duo can be matched against two random players.</li>
 <li>1v1 is one global pool, because each player plays their own world. In 2v2 and Swap only teammates are matched by region, because they share a world through a relay there; a 2v2 team can meet a team from any region.</li>
-<li>Your region is the nearest of five (North America, Europe, Asia, Oceania and the Middle East), found automatically, and you can pick any of them in settings. Queueing alone, you can turn on "join the global pool" to find a teammate anywhere. In a party, the leader picks the region.</li>
+<li>Your region is the nearest of four (North America, Europe, Asia and Oceania), found automatically, and you can pick any of them in settings. The Middle East has no server yet, so players there play on Europe. Queueing alone, you can turn on "join the global pool" to find a teammate anywhere. In a party, the leader picks the region.</li>
 <li>Players you've blocked are never given to you as a random teammate.</li>
 </ul>
 <p>Swap can also be played by one duo alone, against the clock and its best times, with no opposing team.</p>
