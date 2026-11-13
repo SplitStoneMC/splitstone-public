@@ -33,7 +33,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <h2 id="top-cup">Weekend cups</h2>
 <ul>
 <li>Every rank has its own weekend cup. You can enter only the cup for your rank, taken when the cup opens and kept for the weekend.</li>
-<li>The top cup is the <b>Netherite cup</b>: every Netherite player and the Top 20. It runs on 9 weekends and is the only cup that gives playoff points; your best 6 of 9 count. The other cups give cosmetic rewards.</li>
+<li>The top cup is the <b>Netherite cup</b>: every Netherite player and the top 64 on the leaderboard, whatever their Elo; players level at 64th are all in. It runs on 9 weekends and is the only cup that gives playoff points; your best 6 of 9 count. The other cups give cosmetic rewards.</li>
 <li>A cup is a weekend 1v1 league of <b>7</b> matches at launch, played whenever you're online over the weekend. This may change.</li>
 <li>Every match has its own seed, so no seed can be scouted or shared.</li>
 <li>Swiss pairing: each match is against a player on the same cup record, widening by at most one step when nobody is online. Ties go to whoever beat stronger opponents, counted by the cup wins of the players each one beat.</li>
@@ -43,16 +43,36 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <ul>
 <li><b>64 players:</b> the top 58 on playoff points, plus 6 standout places for players not already in: 3 for the fastest finishes and 3 for the biggest Elo climbs since the last Major, or since the season's start. There is no open qualifier.</li>
 <li><b>Saturday from 12 PM ET:</b> all 64 race the same 5 seeds, with 13 minutes per seed. On each seed every player gets a place, finishers by time and then the rest by how far they got, and scores 65 minus their place.</li>
-<li>The top 32 go into a knockout, seeded by race result (1st plays 32nd), and play the rounds of 32 and 16 the same day. A tie at 32nd place is settled by one sudden-death seed.</li>
-<li><b>Sunday from 12 PM ET:</b> the last 8 play on to the final.</li>
-<li>Knockout matches are best of 3 until the last 8, then best of 5, final included. There are no seed rerolls or forfeits, and a game nobody finishes in 20 minutes goes to the player who got further.</li>
+<li>The top 8 go into a knockout, seeded by race result (1st plays 8th). A tie at 8th place is settled by one sudden-death seed. Everyone else's place in the Major is their place in the race.</li>
+<li><b>Saturday from 1:30 PM ET:</b> the four quarterfinals, one at a time, at 1:30, 2:30, 3:30 and 4:30 PM ET.</li>
+<li><b>Sunday from 12 PM ET:</b> the semifinals at 12 and 1 PM ET, then the final at 2:15 PM ET.</li>
+<li>Every series is best of 5 and is played alone, so each can be watched. A series never starts before its time, and starts later only if the one before runs long.</li>
+<li>Your series starts once you and your opponent have both pressed <b>Ready</b> on the Events tab. The button appears 10 minutes before your series' time.</li>
+<li>There are no seed rerolls or forfeits, and a game nobody finishes in 20 minutes goes to the player who got further.</li>
 </ul>
 <h2 id="playoffs">The playoffs</h2>
-<p>The top 16 on playoff points when week 14 ends play a single-elimination bracket over two weekends, best of 5 until the best-of-7 final, each day from 12 PM ET: the round of 16 on Saturday of week 15 (all eight series side by side) and the quarterfinals on Sunday, the semifinals on Saturday of week 16 and the final on Sunday. There is no last-chance qualifier, and only the playoffs crown a champion.</p>
+<p>The top 16 on playoff points when week 14 ends play a single-elimination bracket over two weekends, best of 5 until the best-of-7 final, each day from 12 PM ET. One series is played at a time, so every one can be watched. There is no last-chance qualifier, and only the playoffs crown a champion.</p>
+<ul>
+<li><b>Saturday and Sunday of week 15:</b> the round of 16, four series a day, at 12, 1, 2 and 3 PM ET.</li>
+<li><b>Saturday of week 16:</b> the quarterfinals, at 12, 1, 2 and 3 PM ET.</li>
+<li><b>Sunday of week 16:</b> the semifinals at 12 and 1 PM ET, then the final at 3 PM ET.</li>
+<li>A series never starts before its time, and starts later only if the one before runs long.</li>
+<li>Your series starts once you and your opponent have both pressed <b>Ready</b> on the Events tab. The button appears 10 minutes before your series' time.</li>
+</ul>
 <ul>
 <li><b>Picks:</b> on Monday of week 15 from 2 PM ET, the top 8 on points pick their round-of-16 opponent from the bottom 8, 1st picking first, 2 minutes each, live in the game. A pick made on the show can be entered for a player. A missed pick gets the lowest seed left.</li>
 <li>The bracket is fixed: each top-8 seed keeps their place, so 1st and 8th can meet only in the quarterfinals.</li>
 <li>The 16 stay on the leaderboard through both weekends, without decay, even if they don't play ranked.</li>
+</ul>
+<h2 id="playoff-rules">Playoff rules and prize</h2>
+<ul>
+<li><b>Who plays:</b> the 16 players with the most playoff points when week 14 ends. Players level on points are ordered by Major points, then cup points, then ladder Elo. Entry is free.</li>
+<li><b>Bans:</b> a player who is banned from playing when their series comes up loses that series.</li>
+<li><b>Games:</b> no seed rerolls and no forfeits. A game nobody finishes in 20 minutes goes to the player who got further; if both got equally far, it is played again on a new seed.</li>
+<li><b>Crashes:</b> each player may have one game played again in the playoffs. The admin running the event decides when it applies.</li>
+<li><b>Disputes and no-shows:</b> a player who has not pressed Ready when their series is due can lose it to their opponent. The admins running the event settle this and any dispute on the day, and their decision stands for the event. A ban can still be appealed in the usual way.</li>
+<li><b>Prize:</b> only the playoffs pay a cash prize. The amount is announced here before the playoffs start. The founders pay it directly to the winner; a winner under 18 is paid with a parent's or guardian's agreement.</li>
+<li><b>Breaking the rules:</b> a player found to have broken the <a href="../rules.html">rules</a> loses their result and any prize won by it.</li>
 </ul>
 <h2 id="points">Playoff points</h2>
 <p>Playoff points come from the ladder, the Netherite cups and the Majors. How much the ladder gives depends on how high you go: a steady 2600 is worth about as much as six cup wins. Try a season:</p>
@@ -90,8 +110,8 @@ addEventListener('DOMContentLoaded',function(){var D=document,$=function(i){retu
 var B=[].slice.call(D.querySelectorAll('#ws button')),P=$('wsp'),
 CUP='<li>Ranked all week. Play 10 ranked matches and the highest Elo you reach in the week earns ladder points.</li><li>Weekend cups from Friday 9 PM to Sunday 9 PM ET: 7 matches each. The Netherite cup gives playoff points; the other ranks\' cups give cosmetics.</li>',
 LOW='<li>The other ranks\' cups run as usual, Friday 9 PM to Sunday 9 PM ET.</li>';
-function info(w){if(w==15||w==16)return['Week '+w+' &middot; Playoffs, weekend '+(w-14),(w==15?'<li>Monday from 2 PM ET: the top 8 pick their opponents from the bottom 8, 2 minutes each.</li><li>Saturday from 12 PM ET: the round of 16, all eight series side by side. Sunday: the quarterfinals.</li>':'<li>Saturday from 12 PM ET: the semifinals. Sunday: the best-of-7 final.</li><li>Then the season ends: a full reset, season-end titles and recap cards.</li>')+LOW];
-if(w==4||w==8||w==13)return['Week '+w+' &middot; Major '+(w==4?1:w==8?2:3),'<li>Ranked still counts: 10 matches make the week count for ladder points. No Netherite cup this weekend.</li><li>Saturday from 12 PM ET: 64 players race 5 seeds, then the rounds of 32 and 16. Sunday from 12 PM ET: the last 8 play to the final.</li>'+LOW];
+function info(w){if(w==15||w==16)return['Week '+w+' &middot; Playoffs, weekend '+(w-14),(w==15?'<li>Monday from 2 PM ET: the top 8 pick their opponents from the bottom 8, 2 minutes each.</li><li>Saturday and Sunday from 12 PM ET: the round of 16, four series a day, one at a time.</li>':'<li>Saturday from 12 PM ET: the quarterfinals, one at a time. Sunday from 12 PM ET: the semifinals, then the best-of-7 final.</li><li>Then the season ends: a full reset, season-end titles and recap cards.</li>')+LOW];
+if(w==4||w==8||w==13)return['Week '+w+' &middot; Major '+(w==4?1:w==8?2:3),'<li>Ranked still counts: 10 matches make the week count for ladder points. No Netherite cup this weekend.</li><li>Saturday from 12 PM ET: 64 players race 5 seeds, then the top 8 play the quarterfinals. Sunday from 12 PM ET: the semifinals, then the final.</li>'+LOW];
 if(w==1)return['Week 1 &middot; Placements','<li>After the reset, everyone plays 5 placement matches first.</li><li>Ranked all week, and 10 ranked matches make the week count for ladder points.</li><li>No cups this weekend: they start in week 2.</li>'];
 if(w==14)return['Week 14 &middot; Break','<li>The last week that earns ladder points. When it ends, the top 16 on points go to the playoffs.</li><li>No Netherite cup this weekend.</li>'+LOW];
 return['Week '+w+' &middot; Cup weekend',CUP+(w==3||w==7||w==12?'<li>Next week is Major '+(w==3?1:w==7?2:3)+': the top 58 on playoff points and 6 standout places.</li>':'')]}
