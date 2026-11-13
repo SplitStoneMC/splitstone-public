@@ -46,6 +46,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#c58a4a" 
 <p>Some seed types unlock as you rank up. A match uses only the seed types its lowest-ranked player has unlocked, teammates included.</p>
 <h2 id="inactive">Taking a break</h2>
 <p>If you don't play for a week, you're hidden from the leaderboard and your Elo starts to drop each day until you play again. The first drop comes 8 full days (8 &times; 24 hours) after your last match, then one every 24 hours. It never drops you below the bottom of your rank.</p>
+<p>The drop stays on your shown Elo (your place, rank and ladder points) for the rest of the season. Your matches still count you at your Elo before the drop: you're matched with players of that level, and your opponents gain and lose what they would against you at your real level.</p>
 <figure class="dk">
 <svg class="dkc" id="dkc" viewBox="0 0 400 190" role="img" aria-labelledby="dkt"><title id="dkt">Elo over 28 days without playing, starting 100 Elo above the bottom of your rank: flat for 7 days, then down 12 a day at Netherite, 8 at Obsidian and 5 below, stopping at the bottom of the rank.</title>
 <path class="ax" d="M34 160H390M34 34V160"/><path class="d7" d="M123 34V160"/>
