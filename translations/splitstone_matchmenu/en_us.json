@@ -1,0 +1,8 @@
+{
+  "splitstone.matchmenu.reroll": "Reroll",
+  "splitstone.matchmenu.leave": "Leave",
+  "splitstone.matchmenu.forfeit_ask": "Ask to Forfeit",
+  "splitstone.matchmenu.agree": "%s? · %s",
+  "splitstone.matchmenu.waiting": "%s · waiting · %s",
+  "splitstone.match.reasons.title_short": "Why reroll?"
+}

@@ -1,0 +1,8 @@
+{
+  "splitstone.matchmenu.reroll": "Реролл",
+  "splitstone.matchmenu.leave": "Выйти",
+  "splitstone.matchmenu.forfeit_ask": "Предложить сдаться",
+  "splitstone.matchmenu.agree": "%s? · %s",
+  "splitstone.matchmenu.waiting": "%s · ждём · %s",
+  "splitstone.match.reasons.title_short": "Почему реролл?"
+}

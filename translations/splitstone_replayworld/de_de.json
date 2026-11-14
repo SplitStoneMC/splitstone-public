@@ -1,0 +1,14 @@
+{
+  "splitstone.replayworld.mob.going_to_item": "Geht zu einem Item",
+  "splitstone.replayworld.mob.admiring": "Bewundert",
+  "splitstone.replayworld.mob.bartering": "Tauscht",
+  "splitstone.replayworld.mob.light_anger": "Wut: leicht",
+  "splitstone.replayworld.mob.medium_anger": "Wut: mittel",
+  "splitstone.replayworld.mob.heavy_anger": "Wut: stark",
+  "splitstone.replayworld.mob.angered": "Provoziert",
+  "splitstone.replayworld.mob.none": "",
+  "splitstone.replayworld.container": "Behälter",
+  "splitstone.replayworld.charging": "Lädt auf",
+  "splitstone.replayworld.spawner_near": "Spawner · %s Lohen in der Nähe",
+  "splitstone.replayworld.pearl_hung": "Perle hängt · %s s"
+}

@@ -1,0 +1,8 @@
+{
+  "splitstone.matchmenu.reroll": "Rerolar",
+  "splitstone.matchmenu.leave": "Sair",
+  "splitstone.matchmenu.forfeit_ask": "Propor desistência",
+  "splitstone.matchmenu.agree": "%s? · %s",
+  "splitstone.matchmenu.waiting": "%s · aguardando · %s",
+  "splitstone.match.reasons.title_short": "Por que rerolar?"
+}

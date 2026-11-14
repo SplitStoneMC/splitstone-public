@@ -1,0 +1,14 @@
+{
+  "splitstone.replayworld.mob.going_to_item": "Идёт за предметом",
+  "splitstone.replayworld.mob.admiring": "Любуется",
+  "splitstone.replayworld.mob.bartering": "Торгует",
+  "splitstone.replayworld.mob.light_anger": "Злость: слабая",
+  "splitstone.replayworld.mob.medium_anger": "Злость: средняя",
+  "splitstone.replayworld.mob.heavy_anger": "Злость: сильная",
+  "splitstone.replayworld.mob.angered": "Разозлён",
+  "splitstone.replayworld.mob.none": "",
+  "splitstone.replayworld.container": "Контейнер",
+  "splitstone.replayworld.charging": "Заряжается",
+  "splitstone.replayworld.spawner_near": "Спавнер · ифритов рядом: %s",
+  "splitstone.replayworld.pearl_hung": "Жемчуг завис · %s с"
+}

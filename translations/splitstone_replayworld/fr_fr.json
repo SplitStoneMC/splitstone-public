@@ -1,0 +1,14 @@
+{
+  "splitstone.replayworld.mob.going_to_item": "Va chercher un objet",
+  "splitstone.replayworld.mob.admiring": "Admire",
+  "splitstone.replayworld.mob.bartering": "Troque",
+  "splitstone.replayworld.mob.light_anger": "Colère : légère",
+  "splitstone.replayworld.mob.medium_anger": "Colère : moyenne",
+  "splitstone.replayworld.mob.heavy_anger": "Colère : forte",
+  "splitstone.replayworld.mob.angered": "Provoqué",
+  "splitstone.replayworld.mob.none": "",
+  "splitstone.replayworld.container": "Conteneur",
+  "splitstone.replayworld.charging": "Charge",
+  "splitstone.replayworld.spawner_near": "Générateur · %s blazes autour",
+  "splitstone.replayworld.pearl_hung": "Perle suspendue · %s s"
+}
