@@ -39,7 +39,7 @@ components:
     Mode:
       name: mode
       in: query
-      schema: {type: string, examples: [ranked_1v1, ranked_2v2, coop, weekly_cup]}
+      schema: {type: string, examples: [ranked_1v1, ranked_2v2, weekly_cup, major]}
     Season:
       name: season
       in: query
@@ -69,7 +69,7 @@ components:
     RateLimit-Reset: {description: When the window ends, in Unix seconds., schema: {type: integer}}
   responses:
     Error:
-      description: "400 bad parameter, 401 unknown API-Key or missing Private-Key, 403 another player's Private-Key, 404 not found, 405 not GET, 429 past the limit (with Retry-After), 503 unavailable."
+      description: "400 bad parameter, 401 unknown API-Key or missing Private-Key, 403 another player's Private-Key, 404 not found, 405 not GET or HEAD, 429 past the limit (with Retry-After), 503 unavailable."
       content:
         application/json:
           schema: {$ref: "#/components/schemas/Error"}
@@ -103,7 +103,7 @@ components:
         season: {type: [integer, "null"]}
         startedAt: {type: [string, "null"], format: date-time}
         endedAt: {type: [string, "null"], format: date-time}
-        ending: {type: [string, "null"], examples: [finish, forfeit, time]}
+        ending: {type: [string, "null"], examples: [finish, forfeit, draw, time, void], description: "time: a Major's or the playoffs' game hit its time limit, or no player made progress for 60 minutes (a draw with no Elo change)."}
         event: {$ref: "#/components/schemas/Event"}
         winnerTeam: {type: [integer, "null"]}
         players:
@@ -405,7 +405,7 @@ paths:
         default: {$ref: "#/components/responses/Error"}
   /live:
     get:
-      summary: Matches running now that anyone may watch
+      summary: Matches running now with a top-100 player in them that anyone may watch
       responses:
         "200":
           description: Highest rated first, at most 100.
@@ -541,7 +541,7 @@ paths:
       summary: How busy Splitstone is
       responses:
         "200":
-          description: How many matches the matchmaking is running now, co-op and game modes included.
+          description: How many matches the matchmaking is running now, game modes included.
           content:
             application/json:
               schema:

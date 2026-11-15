@@ -19,11 +19,21 @@ Every answer carries `RateLimit-Limit`, `RateLimit-Remaining` and `RateLimit-Res
 
 **A player's key** is made in the game: **Settings → Linked accounts → API key → Make and copy**. It is copied to the clipboard and shown only then. Making a new one stops the old one. Treat it like a password: an overlay should keep it out of anything shown on stream.
 
-Answers say how long they may be kept (`Cache-Control: public, max-age=N`): 5 seconds for live data, up to a day for a finished match. Please keep them that long rather than asking again. Browsers may call the API from any page (`Access-Control-Allow-Origin: *`).
+Answers say how long they may be kept (`Cache-Control: public, max-age=N`). Please keep them that long rather than asking again:
+
+| Address | Kept for |
+|---|---|
+| `/live`; `/matches/{id}` while it runs or a run in it goes on | 5 seconds |
+| `/status` | 10 seconds |
+| `/matches`, `/players/{player}/matches` | 15 seconds |
+| `/players/{player}`, `/players/{player}/versus/{other}` and its `/matches`, `/leaderboards/{mode}` without parameters | 30 seconds |
+| `/leaderboards/{mode}` with `season` or `country`, `/players/{player}/seasons`, `/records/{board}`, `/playoffs`, `/cups`, `/cups/{id}` | 60 seconds |
+| `/matches/{id}` once finished | 1 day |
+| `/players/{player}/live` | never kept (`private, no-store`) | Browsers may call the API from any page (`Access-Control-Allow-Origin: *`).
 
 ## Errors
 
-Errors are `{"error": "what went wrong"}` with the status: `400` for a bad parameter, `401` for an unknown `API-Key` or a missing `Private-Key`, `403` for a `Private-Key` that is not that player's, `404` when there is no such thing, `405` for anything but `GET`, `429` past the limit, and `503` when the service cannot answer.
+Errors are `{"error": "what went wrong"}` with the status: `400` for a bad parameter, `401` for an unknown `API-Key` or a missing `Private-Key`, `403` for a `Private-Key` that is not that player's, `404` when there is no such thing, `405` (with `Allow: GET, HEAD`) for anything but `GET` or `HEAD`, which answers as `GET` does without the body, `429` past the limit, and `503` when the service cannot answer.
 
 ## Players
 
@@ -86,14 +96,14 @@ Needs that player's `Private-Key`. The match or private room they are in now, or
 
 | Parameter | Meaning |
 |---|---|
-| `mode` | Only this mode, such as `ranked_1v1`, `ranked_2v2`, `coop`, `weekly_cup` |
+| `mode` | Only this mode, such as `ranked_1v1`, `ranked_2v2`, `weekly_cup`, `major` |
 | `season` | Only this season |
 | `cup` | Only this weekly cup's games |
 | `before` | Matches older than this match id: the next page |
 | `after` | Matches newer than this match id, the ones just after it |
 | `count` | How many, 1 to 100; 20 by default |
 
-Each match: `id`, `mode`, `seedType`, `season`, `startedAt`, `endedAt`, `ending` (`finish`, `forfeit`, `time`, …), `event` (`{"name": "Gold cup", "round": "Week 3"}` or `{"name": "Major 2", "round": "Quarterfinal, game 3"}`, null for a queue match), `winnerTeam` (1 or 2 in team matches) and `players`: `uuid`, `name`, `team`, `eloBefore`, `eloAfter`, `eloChange`, `timeMs` (null without a finish) and `won`. Elo is null where it is never shown (co-op and game modes), and a cup or Major game shows only the Elo brought.
+Each match: `id`, `mode`, `seedType`, `season`, `startedAt`, `endedAt`, `ending` (`finish`; `forfeit`; `draw` when both players agreed to one; `time` when a Major's or the playoffs' game hit its time limit, or when no player made progress for 60 minutes, a draw that changes no Elo; `void` when a player was banned during it), `event` (`{"name": "Gold cup", "round": "Week 3"}` or `{"name": "Major 2", "round": "Quarterfinal, game 3"}`, null for a queue match), `winnerTeam` (1 or 2 in team matches) and `players`: `uuid`, `name`, `team`, `eloBefore`, `eloAfter`, `eloChange`, `timeMs` (null without a finish) and `won`. Elo is null where it is never shown (game modes, their co-op included), and a cup or Major game shows only the Elo brought.
 
 ### `GET /matches/{id}`
 
@@ -122,7 +132,7 @@ Only `ranked_1v1` and `ranked_2v2` have a leaderboard; any other mode answers `4
 
 ### `GET /records/{mode}`
 
-The fastest finishes in a ranked mode, or private rooms with `records/rooms` (rooms with every setting at its default): `place`, `uuid`, `name`, `country`, `timeMs`, `seedType` and, in 2v2, the `mate`. In 1v1 each player's best counts once; in 2v2 each pair's. Parameters: `period` (`all`, `month`, `week` or `day`; `all` by default) and `country`. Only `ranked_1v1`, `ranked_2v2` and `rooms` have records; any other mode answers `404`.
+The fastest finishes in a ranked mode, or in private rooms with `records/rooms`: `place`, `uuid`, `name`, `country`, `timeMs`, `seedType` and, in 2v2, the `mate`. In 1v1 each player's best counts once; in 2v2 each pair's; in rooms each player's. A room's finishes count when it changed only settings that keep a run comparable: the format and pairs, the seed options other than a set seed, the limits, hardcore, and the messages and match options. A set seed, a replayed match, a different start or starting inventory, another challenge, cheats or head starts stop a room counting. Parameters: `period` (`all`, `month`, `week` or `day`; `all` by default) and `country`. Only `ranked_1v1`, `ranked_2v2` and `rooms` have records; any other mode answers `404`.
 
 ### `GET /playoffs`
 
@@ -142,7 +152,7 @@ One cup with its `results` in place order: `place`, `uuid`, `name`, `wins`, `dra
 
 ### `GET /status`
 
-`{"matchesRunning": 12}`: how many matches the matchmaking is running now. It counts every one, co-op and game modes included, so it is usually more than `/live` lists.
+`{"matchesRunning": 12}`: how many matches the matchmaking is running now. It counts every one, game modes included, so it is usually more than `/live` lists.
 
 ## Compared with MCSR Ranked's API
 

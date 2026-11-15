@@ -1,6 +1,6 @@
 # Splitstone
 
-Splitstone is an independent Minecraft speedrunning platform: 1v1 and 2v2 speedrun races, weekly cups, Majors and playoffs, practice, spectating and coaching. This repository is its public side.
+Splitstone is an independent Minecraft speedrunning platform: 1v1 and 2v2 speedrun matches, weekly cups, Majors and playoffs, practice, spectating and coaching. This repository is its public side.
 
 - **[The API](api/README.md):** Splitstone's public, read-only API for trackers, stats sites, Twitch commands, Discord bots and stream overlays, with its [OpenAPI description](api/openapi.yaml) and [changelog](CHANGELOG.md).
 
