@@ -6,16 +6,19 @@ title: Community moderators
 nav: Moderators
 summary: Volunteers who keep Splitstone's Discord in order: who can apply, what a moderator can and can't do, and how to apply.
 stat: 16+|to apply
-facts: 16+|to apply;;24 h|longest timeout;;Discord|where you apply
-keywords: moderator moderators mod mods apply application volunteer discord staff timeout time out kick ban trial age 16 team help out
+facts: 16+|to apply;;3|steps;;Discord|where you apply
+keywords: moderator moderators mod mods senior trial suspension suspend apply application volunteer discord staff timeout time out kick ban trial age 16 team help out
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#b9a3f5" d="M10 2h12v2h2v9h-2v3h-2v2h-2v2h-4v-2h-2v-2h-2v-3H8V4h2z"/><path fill="#2e1c4d" d="M11 5h10v7h-2v3h-2v2h-2v-2h-2v-3h-2z"/><path fill="#ffd08a" d="M15 7h2v4h-2zM15 12h2v2h-2z"/></svg>
 ---
 <h2 id="what">What moderators are</h2>
 <p>Splitstone's <a href="https://discord.gg/wxDcZ8NGWt">Discord</a> has volunteer community moderators. They are players who help keep the server in order. They are not part of the Splitstone team.</p>
 <h2 id="can">What a moderator can and can't do</h2>
+<p>Moderators have three steps. Each step can do everything the one before it can.</p>
 <ul>
-<li><b>Can:</b> delete messages that break the <a href="../rules.html">rules</a>, and time a member out for up to 24 hours.</li>
-<li><b>Can't:</b> kick or ban. A moderator asks the Splitstone team, and the team decides.</li>
+<li><b>Trial Moderator</b> (the first 2 to 4 weeks): deletes messages that break the <a href="../rules.html">rules</a>, and times a member out for up to 24 hours.</li>
+<li><b>Moderator:</b> can also suspend a member, with a 1-week timeout, until the Splitstone team reviews it.</li>
+<li><b>Senior Moderator:</b> can also kick, and lift other moderators' timeouts and suspensions.</li>
+<li><b>Nobody but the team bans.</b> The team also reviews every suspension and decides who moves up a step.</li>
 <li><b>Doesn't see:</b> reports, appeals or support requests. Those stay with the team.</li>
 <li><b>In the game:</b> a moderator has no powers at all. Bans, cheating and match results are the team's.</li>
 </ul>
@@ -31,10 +34,12 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#b9a3f5" 
 <li><span><b>Start a private thread in #mod-applications.</b>Only you and the Splitstone team can see it.</span></li>
 <li><span><b>Tell us about you.</b>Your age, your Minecraft name, your time zone, how many hours a week you can be around, and any moderating you've done before.</span></li>
 <li><span><b>Talk with the team.</b>If we'd like to go further, one of us talks with you, by voice or text.</span></li>
-<li><span><b>Start your trial.</b>New moderators start with a trial of 2 to 4 weeks.</span></li>
+<li><span><b>Start your trial.</b>New moderators start as Trial Moderators for 2 to 4 weeks.</span></li>
 </ol>
 <h2 id="after">While you moderate</h2>
 <ul>
-<li>Moderators get free Supporter while they volunteer and one free item of their choice from each item shop batch (<a href="supporting.html">Supporting Splitstone</a>).</li>
+<li>Every moderator gets free Supporter while they volunteer (<a href="supporting.html">Supporting Splitstone</a>). Moderators and Senior Moderators also get one free item of their choice from each item shop batch and a moderators-only cosmetic that can't be bought.</li>
+<li>Senior Moderators also talk with the team each month about the rules and the community, and suggest Trial Moderators to move up.</li>
+<li>After a year, or when you step down in good standing, you keep a veteran cosmetic for good.</li>
 <li>A moderator who isn't active for 21 days loses the role, and can apply again.</li>
 </ul>
