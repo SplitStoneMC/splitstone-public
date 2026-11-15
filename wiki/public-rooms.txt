@@ -19,7 +19,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <h2 id="seeds">Seeds</h2>
 <ul>
 <li>Once two players are in, a seed starts a minute after the last one ended. Seeds are ranked seeds from the pool.</li>
-<li>Everyone plays until the seed ends: after its first finish, the others get extra time (12 minutes below Gold, 10 from Gold to Diamond, 8 from Diamond up), or the seed ends when half its players have finished.</li>
+<li>Everyone plays until the seed ends: after its first finish, the others get extra time, set by the room's average Elo (12 minutes below Gold, 10 from Gold to Diamond, 8 from Diamond up), or the seed ends when half its players have finished.</li>
 <li>If nobody finishes, the seed ends after 40 minutes below Gold, 30 from Gold to Diamond, or 25 from Diamond up, and places go by how far players got.</li>
 <li>Between seeds, and while you wait after joining mid-seed, you practise in your own world. The next seed pulls you in.</li>
 <li>If your game drops, you're out of that seed and keep your place in the room for 2 minutes.</li>

@@ -27,7 +27,6 @@
   "splitstone.rooms.section.messages": "MESSAGES",
   "splitstone.rooms.section.limits": "LIMITS",
   "splitstone.rooms.section.challenges": "CHALLENGES",
-  "splitstone.rooms.rule.wait_for_all": "Wait for all to finish",
   "splitstone.rooms.rule.time_limit": "Time limit",
   "splitstone.rooms.rule.short_countdown": "5-second countdown",
   "splitstone.rooms.rule.solo_strip": "Own strip when alone",

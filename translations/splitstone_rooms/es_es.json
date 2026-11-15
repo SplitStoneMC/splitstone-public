@@ -27,7 +27,6 @@
   "splitstone.rooms.section.messages": "MENSAJES",
   "splitstone.rooms.section.limits": "LÍMITES",
   "splitstone.rooms.section.challenges": "RETOS",
-  "splitstone.rooms.rule.wait_for_all": "Esperar a que todos terminen",
   "splitstone.rooms.rule.time_limit": "Límite de tiempo",
   "splitstone.rooms.rule.short_countdown": "Cuenta atrás de 5 s",
   "splitstone.rooms.rule.solo_strip": "Tu barra si juegas solo",

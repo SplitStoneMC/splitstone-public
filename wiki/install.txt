@@ -27,10 +27,10 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <h2 id="packs">Choose a pack</h2>
 <p>Splitstone comes as one ready-made pack or as the mod on its own, for Windows, macOS and Linux. There is no practice pack with reset mods: <a href="practice.html">practice</a> has its own button for a new world.</p>
 <ul>
-<li><b>Splitstone Pack:</b> Splitstone plus legal mods: the performance mods Sodium (its Mac build on macOS), Lithium, Starlight, LazyDFU and Krypton; SpeedrunAPI, which that Sodium build needs to start; Voyager and Antigone, which fix rare crashes and freezes; StandardSettings, which resets your options at the start of each match; LazyStronghold, which builds strongholds faster; AntiResourceReload, which makes new worlds open faster; and State Output, which tells tools outside the game what the game is doing. The macOS pack also has BoundlessWindow, which removes the window's title bar, and RetiNO, which draws the game at half resolution on Retina screens for a higher frame rate.</li>
+<li><b>Splitstone Pack:</b> Splitstone plus legal mods: the performance mods Sodium (its Mac build on macOS), Lithium, Starlight, LazyDFU and Krypton; SpeedrunAPI, which that Sodium build needs to start; Voyager and Antigone, which fix rare crashes and freezes; StandardSettings, which resets your options at the start of each match; LazyStronghold, which builds strongholds faster; AntiResourceReload, which makes new worlds open faster; State Output, which tells tools outside the game what the game is doing; and Extra Options, which adds FOV Effects and Distortion Effects sliders (Options, then the book button, then Extra Options). The macOS pack also has BoundlessWindow, which removes the window's title bar, and RetiNO, which draws the game at half resolution on Retina screens for a higher frame rate.</li>
 <li><b>The mod alone:</b> for players who already have their own setup. Only mods on the legal mods list are allowed (<a href="faq.html#own-mods">details</a>).</li>
 </ul>
-<p>Download them from the <a href="../download.html">download page</a>: one pack file for each of Windows, macOS and Linux, which Prism, MultiMC and the Modrinth App all import. The pack fetches each mod from the legal mods list on GitHub rather than copying it.</p>
+<p>Download them from the <a href="../download.html">download page</a>: one pack file for each of Windows, macOS and Linux, which Prism, MultiMC and the Modrinth App all import. The pack fetches each mod when you import it, from the speedrun.com legal mods list on GitHub (LazyDFU and RetiNO from Modrinth), rather than copying it.</p>
 <h2 id="java">Java and memory</h2>
 <ul>
 <li><b>Java:</b> Splitstone runs on Java 8 or newer. Java 17 or newer is recommended, as it is for 1.16.1 speedrunning in general. Your launcher can download it and lets you pick it for the instance.</li>
@@ -52,12 +52,13 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <li><b>Agree to the <a href="../rules.html">rules</a>, the <a href="../terms.html">terms</a> and the <a href="../privacy.html">privacy policy</a>.</b> You can't play without agreeing.</li>
 <li><b>Say how old you are: under 13, 13–17, or 18 or older.</b> Players must be 13 or older; 13–17 year olds keep the chat filter on. Splitstone never asks for or keeps your birth date, and you can change your answer in Settings.</li>
 <li><b>Choose who can send you friend requests:</b> everyone, friends of friends and people you've played with, or nobody. You can change it later.</li>
+<li><b>Choose whether to turn on streamer mode.</b> You can change it later in Settings.</li>
 </ul>
 <h2 id="sign-in">Signing in</h2>
 <p>You don't make a Splitstone account or password. Your Minecraft account is your Splitstone account. When the game starts, it asks Microsoft for a signed player certificate, and Splitstone's service checks that certificate. Your login token never leaves your computer.</p>
-<p>Because the certificate comes from Microsoft, Splitstone can't sign you in while Microsoft's service is down.</p>
+<p>The certificate lasts 48 hours and is renewed after 40. If Microsoft's service is down when yours runs out, Splitstone can't sign you in until it's back.</p>
 <h2 id="updates">Updates</h2>
-<p>Only the latest version of Splitstone can connect, so everyone plays the same rules. When a new version comes out, the game's built-in updater installs it.</p>
+<p>Only the current release of Splitstone can sign in, so everyone plays the same rules. When a new version comes out, the game downloads it from Splitstone's server and checks it, then asks you to close the game with the "Close game" button. The new version is in place the next time you start the game.</p>
 <h2 id="problems">If something goes wrong</h2>
 <ul>
 <li><b>"Splitstone: can't reach the service."</b> Check your internet connection, then the <a href="../status.html">status page</a>. The game keeps trying on its own and connects once the service answers.</li>

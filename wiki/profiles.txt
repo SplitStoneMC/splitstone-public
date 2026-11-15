@@ -55,4 +55,4 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" 
 <li>A recap card at the end of each season to share outside the game.</li>
 </ul>
 <h2 id="deleting">Deleting your account</h2>
-<p>Your past matches stay, so other players' histories and the leaderboards stay correct, and your name on them is shown faded. You can ask for your name to be removed from past matches.</p>
+<p>Your past matches stay, so other players' histories and the leaderboards stay correct, with your name on them. You can ask for your name to be removed from past matches.</p>

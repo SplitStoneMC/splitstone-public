@@ -41,12 +41,12 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <h2 id="cosmetics">Cosmetics</h2>
 <ul>
 <li>Cosmetics and coins are sold in the game's own shop, where you can try items on your 3D model first. The website sells only Supporter.</li>
-<li>Kinds of cosmetic at launch: hats (halos and horns included), masks and glasses, wings, back items, emotes, win effects, titles, banners and name colours. Shoulder pets, outfits, tails and moving wings come later. Never capes, or anything shaped like a cape or an elytra.</li>
+<li>Kinds of cosmetic at launch: hats (halos and horns included), masks and glasses, wings, back items, emotes, win effects, titles, banners and name colours. Auras and trails come as battle pass items. Shoulder pets, outfits, tails and moving wings come later. Never capes, or anything shaped like a cape or an elytra.</li>
 <li>Outfits are drawn over your own skin and never change your Minecraft skin.</li>
 <li>Your equipped set shows everywhere: matches, ranked included, replays and profiles. Other players' cosmetics can be hidden only in replays, with the Show Cosmetics switch. Your own RSG and AA instance shows none.</li>
 <li>The shop rotates: items are on sale in limited windows. Some return, some never do, and bundles cost fewer coins.</li>
 <li>Coins have no real-world value and can't be cashed out or transferred.</li>
-<li>Community creators make cosmetics alongside Splitstone, for a share of sales (<a href="creators.html">making cosmetics</a>). Join the creators' channel on our <a href="https://discord.gg/wxDcZ8NGWt" rel="noopener">Discord</a> to learn how listing your cosmetics on Splitstone works.</li>
+<li>Community creators make cosmetics alongside Splitstone, for a share of sales (<a href="creators.html">making cosmetics</a>). Creators post their items in the <a href="https://discord.gg/GGaUKruxEA" rel="noopener">#creator-art</a> forum on our Discord; <a href="creators.html#submit">making cosmetics</a> says how.</li>
 </ul>
 <h2 id="earned">Earned items</h2>
 <ul>

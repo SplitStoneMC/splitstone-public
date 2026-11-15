@@ -44,6 +44,7 @@
   "splitstone.history.ending.disconnected": "%s отключился",
   "splitstone.history.ending.disconnected.at": "%s отключился на %s",
   "splitstone.history.ending.time": "Лимит времени",
+  "splitstone.history.ending.no_progress": "Нет прогресса 60 минут · ничья",
   "splitstone.history.ending.draw": "Ничья",
   "splitstone.history.ending.empty": "Комната опустела",
   "splitstone.history.split.nether": "Незер",

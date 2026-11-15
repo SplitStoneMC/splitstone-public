@@ -44,6 +44,7 @@
   "splitstone.history.ending.disconnected": "%s se desconectó",
   "splitstone.history.ending.disconnected.at": "%s se desconectó en %s",
   "splitstone.history.ending.time": "Límite de tiempo",
+  "splitstone.history.ending.no_progress": "Sin progreso en 60 minutos · empate",
   "splitstone.history.ending.draw": "Empate",
   "splitstone.history.ending.empty": "Sala vacía",
   "splitstone.history.split.nether": "Nether",

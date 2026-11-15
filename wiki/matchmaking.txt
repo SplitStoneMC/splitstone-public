@@ -13,7 +13,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <h2 id="queues">Queues</h2>
 <ul>
 <li>Every mode has its own queue: Ranked 1v1, Ranked 2v2, and each game mode while it is on the dashboard.</li>
-<li>There is no 1v1 Casual queue. To play casually, join a <a href="public-rooms.html">public room</a> from Extra Modes: no Elo moves there.</li>
+<li>To play without Elo at stake, join a <a href="public-rooms.html">public room</a> from Extra Modes.</li>
 <li>Queueing runs in the background. While you wait you can sit in a private room, play your own practice world, or do anything else that doesn't put you against another person.</li>
 <li>You can leave the queue at any time before a match is found, from the queue screen or with <b>Ctrl+Z</b> from anywhere (change the key in Controls). After that it can't be cancelled or declined.</li>
 </ul>

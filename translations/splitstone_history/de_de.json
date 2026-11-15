@@ -44,6 +44,7 @@
   "splitstone.history.ending.disconnected": "%s hat die Verbindung verloren",
   "splitstone.history.ending.disconnected.at": "%s hat bei %s die Verbindung verloren",
   "splitstone.history.ending.time": "Zeitlimit",
+  "splitstone.history.ending.no_progress": "60 Minuten kein Fortschritt · Remis",
   "splitstone.history.ending.draw": "Unentschieden",
   "splitstone.history.ending.empty": "Raum leer",
   "splitstone.history.split.nether": "Nether",

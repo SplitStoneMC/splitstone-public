@@ -33,7 +33,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <ul>
 <li>There are direct messages, party chat, team chat in 2v2, chat between opponents in a match, and chat in public rooms. Spectators can't message the player they watch.</li>
 <li>A filter for swearing and slurs is on by default. Players 18 or older can turn it off; players who said they are 13&ndash;17 can&rsquo;t.</li>
-<li>Chat is kept for 30 days, for moderation only.</li>
+<li>Chat is kept for 30 days, for moderation only. Chat inside a replay is kept as long as the replay.</li>
 <li>You can mute a player, or everyone for one match.</li>
 </ul>
 <h2 id="voice">Voice</h2>
@@ -44,7 +44,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#7fd6c4" 
 <li><b>Coach voice</b> between a coach and their player.</li>
 <li><b>Room voice</b> for everyone in a private room, if the host turns it on.</li>
 </ul>
-<p>Opponents can talk by voice before a match starts and after it ends, for up to 3 minutes, never during play. It is off by default and only for players 18 or older: both must turn it on in Settings &rarr; Voice. Voice is never recorded. Push-to-talk is the default.</p>
-<p>If your Microsoft account settings turn off chat or multiplayer, Splitstone turns off voice for you and tells you to change the setting with Microsoft.</p>
+<p>Opponents can talk by voice from the moment a match is found until it starts, and for up to 3 minutes after it ends, never during play. It is off by default and only for players 18 or older: both must turn it on in Settings &rarr; Voice. Voice is never recorded. Push-to-talk is the default.</p>
+<p>If your Microsoft account settings turn off chat or multiplayer, Splitstone turns off voice and text chat for you and tells you to change the setting with Microsoft. If multiplayer is off, matchmaking, rooms and parties are refused too.</p>
 <h2 id="hub">Is there a hub or SMP?</h2>
 <p>No. There is no hub world at launch, no plan for one yet, and no SMP world.</p>

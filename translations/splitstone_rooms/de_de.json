@@ -27,7 +27,6 @@
   "splitstone.rooms.section.messages": "NACHRICHTEN",
   "splitstone.rooms.section.limits": "LIMITS",
   "splitstone.rooms.section.challenges": "CHALLENGES",
-  "splitstone.rooms.rule.wait_for_all": "Auf alle warten",
   "splitstone.rooms.rule.time_limit": "Zeitlimit",
   "splitstone.rooms.rule.short_countdown": "5-Sekunden-Countdown",
   "splitstone.rooms.rule.solo_strip": "Eigene Leiste, wenn allein",

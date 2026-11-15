@@ -44,6 +44,7 @@
   "splitstone.history.ending.disconnected": "%s disconnected",
   "splitstone.history.ending.disconnected.at": "%s disconnected at %s",
   "splitstone.history.ending.time": "Time limit",
+  "splitstone.history.ending.no_progress": "No progress for 60 minutes · draw",
   "splitstone.history.ending.draw": "Draw",
   "splitstone.history.ending.empty": "Room emptied",
   "splitstone.history.split.nether": "Nether",

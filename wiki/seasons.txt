@@ -71,7 +71,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 <li><b>Games:</b> no seed rerolls and no forfeits. A game nobody finishes in 20 minutes goes to the player who got further; if both got equally far, it is played again on a new seed.</li>
 <li><b>Crashes:</b> each player may have one game played again in the playoffs. The admin running the event decides when it applies.</li>
 <li><b>Disputes and no-shows:</b> a player who has not pressed Ready when their series is due can lose it to their opponent. The admins running the event settle this and any dispute on the day, and their decision stands for the event. A ban can still be appealed in the usual way.</li>
-<li><b>Prize:</b> only the playoffs pay a cash prize. The amount is announced here before the playoffs start. The founders pay it directly to the winner; a winner under 18 is paid with a parent's or guardian's agreement.</li>
+<li><b>Prize:</b> only the playoffs pay a cash prize. The amount is in the playoffs&rsquo; rules, published before they start. The founder pays it directly to the winner; a winner under 18 is paid with a parent's or guardian's agreement.</li>
 <li><b>Breaking the rules:</b> a player found to have broken the <a href="../rules.html">rules</a> loses their result and any prize won by it.</li>
 </ul>
 <h2 id="points">Playoff points</h2>
@@ -95,7 +95,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e8c35a" 
 </tbody></table></div>
 </details>
 <h2 id="prizes">Prizes</h2>
-<p>The playoffs pay a cash prize; Majors pay none. The amount is announced when it is set.</p>
+<p>The playoffs pay a cash prize; Majors pay none. The amount is in the playoffs&rsquo; rules, published before they start.</p>
 <h2 id="season-end">When a season ends</h2>
 <ul>
 <li>Ratings fully reset, and everyone plays <a href="elo-and-ranks.html#placement">placement</a> again.</li>

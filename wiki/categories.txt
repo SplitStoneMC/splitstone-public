@@ -6,16 +6,16 @@ title: RSG and All Advancements
 nav: RSG and AA
 summary: Splitstone doesn't host RSG or All Advancements. It gives you a quick way to open them in your own legal instance from Splitstone's menu, and brings you back afterwards.
 stat: 1|click each way
-facts: 1|click to switch, each way;;Yours|legal instance, untouched;;Vanilla|luck, as in any normal run
+facts: 1|click to switch, each way;;Yours|legal instance, untouched;;Vanilla|RNG, as in any normal run
 keywords: rsg all advancements aa any% submit speedrun.com legal instance switch launcher prism multimc modrinth curseforge official launcher watcher helper speedrunigt record restart
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" d="M1 4h13v11H1z"/><path fill="#7fd6c4" d="M1 4h13v2H1z"/><path fill="#1a2423" d="M18 9h13v11H18z"/><path fill="#7fcf5a" d="M18 9h13v2H18z"/><path fill="#ffd08a" d="M15 2h4V0l3 3-3 3V4h-4zM17 21h-4v2l-3-3 3-3v2h4z"/><path fill="#9db3b1" d="M3 8h6v1H3zM3 11h4v1H3zM20 13h6v1h-6zM20 16h4v1h-4z"/></svg>
 ---
 <h2 id="why">A shortcut, not a Splitstone mode</h2>
-<p>RSG and All Advancements aren't played in Splitstone. Splitstone's mod changes luck for its own matches, so it isn't allowed in runs you submit to speedrun.com. Instead, Splitstone gives you a shortcut: it opens your own legal instance for you, untouched, and every run there can be submitted as usual.</p>
+<p>RSG and All Advancements aren't played in Splitstone. Splitstone's mod standardizes RNG for its own matches, so it isn't allowed in runs you submit to speedrun.com. Instead, Splitstone gives you a shortcut: it opens your own legal instance for you, untouched, and every run there can be submitted as usual.</p>
 <h2 id="switch">How the switch works</h2>
 <ol class="steps">
 <li><span><b>Pick "Play RSG" or "Play AA".</b>It's in Splitstone's menu.</span></li>
-<li><span><b>Splitstone closes and your legal instance starts.</b>Your launcher opens it as it is: no Splitstone mod, no cosmetics, vanilla luck.</span></li>
+<li><span><b>Splitstone closes and your legal instance starts.</b>Your launcher opens it as it is: no Splitstone mod, no cosmetics, vanilla RNG.</span></li>
 <li><span><b>Quit that game and Splitstone starts again.</b>This happens only when you came from Splitstone. It can also bring back the run's SpeedRunIGT record after the run.</span></li>
 </ol>
 <p>A small helper waits for your legal game to close, whether you quit or it crashed, and starts Splitstone again. Splitstone never edits your launcher's files. Each switch restarts the game.</p>

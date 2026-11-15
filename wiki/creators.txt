@@ -7,7 +7,7 @@ nav: Making cosmetics
 summary: Creators make cosmetics for Splitstone's shop alongside Splitstone, for a share of each sale. What you can make, the file formats, how to submit on Discord and the checks before an item goes on sale.
 stat: $0|to sell your items
 facts: $0|to sell, no subscription;;Same|prices as Splitstone's own items;;1|Discord post per item
-keywords: creator creators make making cosmetics art artist submit submission blockbench model texture png emote emotecraft banner win effect hat mask wings back item share revenue payout paid sell made by discord forum workshop ai check
+keywords: creator creators make making cosmetics art artist submit submission blockbench model texture png emote emotecraft banner win effect hat mask wings back item share revenue payout paid sell made by discord forum workshop
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" d="M4 3h24v18H4z"/><path fill="#b98cff" d="M4 3h24v1H4z"/><path fill="#5b3f8f" d="M9 8h10v2H9zM8 10h12v6H8z"/><path fill="#e3d3ff" d="M10 11h2v2h-2zM16 11h2v2h-2z"/><path fill="#ffd36b" d="M22 6h2v8h-2z"/><path fill="#e9f0ef" d="M22 14h2v2h-2z"/></svg>
 ---
 <h2 id="who">Who can sell</h2>
@@ -25,7 +25,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <tr><td>Emote</td><td>animation.json</td><td>An Emotecraft animation (or a GeckoLib animation file). Parts are head, torso, rightArm, leftArm, rightLeg and leftLeg, with angles in radians and 20 ticks a second.</td></tr>
 <tr><td>Banner</td><td>picture.png</td><td>Exactly 64 &times; 128 pixels. It hangs from a pole beside the player, pixel for pixel, so a clear background around a cloth shape works best.</td></tr>
 <tr><td>Win effect</td><td>effect.json</td><td>A particle (firework, flame, soul_fire_flame, end_rod, note, heart, happy_villager, totem_of_undying, enchant or dust), a shape (ring, fountain, spiral or burst), up to four colours, 1 to 4 seconds and at most 150 particles. It stays within about a block around the player.</td></tr>
-<tr><td>Title or name colour</td><td>none</td><td>A title is its text, up to 24 characters. A name colour is one colour that is not one of Supporter's.</td></tr>
+<tr><td>Title or name colour</td><td>none</td><td>A title is its text, up to 24 characters. A name colour is one colour, or two it shimmers between, and not one of Supporter's.</td></tr>
 </tbody></table></div>
 <ul>
 <li>Every file is at most 64 kB. A texture is one PNG, 16 to 128 pixels a side.</li>
@@ -44,8 +44,8 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 </tbody></table></div>
 <h2 id="submit">Submitting an item</h2>
 <ol class="steps">
-<li><span><b>Join Splitstone's Discord.</b>The shop's "Join creators on Discord" button takes you there too.</span></li>
-<li><span><b>Read the creators' short rules and take the Creator role.</b>The role comes from a button under the rules. Only members with it can post in the creators' forum channel.</span></li>
+<li><span><b>Join the <a href="https://discord.gg/GGaUKruxEA" rel="noopener">#creator-art</a> forum on Splitstone's Discord.</b>It is in the Resources category. The shop's "Join creators on Discord" button takes you there too.</span></li>
+<li><span><b>Read the rules post pinned in #creator-art and press "Become a creator".</b>The button under the rules gives you the Creator role. Only members with it can post in #creator-art.</span></li>
 <li><span><b>Post each item in its own post, with its files.</b>Everyone can look and react, so you see what players want.</span></li>
 <li><span><b>Splitstone answers each post.</b>The answer is accepted, or changes needed with what to change.</span></li>
 </ol>
@@ -54,7 +54,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#2a1c3c" 
 <li>Your item must be your own art. You confirm in the creators' terms that you own the rights to it.</li>
 <li>If you used AI to make it, tell Splitstone privately. Items carry no AI label in the shop, but AI-made items go through the same similarity check as Splitstone's own.</li>
 <li>The similarity check compares your textures and model with Minecraft 1.16.1's own textures and with every Splitstone item. It looks at the shapes in a texture, not its colours, so a recoloured, scaled or moved copy still matches. A texture that matches 70% or more, or a model of 3 boxes or more that matches 95% or more, is not sold.</li>
-<li>Then a second AI, a different model from any used to make the item, reviews it, and a person approves it before it goes on sale.</li>
+<li>Then the item is reviewed, and a person approves it before it goes on sale.</li>
 </ul>
 <h2 id="shop">In the shop</h2>
 <ul>
@@ -104,6 +104,6 @@ function run(){var out=$('ck-out');out.textContent='';$('ck-pic').hidden=true;va
  if(k=='emote'){var a=pick(fs,'.json')[0];if(!li(!!a,'animation.json'+(a?' added':' is missing')))return;
   txt(a).then(function(j){var o;try{o=JSON.parse(j)}catch(e){return li(false,'animation.json is not valid JSON')}
    var s=JSON.stringify(o),used=PARTS.filter(function(p){return s.indexOf('"'+p+'"')>=0});li(used.length>0,used.length?'Moves '+used.join(', '):'Moves none of head, torso, rightArm, leftArm, rightLeg or leftLeg');
-   li(s.indexOf('"bend"')<0,s.indexOf('"bend"')<0?'No bend values':'bend is ignored: arms and legs do not bend')})}}
+   li(true,s.indexOf('"bend"')<0?'No bend values':'Bend values found: arms and legs bend at the elbow or knee; a bend on the head or torso is ignored')})}}
 $('ck-f').addEventListener('change',run);$('ck-k').addEventListener('change',run)});
 </script>

@@ -27,7 +27,6 @@
   "splitstone.rooms.section.messages": "СООБЩЕНИЯ",
   "splitstone.rooms.section.limits": "ОГРАНИЧЕНИЯ",
   "splitstone.rooms.section.challenges": "ИСПЫТАНИЯ",
-  "splitstone.rooms.rule.wait_for_all": "Ждать финиша всех",
   "splitstone.rooms.rule.time_limit": "Лимит времени",
   "splitstone.rooms.rule.short_countdown": "Отсчёт 5 секунд",
   "splitstone.rooms.rule.solo_strip": "Своя полоска в одиночку",

@@ -25,7 +25,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#b98cff" 
 </ul>
 <h2 id="joining">Making and joining</h2>
 <ul>
-<li>Making a clan is one form: the name (4 to 24 letters or digits) and the tag (2 to 5 capital letters or digits), who gets in, and the shield. Names and tags are unique, and offensive ones are refused.</li>
+<li>Making a clan is one form: the name (4 to 24 letters or digits, with single spaces) and the tag (2 to 5 capital letters or digits), who gets in, and the shield. Names and tags are unique, and offensive ones are refused.</li>
 <li>A clan's joining setting is Ask to join (the default), Open, or Invite only. It can also set a minimum Ranked 1v1 Elo and a region: North America, Europe, Asia, Oceania, the Middle East, or any region.</li>
 <li>An invite lets a player in whatever the joining setting and the minimum Elo. Nobody can invite a player they blocked or who blocked them.</li>
 <li>The shield is one of 8 emblems on one of 8 colours, all free, picked by the Leader or a Co-leader.</li>
@@ -37,7 +37,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#b98cff" 
 </ul>
 <h2 id="leader">When the Leader is away</h2>
 <ul>
-<li>A Leader away 21 and 32 days gets a warning when they sign in, and every member's clan card shows how long the Leader has been away.</li>
+<li>A Leader who has been away 21 days, and again at 32 days, gets a warning when they sign in, and every member's clan card shows how long the Leader has been away.</li>
 <li>At 35 days the clan passes to the longest-serving Co-leader. With no Co-leader, nothing changes.</li>
 <li>The Leader hands the clan over before leaving. The last member to leave closes it, and the Leader can also disband it; its name and tag are free again at once.</li>
 </ul>
