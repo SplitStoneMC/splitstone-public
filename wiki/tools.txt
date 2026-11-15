@@ -1,0 +1,34 @@
+slug: tools
+group: play
+mat: stone
+acc: stone
+title: Tools
+nav: Tools
+summary: Programs runners use beside the game, such as Ninjabrain Bot and Toolscreen. Splitstone doesn't include them: what is allowed and where to get each one.
+stat: 2|tools listed
+facts: 2|tools listed;;Free|both of them;;Yours|to install, not in the pack
+keywords: tools external programs ninjabrain bot ninjabrain calculator stronghold eye throw f3+c toolscreen eyezoom eye zoom resize thin wide overlay fullscreen windows antivirus defender allowed legal speedrun.com
+art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#1a2423" d="M3 3h26v15H3z"/><path fill="#9db3b1" d="M3 3h26v2H3z"/><path fill="#7fd6c4" d="M6 8h9v7H6z"/><path fill="#1a2423" d="M9 10h3v3H9z"/><path fill="#ffd08a" d="M18 8h8v1h-8zM18 11h6v1h-6zM18 14h7v1h-7z"/><path fill="#9db3b1" d="M13 18h6v2h-6zM10 20h12v2H10z"/></svg>
+---
+<h2 id="allowed">What is allowed</h2>
+<p>Programs that run beside the game follow speedrun.com's rules: its approved calculators, such as Ninjabrain Bot, and its approved Toolscreen builds. Mods inside the game have their own rule (<a href="faq.html#own-mods">mods and tools</a>).</p>
+<p>The two tools below are the ones most runners use. Neither is part of Splitstone Pack: you install them yourself, and their authors, not Splitstone, look after them.</p>
+<h2 id="ninjabrain-bot">Ninjabrain Bot</h2>
+<p>A stronghold calculator. It works out where the stronghold is from your eye throws.</p>
+<ul>
+<li><b>How you use it:</b> throw an eye of ender, look straight at it and press F3+C. Move somewhere else and do it again. The calculator lists the likely stronghold locations and how sure it is of each.</li>
+<li><b>What it runs on:</b> it is a Java program, a single .jar file that you open.</li>
+<li><b>Cost:</b> free and open source.</li>
+<li><b>Get it:</b> <a href="https://github.com/Ninjabrain1/Ninjabrain-Bot/releases/latest">Ninjabrain Bot's releases on GitHub</a>. Its <a href="https://github.com/Ninjabrain1/Ninjabrain-Bot">page</a> links video guides.</li>
+</ul>
+<h2 id="toolscreen">Toolscreen</h2>
+<p>A program for playing in fullscreen: it resizes the game with a hotkey (thin, wide), magnifies the area around your crosshair for reading eye throws (EyeZoom), and shows other windows, such as Ninjabrain Bot, on top of the game.</p>
+<ul>
+<li><b>What it runs on:</b> Windows 10 and 11 only. Of the launchers Splitstone supports, it works with Prism Launcher and MultiMC.</li>
+<li><b>How you install it:</b> download its installer, copy it into your Splitstone instance's folder and open it there. Its own page has the steps.</li>
+<li><b>Antivirus:</b> Toolscreen works by loading itself into the game, so Windows Defender or another antivirus may warn about it. Its installer asks you to allow it.</li>
+<li><b>Cost:</b> free and open source.</li>
+<li><b>Get it:</b> <a href="https://github.com/jojoe77777/Toolscreen/releases/latest">Toolscreen's releases on GitHub</a>. Its <a href="https://github.com/jojoe77777/Toolscreen">page</a> has the install steps and a video guide.</li>
+</ul>
+<h2 id="help">Help with a tool</h2>
+<p>For a problem with one of these tools, ask its author's community, linked from the tool's page. For a problem with Splitstone itself, see <a href="install.html#problems">if something goes wrong</a>.</p>

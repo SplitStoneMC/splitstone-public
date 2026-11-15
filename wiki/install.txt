@@ -7,7 +7,7 @@ nav: Install
 summary: Splitstone is a mod you run from a Minecraft launcher you already use: which launchers are supported, the packs, and what happens the first time you start it.
 stat: 4|supported launchers
 facts: 4|supported launchers;;1|ready-made pack;;1|instance of its own;;13+|minimum age
-keywords: problem error crash java help troubleshooting download launcher prism multimc modrinth official curseforge pack instance mac linux windows sign in certificate update updater first launch age
+keywords: problem error crash java 17 memory ram allocate lag spikes fps performance graphics card gpu help troubleshooting download launcher prism multimc modrinth official curseforge pack instance mac linux windows sign in certificate update updater first launch age
 art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" d="M14 1h4v8h4l-6 6-6-6h4z"/><path fill="#6b4a32" d="M8 16h16v8H8z"/><path fill="#7fcf5a" d="M8 16h16v2H8z"/><path fill="#5a9e3e" d="M10 18h2v1h-2zM17 18h3v1h-3z"/><path fill="#000" fill-opacity=".25" d="M11 21h2v1h-2zM18 22h2v1h-2z"/></svg>
 ---
 <h2 id="what-you-need">What you need</h2>
@@ -27,10 +27,16 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <h2 id="packs">Choose a pack</h2>
 <p>Splitstone comes as one ready-made pack or as the mod on its own, for Windows, macOS and Linux. There is no practice pack with reset mods: <a href="practice.html">practice</a> has its own button for a new world.</p>
 <ul>
-<li><b>Splitstone Pack:</b> Splitstone plus legal mods: the performance mods Sodium (its Mac build on macOS), Lithium, Starlight, LazyDFU and Krypton; SpeedrunAPI, which that Sodium build needs to start; Voyager and Antigone, which fix rare crashes and freezes; StandardSettings, which resets your options at the start of each match; LazyStronghold, which builds strongholds faster; and AntiResourceReload, which makes new worlds open faster.</li>
+<li><b>Splitstone Pack:</b> Splitstone plus legal mods: the performance mods Sodium (its Mac build on macOS), Lithium, Starlight, LazyDFU and Krypton; SpeedrunAPI, which that Sodium build needs to start; Voyager and Antigone, which fix rare crashes and freezes; StandardSettings, which resets your options at the start of each match; LazyStronghold, which builds strongholds faster; AntiResourceReload, which makes new worlds open faster; and State Output, which tells tools outside the game what the game is doing. The macOS pack also has BoundlessWindow, which removes the window's title bar, and RetiNO, which draws the game at half resolution on Retina screens for a higher frame rate.</li>
 <li><b>The mod alone:</b> for players who already have their own setup. Only mods on the legal mods list are allowed (<a href="faq.html#own-mods">details</a>).</li>
 </ul>
 <p>Download them from the <a href="../download.html">download page</a>: one pack file for each of Windows, macOS and Linux, which Prism, MultiMC and the Modrinth App all import. The pack fetches each mod from the legal mods list on GitHub rather than copying it.</p>
+<h2 id="java">Java and memory</h2>
+<ul>
+<li><b>Java:</b> Splitstone runs on Java 8 or newer. Java 17 or newer is recommended, as it is for 1.16.1 speedrunning in general. Your launcher can download it and lets you pick it for the instance.</li>
+<li><b>Memory:</b> give the instance about 2,000 to 3,000 MB as its maximum. More than that can cause lag spikes rather than prevent them.</li>
+<li><b>Two graphics cards:</b> on a laptop with both a built-in and a dedicated graphics card, set Java (javaw.exe) to use the dedicated one in your graphics settings.</li>
+</ul>
 <h2 id="own-instance">Give it its own instance</h2>
 <p>Splitstone runs in its own instance. Other speedrun setups often refuse to start next to mods they don't expect, and some bundle their own copies of mods that Splitstone's packs include. Make a new instance for Splitstone and leave your other instances as they are; they can all sit side by side in the same launcher.</p>
 <h2 id="steps">Install in four steps</h2>
