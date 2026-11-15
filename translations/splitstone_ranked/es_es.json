@@ -46,6 +46,7 @@
   "splitstone.match.result.menu": "Menú principal",
   "splitstone.queue.refused.banned": "Ban de cola por rendirte varias veces seguidas: quedan %s",
   "splitstone.queue.refused.relay_call_offs": "Las colas de 2v2 y cooperativo están cerradas para ti: quedan %s",
+  "splitstone.queue.refused.relay_call_offs.notice": "Las colas de 2v2 y cooperativo están cerradas para ti",
   "splitstone.queue.refused.relay_call_offs.why": "Tu juego no pudo conectar con nuestros servidores en varias partidas hoy.",
   "splitstone.queue.refused.mods": "Quita los mods no legales en speedrun.com: %s",
   "splitstone.queue.refused.agent": "Las partidas no pueden empezar mientras haya un agente de Java cargado (%s). Quita -javaagent de los argumentos de Java de tu launcher y reinicia el juego.",

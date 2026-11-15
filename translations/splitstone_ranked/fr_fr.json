@@ -46,6 +46,7 @@
   "splitstone.match.result.menu": "Menu principal",
   "splitstone.queue.refused.banned": "Exclu de la file après plusieurs abandons d'affilée : encore %s",
   "splitstone.queue.refused.relay_call_offs": "Les files 2v2 et coop te sont fermées : encore %s",
+  "splitstone.queue.refused.relay_call_offs.notice": "Les files 2v2 et coop te sont fermées",
   "splitstone.queue.refused.relay_call_offs.why": "Ton jeu n'a pas pu joindre nos serveurs dans plusieurs matchs aujourd'hui.",
   "splitstone.queue.refused.mods": "Retire les mods non autorisés sur speedrun.com : %s",
   "splitstone.queue.refused.agent": "Les matchs ne peuvent pas démarrer tant qu'un agent Java est chargé (%s). Retire -javaagent des arguments Java de ton launcher et relance le jeu.",
