@@ -16,6 +16,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#ff5a6e" 
 <li><b>The community's practice maps</b>, offered by default, such as Llama's Bastion Practice, ryguy2k4's End Practice and Portal Practice v2. Saved Worlds downloads Llama's Bastion Practice, Zero Practice, Portal Practice v2 and Crafting Practice v2 from their authors' own pages when you first open it; the others download from their authors' pages in one click. Each author is credited.</li>
 <li><b>A solo private room</b> on filtered seeds, where you choose which seed types or which bastion types come up.</li>
 <li>A run timer and a button for a new practice world straight away. Practice opens from the Practice button in the dashboard's Singleplayer box.</li>
+<li>In practice maps and your other single-player worlds: a timer with real time and in-game time, as SpeedRunIGT shows them (Settings can turn it off), which stops while the world is closed, and <b>Quit to Title</b> at the bottom right of the pause menu, which leaves without saving the world, as Fast Reset's does.</li>
 </ul>
 <p>Practice mods such as peepoPractice aren't added. MiniPracticeKit isn't a mod, so it already works.</p>
 <p>All practice tools are free.</p>
