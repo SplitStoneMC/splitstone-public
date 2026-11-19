@@ -13,7 +13,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <h2 id="what-you-need">What you need</h2>
 <ul>
 <li>A Minecraft Java Edition account.</li>
-<li>One of the supported launchers below, on Windows, macOS or Linux.</li>
+<li>One of the supported launchers below, on Windows, macOS or Linux. If you only have the official Minecraft Launcher, get <a href="https://prismlauncher.org/download">Prism Launcher</a> first (free): the official launcher can't open the pack.</li>
 </ul>
 <p>There is no Splitstone launcher. Your launcher downloads the game from Mojang and signs you in with Microsoft as it always does, so Splitstone never handles your password or copies game files.</p>
 <h2 id="launchers">Supported launchers</h2>
@@ -21,7 +21,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <tr><td>Prism Launcher</td><td>Yes</td><td>Imports the pack file (.mrpack).</td></tr>
 <tr><td>Modrinth App</td><td>Yes</td><td>Imports the pack file (.mrpack).</td></tr>
 <tr><td>MultiMC</td><td>Yes</td><td>Imports the pack file (.mrpack): Add Instance, then Import from zip.</td></tr>
-<tr><td>Official Minecraft Launcher</td><td>Yes</td><td>Opening RSG and All Advancements is done by hand (<a href="categories.html">why</a>).</td></tr>
+<tr><td>Official Minecraft Launcher</td><td>Yes</td><td>Can't open the pack, so the mod is added by hand to a Fabric install; Prism is easier. Opening RSG and All Advancements is done by hand (<a href="categories.html">why</a>).</td></tr>
 <tr><td>CurseForge</td><td>No</td><td>CurseForge packs may only include mods hosted on CurseForge or on its approved list, which leaves out most speedrun-legal builds.</td></tr>
 </tbody></table></div>
 <h2 id="packs">Choose a pack</h2>
@@ -41,9 +41,9 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <p>Splitstone runs in its own instance. Other speedrun setups often refuse to start next to mods they don't expect, and some bundle their own copies of mods that Splitstone's packs include. Make a new instance for Splitstone and leave your other instances as they are; they can all sit side by side in the same launcher.</p>
 <h2 id="steps">Install in four steps</h2>
 <ol class="steps">
-<li><span><b>Open a supported launcher.</b>Sign in with your Microsoft account as usual.</span></li>
-<li><span><b>Add Splitstone Pack as a new instance.</b>Download the pack file for your system and import it.</span></li>
-<li><span><b>Launch the instance.</b>Splitstone starts inside Minecraft.</span></li>
+<li><span><b>Open a supported launcher.</b>If you only have the official Minecraft Launcher, get <a href="https://prismlauncher.org/download">Prism Launcher</a> first. Sign in with your Microsoft account.</span></li>
+<li><span><b>Add Splitstone Pack as a new instance.</b>Download the pack file for your system and import it. Prism shows "Easy There!" because the speedrun mods come from the speedrun.com legal mods list, not Modrinth: tick "I trust this modpack" and click OK.</span></li>
+<li><span><b>Launch the instance.</b>Select the new Splitstone-Pack instance. The first import downloads Minecraft 1.16.1 (about 300 MB) and the first launch downloads Java. Both can take several minutes and the bar may sit still; let it finish.</span></li>
 <li><span><b>Finish the first-launch screen.</b>See below.</span></li>
 </ol>
 <p>The <a href="../download.html">download page</a> has the steps for each launcher.</p>
@@ -66,6 +66,7 @@ art: <svg viewBox="0 0 32 24" shape-rendering="crispEdges"><path fill="#e9f0ef" 
 <li><b>"Could not set up a secure connection."</b> Check that your computer's date and time are right. Antivirus or firewall programs that inspect web traffic can also cause it.</li>
 <li><b>An update could not be downloaded or installed.</b> Restart the game to try again. If it still fails, download the latest pack from the <a href="../download.html">download page</a>.</li>
 <li><b>The game closes or crashes on start.</b> Make sure Splitstone has its own instance made from Splitstone Pack, with no mods added to it. Don't add Fabric API. After a crash, the next launch asks whether to send the crash report; saying yes helps us fix it.</li>
+<li><b>On macOS the game window has no title bar.</b> The pack's BoundlessWindow mod removes it. Close the game with Quit game in Splitstone's Menu, or press Cmd+Q. To get the title bar back, turn off Remove Titlebar under Options, then the book button, then BoundlessWindow, and restart the game.</li>
 <li><b>The launcher says Java is missing.</b> Let your launcher download it: Prism and the Modrinth App can download the right Java for 1.16.1 from their settings.</li>
 </ul>
 <p>Still stuck? Ask in #install-help on our <a href="https://discord.gg/wxDcZ8NGWt">Discord</a> with your launcher, your operating system and a screenshot of the error, or email contact@splitstonemc.com. For a bug in the game, use "Report a bug" in game; it sends your logs with the report.</p>
