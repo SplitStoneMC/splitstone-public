@@ -987,7 +987,6 @@
   "splitstone.shop.age": "Мне 16 или больше, или я родитель или опекун и покупаю для этого игрока",
   "splitstone.shop.age.title": "Перед первой покупкой",
   "splitstone.shop.age.continue": "Продолжить",
-  "splitstone.emotes.none": "Эмоций пока нет: GG и «Удачи» появятся после входа.",
   "splitstone.emotes.one_vs_one": "Соперник видит эмоции только на экранах «Против» и итогов.",
   "splitstone.emotes.empty": "Пусто",
   "splitstone.replays.count.short": "Сохранено: %s",

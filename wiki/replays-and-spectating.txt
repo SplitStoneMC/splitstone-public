@@ -70,7 +70,7 @@ keywords: replay replays analysis splits time lost inventory download saved top 
 </ul>
 <h2 id="broadcast">Broadcast tools</h2>
 <p>Organisers approved for an event get broadcast tools: camera control, split and timeline screens, and a live data feed for stream overlays in the same format as MCSR Ranked&rsquo;s.</p>
-<script defer src="../assets/sample.js?v=d31cf130"></script><script defer src="../assets/live-data.js?v=7e69f55a"></script>
+<script defer src="../assets/sample.js?v=d31cf130"></script><script defer src="../assets/live-data.js?v=5f00382e"></script>
 <script>
 /* wiki-content: ranked matches running now, from the live data the Live page reads; shown only with real data */
 addEventListener('DOMContentLoaded',function(){var X=window.SAMPLE,e=document.getElementById('livec');if(!X||!X.ready||!e)return;

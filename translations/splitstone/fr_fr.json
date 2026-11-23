@@ -987,7 +987,6 @@
   "splitstone.shop.age": "J'ai 16 ans ou plus, ou je suis parent ou tuteur et j'achète pour ce joueur",
   "splitstone.shop.age.title": "Avant ton premier achat",
   "splitstone.shop.age.continue": "Continuer",
-  "splitstone.emotes.none": "Pas encore d'émotes : GG et Bonne chance arrivent une fois connecté.",
   "splitstone.emotes.one_vs_one": "Ton adversaire ne voit les émotes que sur les écrans VS et de résultats.",
   "splitstone.emotes.empty": "Vide",
   "splitstone.replays.count.short": "%s enregistrés",
