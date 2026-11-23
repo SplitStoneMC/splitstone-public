@@ -127,7 +127,7 @@
   "splitstone.events.season": "Saison %s · semaine %s sur 16",
   "splitstone.events.season.over": "La saison %s est terminée",
   "splitstone.events.season.starts": "La saison %s commence le %s",
-  "splitstone.events.season.starts_launch": "La saison %s commence au lancement complet",
+  "splitstone.events.season.starts_launch": "La saison %s commence après la saison 0",
   "splitstone.events.season.before": "D'ici là, pas de coupes, de Majors ni de points de playoffs.",
   "splitstone.events.next.before.label": "AVANT LA SAISON",
   "splitstone.events.next.before": "Les coupes commencent en semaine 2",
